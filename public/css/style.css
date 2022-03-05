@@ -1,0 +1,175 @@
+.indicador_interatividade label {
+	margin-left: 10px;
+}
+
+.indicador_interatividade {
+	flex-direction: column;
+	border: 1px solid black;
+}
+
+#campo_observacao {
+	resize: none;
+	width: 100%;
+}
+
+#descricao_item {
+	resize: none;
+	width: 100%;
+}
+
+.indicador_interatividade legend {
+	width: max-content;
+	font-size: 1em;
+	padding: 6px;
+	margin-left: 7px;
+}
+
+.notas_rodape {
+	margin: 15px 0;
+}
+
+.logo_titulo .logo, .logo_titulo .titulo {
+	border: 1px solid black;
+}
+
+.titulo {
+	width: 100%;
+	text-align: center;
+}
+
+@font-face {
+	font-family: "Calibri";
+	src: url("/calibri-font-family/calibri-regular.ttf")
+}
+
+.titulo span {
+	font-weight: bold;
+	font-family: calibri;
+}
+
+@media(min-width: 991px) {
+	.titulo span {
+		font-size: 1.8em;
+	}
+}
+
+@media(min-width:667px) and (max-width: 991px) {
+	.titulo span {
+		font-size: 2.3vw;
+	}
+}
+
+@media(max-width: 667px) {
+	.titulo span {
+		font-size: 0.8em;
+	}
+}
+
+.logo_titulo {
+	margin-top: 50px;
+}
+
+.cabecalho>span {
+	top: 13px;
+	position: relative;
+}
+
+.formulario section>span, .formulario section>p {
+	font-weight: 600;
+}
+
+.formulario section>p {
+	margin-bottom: 6px;
+}
+
+.container.login {
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+
+.container.login .row {
+	width: 100%;
+}
+
+.cadastro_item_digital .logo {
+	max-height: 100px;
+	margin: 21px 0;
+}
+
+.logo img {
+	width: 279px;
+}
+
+@media(min-width: 991px) {
+	.cadastro_item_digital .input_cadastro_item {
+		width: 300px;
+	}
+
+	.cadastro_item_digital .logo {
+		max-height: 100px;
+		width: 30%;
+	}
+}
+
+@media(max-width: 991px) {
+	.cadastro_item_digital .input_cadastro_item {
+		width: 31vw;
+	}
+
+	.cadastro_item_digital .logo {
+		max-height: 100px;
+	}
+}
+
+.cadastro_item_digital {
+	flex-direction: column;
+	align-items: center;
+}
+
+.cadastro_item_digital form {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.cadastro_item_digital form input, .cadastro_item_digital form select {
+	margin-left: 5px;
+}
+
+.cadastro_item_digital form>label {
+	display: flex;
+}
+
+.questionario .botoes>* {
+	margin: 0 10px;
+}
+
+.botoes {
+	margin: 5px 0;
+}
+
+.imagem-carousel {
+	max-height: 350px;
+}
+
+.login {
+	padding: 18px;
+	border-radius: 30px;
+}
+
+textarea {
+	resize: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+	background-color: #cddae8 !important;
+}
+
+.nav-item .nav-link:hover {
+	color: #82aed5 !important;
+}

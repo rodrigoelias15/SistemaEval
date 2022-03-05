@@ -1,0 +1,148 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests\AvaliadorFormRequest;
+use App\Http\Requests\InstituicaoFormRequest;
+use App\Http\Requests\ItemDigitalFormRequest;
+use App\Http\Requests\QuestionarioFormRequest;
+use App\ItemDigital;
+use App\Questionario;
+use App\UsuarioAvaliador;
+use Illuminate\Http\Request;
+use App\Instituicao;
+
+class SiteController extends Controller
+{
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    // Banco de dados
+    public function cadastroavaliador_bancodados(AvaliadorFormRequest $request)
+    {
+        UsuarioAvaliador::create($request->all());
+        $request->session()->flash('mensagem', "Usuário cadastrado com sucesso!");
+        return redirect()->route('teste_cadastro_avaliador');
+    }
+
+    public function cadastroinstituicao_bancodados(InstituicaoFormRequest $request)
+    {
+        Instituicao::create($request->all());
+        $request->session()->flash('mensagem', "Instituição cadastrada com sucesso!");
+        return redirect()->route('teste_cadastro_instituicao');
+    }
+
+    public function cadastroItemDigital_bancodados(ItemDigitalFormRequest $request)
+    {
+        ItemDigital::create($request->all());
+        $request->session()->flash('mensagem', "Item Digital cadastrado com sucesso!");
+        return redirect()->route('teste_cadastro_item_digital');
+    }
+   
+    public function preQuestionario(Request $request)
+    {
+        $itemdigital = ItemDigital::all();
+        $usuarioavaliador = UsuarioAvaliador::all();
+        return view('prequestionario', compact('usuarioavaliador', 'itemdigital'));
+    }
+
+    public function postPreQuestionario(QuestionarioFormRequest $request)
+    {
+        $questionario = new Questionario();
+        $dados = $request->all();
+        // $questionario = $request->session()->get('questionario');
+        $questionario->fill($dados);
+        $request->session()->put('questionario', $questionario);
+        return redirect()->route('questionario');
+    }
+
+    public function questionario(QuestionarioFormRequest $request)
+    {
+        $questionario = $request->session()->get('questionario');
+        return view('questionario', compact('questionario'));
+    }
+
+    public function storeQuestionario(QuestionarioFormRequest $request)
+    {
+        $questionario = $request->session()->get('questionario');
+        $dados = $request->all();
+        $questionario->fill($dados);
+        $request->session()->put('questionario', $questionario);
+        $questionario->save();
+        // return redirect()->route('testeCadastroQuestionario');
+        return redirect()->route('questionario');
+    }
+
+    // Páginas do sistema
+    public function testeCadastroQuestionario(Request $request)
+    {
+        $questionario = Questionario::all();
+        return view('testecadastros.testecadastroquestionario', compact('questionario'));    
+    }
+
+    public function testeCadastroAvaliador(Request $request)
+    {
+        $usuarioavaliador = UsuarioAvaliador::all();
+        $mensagem = $request->session()->get('mensagem');
+        return view('testecadastros.testecadastroavaliador', compact('mensagem', 'usuarioavaliador'));
+    }
+
+    public function testeCadastroInstituicao(Request $request)
+    {
+        $instituicaoensino = Instituicao::all();
+        $mensagem = $request->session()->get('mensagem');
+        return view('testecadastros.testecadastroinstituicao', compact('mensagem', 'instituicaoensino'));
+    }
+
+    public function testeCadastroItensDigitais(Request $request)
+    {
+        $itemdigital = ItemDigital::all();
+        $mensagem = $request->session()->get('mensagem');
+        return view('testecadastros.testecadastroitemdigital', compact('mensagem', 'itemdigital'));
+    }
+
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function home_sistema()
+    {
+        return view('home_sistema');
+    }
+
+    // Cadastro
+    public function cadastroadmin()
+    {
+        return view('cadastroadmin');
+    }
+
+    public function cadastroavaliador()
+    {
+        return view('cadastroavaliador');
+    }
+
+    public function cadastroitemDigital()
+    {
+        return view('cadastroitemdigital');
+    }
+
+    public function cadastroinstituicao()
+    {
+        return view('cadastroinstituicao');
+    }
+
+    // Contato
+    public function contatoadmin()
+    {
+        return view('contatoadmin');
+    }
+
+    public function contatoavaliador()
+    {
+        return view('contatoavaliador');
+    }
+}
