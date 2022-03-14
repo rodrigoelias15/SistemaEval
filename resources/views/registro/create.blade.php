@@ -10,6 +10,17 @@ Novo Registro
         <div class="logo d-flex mt-4">
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
+
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
         <form method="post">
             @csrf
             <div class="form-group">
