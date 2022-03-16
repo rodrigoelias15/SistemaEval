@@ -27,11 +27,6 @@ class CriarTabelaItemDigital extends Migration
             $table->string('plataforma_item_digital');
             $table->string('instituicao_plataforma');
             $table->string('instituicao_item_digital');
-            $table->string('nome_avaliador');
-            $table->string('email_avaliador');
-            $table->string('ocupacao_avaliador');
-            $table->string('formacao_avaliador');
-            $table->string('instituicao_avaliador');
         });
         
     }

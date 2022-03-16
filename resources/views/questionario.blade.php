@@ -32,15 +32,7 @@ Questionário de Interatividade
         </div>
     </div>
     
-    
-    <div class="col-lg-12 my-4">
-        
-        <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-              70%
-            </div>
-          </div> 
+    <div class="col-lg-12 my-4">             
 
         <form id="form1" method="post" class="form-group formulario">
             @csrf
@@ -49,8 +41,7 @@ Questionário de Interatividade
                 <p>O Item Digital:</p>
                 <fieldset class="indicador_interatividade d-flex">
                     <legend>Critérios:</legend>
-                    <label><input type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado,
-                        respostas e informações adicionais." checked>
+                    <label><input type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." checked>
                         Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado,
                         respostas e informações adicionais. </label><br>
                     <label><input type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos
@@ -249,30 +240,14 @@ Questionário de Interatividade
                 <p>O Item Digital:</p>
                 <fieldset class="indicador_interatividade d-flex">
                     <legend>Critérios:</legend>
-                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento
-                        ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas
-                        para sua
-                        resolução e/ou arquiteta percursos hipertextuais." checked>
-                        O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento
-                        ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas
-                        para sua
-                        resolução e/ou arquiteta percursos hipertextuais.
+                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações." checked>
+                        O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações.
                     </label><br>
-                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou
-                        entre conhecimentos da mesma área porém não possibilitam ações coletivas e colaborativas
-                        para sua
-                        resolução e/ou arquiteta percursos hipertextuais.">
-                        O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou
-                        entre conhecimentos da mesma área porém não possibilitam ações coletivas e colaborativas
-                        para sua
-                        resolução e/ou arquiteta percursos hipertextuais.
+                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações e simulações, porém não há  conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.">
+                        O enunciado e respostas criam possibilidades de associações e simulações, porém não há  conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.
                     </label><br>
-                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou
-                        entre conhecimentos da mesma área e/ou possibilita ações coletivas e colaborativas para sua
-                        resolução e/ou arquiteta percursos hipertextuais.">
-                        O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou
-                        entre conhecimentos da mesma área e/ou possibilita ações coletivas e colaborativas para sua
-                        resolução e/ou arquiteta percursos hipertextuais.
+                    <label><input type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações, simulações e a conectividade, ou seja, há a interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.">
+                        O enunciado e respostas criam possibilidades de associações, simulações e a conectividade, ou seja, há a interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.
                     </label><br>
                 </fieldset>
             </section>

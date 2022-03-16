@@ -87,26 +87,6 @@ Cadastro de Itens Digitais
                 <label for="inputInstituicaoItem">Instituição que desenvolveu item digital</label>
                 <input type="text" class="form-control" id="inputInstituicaoItem" name="instituicao_item_digital">
             </div>
-            <div class="form-group">
-                <label for="inputNomeAval">Nome do Avaliador</label>
-                <input type="text" class="form-control" id="inputNomeAval" name="nome_avaliador">
-            </div>
-            <div class="form-group">
-                <label for="inputEmailAval">E-mail do Avaliador</label>
-                <input type="email" class="form-control" id="inputEmailAval" name="email_avaliador">
-            </div>
-            <div class="form-group">
-                <label for="inputOcupAval">Ocupação do Avaliador</label>
-                <input type="text" class="form-control" id="inputOcupAval" name="ocupacao_avaliador">
-            </div>
-            <div class="form-group">
-                <label for="inputFormAval">Formação do Avaliador</label>
-                <input type="text" class="form-control" id="inputFormAval" name="formacao_avaliador">
-            </div>
-            <div class="form-group">
-                <label for="inputInstAval">Instituição do Avaliador</label>
-                <input type="text" class="form-control" id="inputInstAval" name="instituicao_avaliador">
-            </div>
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
             </div>

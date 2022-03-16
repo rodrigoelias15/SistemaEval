@@ -34,12 +34,7 @@ class ItemDigitalFormRequest extends FormRequest
             'nome_instituicao' => 'required',
             'plataforma_item_digital' => 'required',
             'instituicao_plataforma' => 'required',
-            'instituicao_item_digital' => 'required',
-            'nome_avaliador' => 'required',
-            'email_avaliador' => 'required',
-            'ocupacao_avaliador' => 'required',
-            'formacao_avaliador' => 'required',
-            'instituicao_avaliador' => 'required',
+            'instituicao_item_digital' => 'required',         
         ];
     }
 
@@ -55,12 +50,7 @@ class ItemDigitalFormRequest extends FormRequest
             'nome_instituicao.required' => 'Nome da Instituição que usa Item Digital é obrigatório',
             'plataforma_item_digital.required' => 'Plataforma em que o Item está armazenado é obrigatório',
             'instituicao_plataforma.required' => 'Instituição responsável pela plataforma é obrigatório',
-            'instituicao_item_digital.required' => 'Instituição que desenvolveu item digital é obrigatório',
-            'nome_avaliador.required' => 'Nome do avaliador é obrigatório',
-            'email_avaliador.required' => 'E-mail do avaliador é obrigatório',
-            'ocupacao_avaliador.required' => 'Ocupação do avaliador é obrigatório',
-            'formacao_avaliador.required' => 'Formação do avaliador é obrigatória',
-            'instituicao_avaliador.required' => 'Instituição do avaliador é obrigatório',
+            'instituicao_item_digital.required' => 'Instituição que desenvolveu item digital é obrigatório',            
         ];
     }
 
