@@ -56,7 +56,6 @@ Route::get('/contatoadmin', [SiteController::class, 'contatoadmin'])->name('cont
 Route::get('/contatoavaliador', [SiteController::class, 'contatoavaliador'])->name('contato_avaliador');
 
 // Autenticação
-// Route::get('/', 'EntrarController::class,login')->name('login_sistema');
 Route::get('/', [EntrarController::class, 'login'])->name('login_sistema');
 Route::post('/', [EntrarController::class, 'entrar']);
 
@@ -72,5 +71,5 @@ Route::get('/sair', function () {
 });
 
 // Autenticação padrão do laravel
-Route::get('/home', [HomeController::class,'index'])->name('home');
+// Route::get('/home', [HomeController::class,'index'])->name('home');
 Auth::routes();
