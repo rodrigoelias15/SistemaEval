@@ -1,10 +1,6 @@
-.indicador_interatividade label {
-	margin-left: 10px;
-}
-
 .indicador_interatividade {
-	flex-direction: column;
 	border: 1px solid black;
+	padding: 10px;
 }
 
 #campo_observacao {
@@ -21,7 +17,6 @@
 	width: max-content;
 	font-size: 1em;
 	padding: 6px;
-	margin-left: 7px;
 }
 
 .notas_rodape {
