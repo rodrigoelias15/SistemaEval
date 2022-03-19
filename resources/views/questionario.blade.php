@@ -5,6 +5,13 @@ Questionário de Interatividade
 @endsection
 
 @section('content')
+    
+    {{-- Gerador PDF --}}
+    <script async src="js/pdfGenerator.js"></script> {{-- script baixado e executado durante carregamento da página (assíncrono) --}}
+
+    {{-- Script de interatividade --}}
+    <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
+
 <div class="row">
     <div class="cabecalho col-lg-12">
         <div class="logo_titulo d-flex">
@@ -32,29 +39,15 @@ Questionário de Interatividade
         </div>
     </div>
 
-    <script>
-        let count = 0;
-        function myFunction() 
-        {
-            var item = document.getElementById("indicador1a");
-            if(item.checked == true){
-                count = count + 10;
-            }
-            if(count >= 0 && count < 40)
-                document.getElementById("teste").innerHTML = "Baixa Interatividade";
-            else if(count >= 40 && count < 70 )
-                document.getElementById("teste").innerHTML = "Média Interatividade";
-            else
-                document.getElementById("teste").innerHTML = "Alta Interatividade";
-        }
-    </script>
+    <div class="col-lg-12 my-4">             
 
-<div class="col-lg-12 my-4">             
-    
-    <span class="justify-content-center row">
-        <p class="pr-3"> Nível de Interatividade: </p>
-        <p id="teste" class="font-weight-bold"></p>
-    </span>
+    {{-- Teste nível de interatividade --}}
+        <span class="justify-content-center row">
+            <p id="count" class="font-weight-bold"></p>
+            <p class="pr-3"> Nível de Interatividade: </p>
+            <p id="teste" class="font-weight-bold"></p>
+        </span>
+    {{-- ---------------------------------- --}}
 
         <form id="form1" method="post" class="formulario">
             @csrf
@@ -64,21 +57,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." onclick="myFunction()">
+                        <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." onclick="indicador1()">
                         <label class="form-check-label" for="indicador1a">
                             Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais. 
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." onclick="myFunction()">
+                        <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." onclick="indicador1()">
                         <label class="form-check-label" for="indicador1b">
                             Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação. 
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." onclick="myFunction()">
+                        <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." onclick="indicador1()">
                         <label class="form-check-label" for="indicador1c">
                             Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais.
                         </label>
@@ -92,22 +85,22 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.">
+                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." onclick="indicador2()">
                         <label class="form-check-label" for="indicador2a">
                             Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen">
-                        <label class="form-check-label" for="indicador2a">
+                        <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen" onclick="indicador2()">
+                        <label class="form-check-label" for="indicador2b">
                             Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                       <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.">
-                       <label class="form-check-label" for="indicador2b">
+                       <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc." onclick="indicador2()">
+                       <label class="form-check-label" for="indicador2c">
                            Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.
                         </label>
                     </div>
