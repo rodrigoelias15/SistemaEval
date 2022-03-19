@@ -51,7 +51,10 @@ Questionário de Interatividade
 
 <div class="col-lg-12 my-4">             
     
-    <p id="teste" class="font-weight-bold text-center"></p>
+    <span class="justify-content-center row">
+        <p class="pr-3"> Nível de Interatividade: </p>
+        <p id="teste" class="font-weight-bold"></p>
+    </span>
 
         <form id="form1" method="post" class="formulario">
             @csrf
@@ -89,7 +92,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." checked>
+                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.">
                         <label class="form-check-label" for="indicador2a">
                             Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.
                         </label>
@@ -117,7 +120,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade ">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão." checked>
+                        <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.">
                         <label class="form-check-label" for="indicador3a">
                             Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.
                         </label>
@@ -145,7 +148,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade ">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador4a" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida." checked>
+                        <input id="indicador4a" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida.">
                         <label class="form-check-label" for="indicador4a">
                             Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida.
                         </label>
@@ -173,7 +176,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador5a" class="form-check-input" type="radio" name="questionario_item5" value="Não apresenta opção de ajuda ou retorno." checked>
+                        <input id="indicador5a" class="form-check-input" type="radio" name="questionario_item5" value="Não apresenta opção de ajuda ou retorno.">
                         <label class="form-check-label" for="indicador5a">
                             Não apresenta opção de ajuda ou retorno.
                         </label>
@@ -201,7 +204,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador6a" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida." checked>
+                        <input id="indicador6a" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida.">
                         <label class="form-check-label" for="indicador6a">
                             Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida.
                         </label>
@@ -229,7 +232,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador7a" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada." checked>
+                        <input id="indicador7a" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada.">
                         <label class="form-check-label" for="indicador7a">
                             O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada.
                         </label>
@@ -257,7 +260,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador8a" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." checked>
+                        <input id="indicador8a" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais.">
                         <label class="form-check-label" for="indicador8a">
                             O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais.
                         </label>
@@ -285,7 +288,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador9a" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações." checked>
+                        <input id="indicador9a" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações.">
                         <label class="form-check-label" for="indicador9a">
                             O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações.
                         </label>
@@ -313,7 +316,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item." checked>
+                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item.">
                         <label class="form-check-label" for="indicador10a">
                             O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item.
                         </label>
@@ -341,7 +344,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador11a" class="form-check-input" type="radio" name="questionario_item11" value=" O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos." checked>
+                        <input id="indicador11a" class="form-check-input" type="radio" name="questionario_item11" value=" O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos.">
                         <label class="form-check-label" for="indicador11a">
                             O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos.
                         </label>
@@ -368,12 +371,8 @@ Questionário de Interatividade
                 <b>Nota de Rodapé:</b>
                 <p> e-Val: Avaliação da interatividade em itens digitais
                     Pesquisadoras: Dra. Liamara Scortegagna (UFJF) e Dra. Adriana Bruno (UNIRIO).
-                    Projeto de pesquisa: Itens digitais e interativos em e-Avaliação de larga escala: processos cognitivos,
-                    estratégias e produtos didáticos
-                    na relação entre meio impresso e meio digital (2020/2021).
-                    Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz
-                    de Fora
-                    (CAEd/UFJF).
+                    Projeto de pesquisa: Itens digitais e interativos em e-Avaliação de larga escala: processos cognitivos, estratégias e produtos didáticos na relação entre meio impresso e meio digital (2020/2021).
+                    Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).
                 </p>
             </div>
             <div class="form-group justify-content-end d-flex">
