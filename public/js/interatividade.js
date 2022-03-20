@@ -356,13 +356,13 @@ function indicador11() {
 function somaInteratividade() {
     var somaTotal = indicador1() + indicador2() + indicador3() + indicador4() + indicador5() + indicador6() + indicador7() + indicador8() + indicador9() + indicador10() + indicador11();
     if (somaTotal < 40) {
-        document.getElementById("teste").innerHTML = "Baixa Interatividade";
+        document.getElementById("nivel_interatividade").innerHTML = "Baixa Interatividade";
     }
     else if (somaTotal >= 40 && somaTotal < 70) {
-        document.getElementById("teste").innerHTML = "Média Interatividade";
+        document.getElementById("nivel_interatividade").innerHTML = "Média Interatividade";
     }
     else if (somaTotal >= 70 && somaTotal <= 100) {
-        document.getElementById("teste").innerHTML = "Alta Interatividade";
+        document.getElementById("nivel_interatividade").innerHTML = "Alta Interatividade";
     }
     document.getElementById("count").innerHTML = somaTotal;
 }

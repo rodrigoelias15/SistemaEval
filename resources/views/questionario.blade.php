@@ -45,7 +45,7 @@ Questionário de Interatividade
         <span class="justify-content-center row">
             <p id="count" class="font-weight-bold"></p>
             <p class="pr-3"> Nível de Interatividade: </p>
-            <p id="teste" class="font-weight-bold"></p>
+            <p id="nivel_interatividade" class="font-weight-bold"></p>
         </span>
     {{-- ---------------------------------- --}}
 
@@ -369,8 +369,7 @@ Questionário de Interatividade
                 </p>
             </div>
             <div class="form-group justify-content-end d-flex">
-                <input class="btn btn-primary ml-3" type="button" value="Imprimir" onclick="geradorpdf()">
-                <input class="btn btn-primary ml-3" type="submit" value="Enviar">
+                <input class="btn btn-primary px-4" type="submit" value="Enviar" onclick="geradorpdf()">
             </div>
         </form>
     </div>
