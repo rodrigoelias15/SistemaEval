@@ -104,6 +104,12 @@ class SiteController extends Controller
         return view('testecadastros.testecadastroitemdigital', compact('mensagem', 'itemdigital'));
     }
 
+    public function update(Request $request)
+    {
+        $path = $request->file('avatar')->store('avatars');
+        return $path;
+    }
+    
     public function login()
     {
         return view('login');
