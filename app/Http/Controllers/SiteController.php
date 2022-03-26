@@ -6,11 +6,11 @@ use App\Http\Requests\AvaliadorFormRequest;
 use App\Http\Requests\InstituicaoFormRequest;
 use App\Http\Requests\ItemDigitalFormRequest;
 use App\Http\Requests\QuestionarioFormRequest;
-use App\ItemDigital;
 use App\Questionario;
 use App\UsuarioAvaliador;
 use Illuminate\Http\Request;
 use App\Instituicao;
+use App\ItemDigital;
 
 class SiteController extends Controller
 {
@@ -37,11 +37,26 @@ class SiteController extends Controller
 
     public function cadastroItemDigital_bancodados(ItemDigitalFormRequest $request)
     {
-        ItemDigital::create($request->all());
+        $itemdigital = new ItemDigital();
+        if($request->file('imagem_item_digital')){
+            $file= $request->file('imagem_item_digital');
+            $filename= date('YmdHi').$file->getClientOriginalName();
+            $file-> move(public_path('public/Imagens'), $filename);
+            $itemdigital['imagem_item_digital']= $filename;
+        }
+        $data = $request->except('imagem_item_digital');
+        $itemdigital->fill($data);
+        $itemdigital->save();
         $request->session()->flash('mensagem', "Item Digital cadastrado com sucesso!");
         return redirect()->route('teste_cadastro_item_digital');
     }
    
+    public function image_view()
+    {
+        $imageData= ItemDigital::all();
+        return view('view_image', compact('imageData'));
+    }
+
     public function preQuestionario(Request $request)
     {
         $itemdigital = ItemDigital::all();
@@ -103,7 +118,7 @@ class SiteController extends Controller
         $mensagem = $request->session()->get('mensagem');
         return view('testecadastros.testecadastroitemdigital', compact('mensagem', 'itemdigital'));
     }
-
+    
     public function login()
     {
         return view('login');

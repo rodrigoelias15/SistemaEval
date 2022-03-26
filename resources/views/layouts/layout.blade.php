@@ -13,7 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!---->
 
-
+    <!--Gerador PDF-->
+    <script src="js/pdfGenerator.js"></script>
+    <!---->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
-                </li>
+                </li>                                           
                 <li class="nav-item">
                     <a class="nav-link" href="/sair">Sair</a>
                 </li>
