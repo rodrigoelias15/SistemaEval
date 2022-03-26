@@ -37,7 +37,7 @@ Route::post('/cadastroavaliador', [SiteController::class,'cadastroavaliador_banc
 
 // Cadastro Itens Digitais
 Route::get('/cadastroitemdigital', [SiteController::class,'cadastroitemdigital'])->name('cadastro_itemdigital');
-Route::post('/cadastroitemdigital', [SiteController::class,'cadastroItemDigital_bancodados']);
+Route::post('/cadastroitemdigital', [SiteController::class,'cadastroItemDigital_bancodados'])->name('upload_imagem');
 
 // Cadastro Instituição
 Route::get('/cadastroinstituicao', [SiteController::class,'cadastroinstituicao'])->name('cadastro_instituicao');

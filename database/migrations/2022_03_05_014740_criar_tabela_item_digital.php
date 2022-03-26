@@ -23,12 +23,12 @@ class CriarTabelaItemDigital extends Migration
             $table->integer('item_utilizado');
             $table->string('nome_avaliacao_item_digital');
             $table->integer('ano_item_digital');
+            $table->string('imagem_item_digital')->nullable();
             $table->string('nome_instituicao');
             $table->string('plataforma_item_digital');
             $table->string('instituicao_plataforma');
             $table->string('instituicao_item_digital');
-        });
-        
+        });        
     }
 
     /**

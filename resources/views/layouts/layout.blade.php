@@ -16,6 +16,8 @@
     <!--Gerador PDF-->
     <script src="js/pdfGenerator.js"></script>
     <!---->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
-                </li>
+                </li>                                           
                 <li class="nav-item">
                     <a class="nav-link" href="/sair">Sair</a>
                 </li>

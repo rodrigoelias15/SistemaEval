@@ -1,3 +1,7 @@
+.custom-file .custom-file-label::after {
+	display: none;
+}
+
 .indicador_interatividade label {
 	margin-left: 10px;
 }

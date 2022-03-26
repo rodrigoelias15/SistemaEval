@@ -10,6 +10,7 @@ Cadastro de Itens Digitais
         <div class="logo my-3">
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
+        
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -19,7 +20,8 @@ Cadastro de Itens Digitais
             </ul>
         </div>
         @endif
-        <form method="post" class="form-group">
+
+        <form method="post" class="form-group" action="{{route('upload_imagem')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="inputItemDigital">Nome do Item Digital</label>
@@ -41,11 +43,7 @@ Cadastro de Itens Digitais
             <div class="form-group">
                 <label for="inputURL">URL Item Digital</label>
                 <input type="text" class="form-control" id="inputURL" name="url_item_digital">
-            </div>
-            <!-- <div class="form-group">
-                <label for="inputJpeg">Upload JPEG/PNG</label>
-                <input type="text" class="form-control" id="inputJpeg" name="upload_imagem_item_digital">
-            </div> -->
+            </div>           
             <div class="form-group">
                 <label for="campo_descricao_item">Descrição do Item</label>
                 <textarea id="campo_descricao_item" class="form-control" name="descricao_item_digital"></textarea>
@@ -71,6 +69,44 @@ Cadastro de Itens Digitais
                 <label for="inputAnoAvaliacao">Ano</label>
                 <input type="text" class="form-control col-md-2" id="inputAnoAvaliacao" name="ano_item_digital">
             </div>
+            
+            <div class="form-group">
+                <label>Escolher Arquivo de Imagem</label>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputUploadImagem">Adicionar</label>
+                    </div>
+                    <div class="custom-file">
+                        <input id="inputUploadImagem" type="file" class="custom-file-input" name="imagem_item_digital" onchange="exibeImagem()">
+                        <label class="custom-file-label" for="inputUploadImagem">Escolher Arquivo de Imagem</label>
+                    </div>          
+                </div>
+            </div>
+            
+            <div id="image_preview" class="form-group" style="display: none">
+                <img id="preview-image-before-upload" class="img-fluid" src="https://www.riobeauty.co.uk/images/product_image_not_found.gif" alt="Prévia da Imagem do Item Digital" title="Imagem do Item Digital" style="max-height: 250px">
+            </div>    
+
+            {{-- Scripts --}}
+                <script>
+                    function exibeImagem() {
+                        $('#image_preview').show();
+                    }
+                </script>
+
+                <script type="text/javascript">      
+                    $(document).ready(function (e){                                           
+                        $('#inputUploadImagem').change(function(){
+                            let reader = new FileReader();                     
+                            reader.onload = (e) => {                      
+                            $('#preview-image-before-upload').attr('src', e.target.result); 
+                            }                     
+                            reader.readAsDataURL(this.files[0]);                        
+                        });                       
+                    });                     
+                </script>
+            {{--  --}}
+
             <div class="form-group">
                 <label for="inputInstituicao">Nome da Instituição</label>
                 <input type="text" class="form-control" id="inputInstituicao" name="nome_instituicao">
