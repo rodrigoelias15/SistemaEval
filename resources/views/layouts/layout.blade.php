@@ -35,7 +35,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Item Digital</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_itemdigital')}}">Cadastrar Item Digital</a>
-                      <a class="dropdown-item" href="{{route('exibe_item_digital')}} ">Visualizar Itens Digitais</a>
+                      <a class="dropdown-item" href="{{route('exibir_item_digital')}} ">Visualizar Itens Digitais</a>
                     </div>
                 </li>                
                 <li class="nav-item dropdown">
@@ -49,7 +49,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Avaliador</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_avaliador')}}">Cadastrar Avaliador</a>
-                      <a class="dropdown-item" href="{{route('exibe_avaliador')}}">Visualizar Avaliadores</a>
+                      <a class="dropdown-item" href="{{route('exibir_avaliador')}}">Visualizar Avaliadores</a>
                     </div>
                 </li>                
                 <li class="nav-item">

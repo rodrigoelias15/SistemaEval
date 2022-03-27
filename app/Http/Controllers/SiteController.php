@@ -29,7 +29,7 @@ class SiteController extends Controller
     public function exibirItemDigital()
     {
         $itemdigital = ItemDigital::all();
-        return view('testecadastros.exibiritemdigital', compact('itemdigital'));
+        return view('exibircadastros.exibiritemdigital', compact('itemdigital'));
     }
 
     public function cadastrarItemDigital(ItemDigitalFormRequest $request)
@@ -64,7 +64,7 @@ class SiteController extends Controller
     public function exibirAvaliador(Request $request)
     {
         $usuarioavaliador = UsuarioAvaliador::all();
-        return view('testecadastros.exibiravaliador', compact('usuarioavaliador'));
+        return view('exibircadastros.exibiravaliador', compact('usuarioavaliador'));
     }
     
     public function exibirPaginaCadastroAvaliador()
@@ -89,7 +89,7 @@ class SiteController extends Controller
     public function exibirInstituicao(Request $request)
     {
         $instituicaoensino = Instituicao::all();
-        return view('testecadastros.exibirinstituicao', compact('instituicaoensino'));
+        return view('exibircadastros.exibirinstituicao', compact('instituicaoensino'));
     }
 
     public function exibirPaginaCadastroInstituicao()
@@ -141,7 +141,7 @@ class SiteController extends Controller
     public function testeCadastroQuestionario(Request $request)
     {
         $questionario = Questionario::all();
-        return view('testecadastros.testecadastroquestionario', compact('questionario'));    
+        return view('exibircadastros.testecadastroquestionario', compact('questionario'));    
     }
 
           

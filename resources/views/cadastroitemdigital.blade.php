@@ -27,7 +27,7 @@ Cadastro de Itens Digitais
         </div>
         @endif
 
-        <form method="post" class="form-group" action="{{route('upload_imagem')}}" enctype="multipart/form-data">
+        <form method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="inputItemDigital">Nome do Item Digital</label>

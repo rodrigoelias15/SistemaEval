@@ -33,15 +33,15 @@ Route::get('/cadastroadmin', [SiteController::class,'cadastroadmin'])->name('cad
 
 // Cadastro Avaliador
 Route::get('/cadastroavaliador', [SiteController::class,'exibirPaginaCadastroAvaliador'])->name('cadastro_avaliador');
-Route::get('/avaliador', [SiteController::class,'exibirAvaliador'])->name('exibe_avaliador');
+Route::get('/avaliador', [SiteController::class,'exibirAvaliador'])->name('exibir_avaliador');
 Route::post('/cadastroavaliador', [SiteController::class,'cadastrarAvaliador']);
 Route::post('/avaliador/remover/{id}', [SiteController::class,'excluirAvaliador']);
 
 // Cadastro Itens Digitais
 Route::get('/cadastroitemdigital', [SiteController::class,'exibirPaginaCadastroItemDigital'])->name('cadastro_itemdigital');
-Route::get('/itemdigital', [SiteController::class,'exibirItemDigital'])->name('exibe_item_digital');
-Route::post('/cadastroitemdigital', [SiteController::class,'cadastrarItemDigital'])->name('upload_imagem');
-Route::post('/cadastroitemdigital/remover/{id}', [SiteController::class,'excluirItemDigital'])->name('excluir_item_digital');
+Route::get('/itemdigital', [SiteController::class,'exibirItemDigital'])->name('exibir_item_digital');
+Route::post('/cadastroitemdigital', [SiteController::class,'cadastrarItemDigital'])->name('cadastrar_item_digital');
+Route::post('/cadastroitemdigital/remover/{id}', [SiteController::class,'excluirItemDigital']);
 
 // Cadastro Instituição
 Route::get('/cadastroinstituicao', [SiteController::class,'exibirPaginaCadastroinstituicao'])->name('cadastro_instituicao');
