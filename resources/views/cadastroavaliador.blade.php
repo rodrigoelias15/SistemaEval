@@ -10,6 +10,13 @@ Cadastro Avaliador
     <div class="logo my-3">
       <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
     </div>
+
+    @if(session()->has('mensagem'))
+      <div class="alert alert-success text-center">
+          {{ session()->get('mensagem') }}
+      </div>
+    @endif
+
     @if ($errors->any())
     <div class="alert alert-danger">
       <ul>

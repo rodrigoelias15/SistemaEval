@@ -21,15 +21,15 @@ class SiteController extends Controller
     }
     
     // Item Digital
-    public function exibePaginaCadastroItemDigital()
+    public function exibirPaginaCadastroItemDigital()
     {
         return view('cadastroitemdigital');
     }
 
-    public function exibeItemDigital()
+    public function exibirItemDigital()
     {
         $itemdigital = ItemDigital::all();
-        return view('testecadastros.exibeitemdigital', compact('itemdigital'));
+        return view('testecadastros.exibiritemdigital', compact('itemdigital'));
     }
 
     public function cadastrarItemDigital(ItemDigitalFormRequest $request)
@@ -54,30 +54,55 @@ class SiteController extends Controller
     }
    
     
-
-
-
-
-
-
-
-
-
-
-
-    public function cadastroavaliador_bancodados(AvaliadorFormRequest $request)
+    // Avaliador
+    public function cadastrarAvaliador(AvaliadorFormRequest $request)
     {
         UsuarioAvaliador::create($request->all());
-        $request->session()->flash('mensagem', "Usuário cadastrado com sucesso!");
-        return redirect()->route('teste_cadastro_avaliador');
+        return redirect()->back()->with('mensagem', 'Avaliador cadastrado com sucesso!');
     }
-
-    public function cadastroinstituicao_bancodados(InstituicaoFormRequest $request)
+    
+    public function exibirAvaliador(Request $request)
+    {
+        $usuarioavaliador = UsuarioAvaliador::all();
+        return view('testecadastros.exibiravaliador', compact('usuarioavaliador'));
+    }
+    
+    public function exibirPaginaCadastroAvaliador()
+    {
+        return view('cadastroavaliador');
+    }
+    
+    public function excluirAvaliador(Request $request)
+    {
+        UsuarioAvaliador::destroy($request->id);
+        return redirect()->back()->with('mensagem', 'Avaliador excluído com sucesso!');
+    }
+    
+        
+    // Instituição
+    public function cadastrarInstituicao(InstituicaoFormRequest $request)
     {
         Instituicao::create($request->all());
-        $request->session()->flash('mensagem', "Instituição cadastrada com sucesso!");
-        return redirect()->route('teste_cadastro_instituicao');
+        return redirect()->back()->with('mensagem', 'Instituição cadastrada com sucesso!');
     }
+    
+    public function exibirInstituicao(Request $request)
+    {
+        $instituicaoensino = Instituicao::all();
+        return view('testecadastros.exibirinstituicao', compact('instituicaoensino'));
+    }
+
+    public function exibirPaginaCadastroInstituicao()
+    {
+        return view('cadastroinstituicao');
+    }
+
+    public function excluirInstituicao(Request $request)
+    {
+        Instituicao::destroy($request->id);
+        return redirect()->back()->with('mensagem', 'Instituição excluída com sucesso!');
+    }
+
 
 
     public function preQuestionario(Request $request)
@@ -91,7 +116,6 @@ class SiteController extends Controller
     {
         $questionario = new Questionario();
         $dados = $request->all();
-        // $questionario = $request->session()->get('questionario');
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         return redirect()->route('questionario');
@@ -110,7 +134,6 @@ class SiteController extends Controller
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         $questionario->save();
-        // return redirect()->route('testeCadastroQuestionario');
         return redirect()->route('questionario');
     }
 
@@ -121,22 +144,7 @@ class SiteController extends Controller
         return view('testecadastros.testecadastroquestionario', compact('questionario'));    
     }
 
-    public function testeCadastroAvaliador(Request $request)
-    {
-        $usuarioavaliador = UsuarioAvaliador::all();
-        $mensagem = $request->session()->get('mensagem');
-        return view('testecadastros.testecadastroavaliador', compact('mensagem', 'usuarioavaliador'));
-    }
-
-    public function testeCadastroInstituicao(Request $request)
-    {
-        $instituicaoensino = Instituicao::all();
-        $mensagem = $request->session()->get('mensagem');
-        return view('testecadastros.testecadastroinstituicao', compact('mensagem', 'instituicaoensino'));
-    }
-
-    
-    
+          
     public function login()
     {
         return view('login');
@@ -153,16 +161,6 @@ class SiteController extends Controller
         return view('cadastroadmin');
     }
 
-    public function cadastroavaliador()
-    {
-        return view('cadastroavaliador');
-    }
-
-
-    public function cadastroinstituicao()
-    {
-        return view('cadastroinstituicao');
-    }
 
     // Contato
     public function contatoadmin()

@@ -42,14 +42,14 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Instituição</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_instituicao')}}">Cadastrar Instituição</a>
-                      <a class="dropdown-item" href="{{route('teste_cadastro_instituicao')}}">Visualizar Instituições</a>
+                      <a class="dropdown-item" href="{{route('exibir_instituicao')}}">Visualizar Instituições</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Avaliador</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_avaliador')}}">Cadastrar Avaliador</a>
-                      <a class="dropdown-item" href="{{route('teste_cadastro_avaliador')}}">Visualizar Avaliadores</a>
+                      <a class="dropdown-item" href="{{route('exibe_avaliador')}}">Visualizar Avaliadores</a>
                     </div>
                 </li>                
                 <li class="nav-item">

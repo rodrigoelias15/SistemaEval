@@ -32,22 +32,24 @@ Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
 Route::get('/cadastroadmin', [SiteController::class,'cadastroadmin'])->name('cadastro_admin');
 
 // Cadastro Avaliador
-Route::get('/cadastroavaliador', [SiteController::class,'cadastroavaliador'])->name('cadastro_avaliador');
-Route::post('/cadastroavaliador', [SiteController::class,'cadastroavaliador_bancodados']);
+Route::get('/cadastroavaliador', [SiteController::class,'exibirPaginaCadastroAvaliador'])->name('cadastro_avaliador');
+Route::get('/avaliador', [SiteController::class,'exibirAvaliador'])->name('exibe_avaliador');
+Route::post('/cadastroavaliador', [SiteController::class,'cadastrarAvaliador']);
+Route::post('/avaliador/remover/{id}', [SiteController::class,'excluirAvaliador']);
 
 // Cadastro Itens Digitais
-Route::get('/cadastroitemdigital', [SiteController::class,'exibePaginaCadastroItemDigital'])->name('cadastro_itemdigital');
+Route::get('/cadastroitemdigital', [SiteController::class,'exibirPaginaCadastroItemDigital'])->name('cadastro_itemdigital');
+Route::get('/itemdigital', [SiteController::class,'exibirItemDigital'])->name('exibe_item_digital');
 Route::post('/cadastroitemdigital', [SiteController::class,'cadastrarItemDigital'])->name('upload_imagem');
 Route::post('/cadastroitemdigital/remover/{id}', [SiteController::class,'excluirItemDigital'])->name('excluir_item_digital');
 
 // Cadastro Instituição
-Route::get('/cadastroinstituicao', [SiteController::class,'cadastroinstituicao'])->name('cadastro_instituicao');
-Route::post('/cadastroinstituicao', [SiteController::class,'cadastroinstituicao_bancodados']);
+Route::get('/cadastroinstituicao', [SiteController::class,'exibirPaginaCadastroinstituicao'])->name('cadastro_instituicao');
+Route::get('/instituicao', [SiteController::class, 'exibirInstituicao'])->name('exibir_instituicao');
+Route::post('/cadastroinstituicao', [SiteController::class,'cadastrarInstituicao']);
+Route::post('/cadastroinstituicao/remover/{id}', [SiteController::class,'excluirInstituicao']);
 
 // Teste de Cadastrado
-Route::get('/testecadastroavaliador', [SiteController::class,'testeCadastroAvaliador'])->name('teste_cadastro_avaliador');
-Route::get('/testecadastroinstituicao', [SiteController::class, 'testeCadastroInstituicao'])->name('teste_cadastro_instituicao');
-Route::get('/itemdigital', [SiteController::class,'exibeItemDigital'])->name('exibe_item_digital');
 Route::get('/testecadastroquestionario', [SiteController::class, 'testeCadastroQuestionario'])->name('testeCadastroQuestionario');
 
 // Contato com Administrador
