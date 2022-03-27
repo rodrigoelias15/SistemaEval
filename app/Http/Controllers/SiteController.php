@@ -19,20 +19,17 @@ class SiteController extends Controller
     {
         $this->middleware('auth');
     }
-
-    // Banco de dados
-    public function cadastroavaliador_bancodados(AvaliadorFormRequest $request)
+    
+    // Item Digital
+    public function exibeCadastroItemDigital()
     {
-        UsuarioAvaliador::create($request->all());
-        $request->session()->flash('mensagem', "Usuário cadastrado com sucesso!");
-        return redirect()->route('teste_cadastro_avaliador');
+        return view('cadastroitemdigital');
     }
 
-    public function cadastroinstituicao_bancodados(InstituicaoFormRequest $request)
+    public function exibeItemDigital()
     {
-        Instituicao::create($request->all());
-        $request->session()->flash('mensagem', "Instituição cadastrada com sucesso!");
-        return redirect()->route('teste_cadastro_instituicao');
+        $itemdigital = ItemDigital::all();
+        return view('testecadastros.exibeitemdigital', compact('itemdigital'));
     }
 
     public function cadastroItemDigital_bancodados(ItemDigitalFormRequest $request)
@@ -47,15 +44,35 @@ class SiteController extends Controller
         $data = $request->except('imagem_item_digital');
         $itemdigital->fill($data);
         $itemdigital->save();
-        $request->session()->flash('mensagem', "Item Digital cadastrado com sucesso!");
-        return redirect()->route('teste_cadastro_item_digital');
+        return redirect()->back()->with('mensagem', 'Item Digital cadastrado com sucesso!');
     }
    
-    public function image_view()
+    
+
+
+
+
+
+
+
+
+
+
+
+    public function cadastroavaliador_bancodados(AvaliadorFormRequest $request)
     {
-        $imageData= ItemDigital::all();
-        return view('view_image', compact('imageData'));
+        UsuarioAvaliador::create($request->all());
+        $request->session()->flash('mensagem', "Usuário cadastrado com sucesso!");
+        return redirect()->route('teste_cadastro_avaliador');
     }
+
+    public function cadastroinstituicao_bancodados(InstituicaoFormRequest $request)
+    {
+        Instituicao::create($request->all());
+        $request->session()->flash('mensagem', "Instituição cadastrada com sucesso!");
+        return redirect()->route('teste_cadastro_instituicao');
+    }
+
 
     public function preQuestionario(Request $request)
     {
@@ -112,12 +129,7 @@ class SiteController extends Controller
         return view('testecadastros.testecadastroinstituicao', compact('mensagem', 'instituicaoensino'));
     }
 
-    public function testeCadastroItensDigitais(Request $request)
-    {
-        $itemdigital = ItemDigital::all();
-        $mensagem = $request->session()->get('mensagem');
-        return view('testecadastros.testecadastroitemdigital', compact('mensagem', 'itemdigital'));
-    }
+    
     
     public function login()
     {
@@ -140,10 +152,6 @@ class SiteController extends Controller
         return view('cadastroavaliador');
     }
 
-    public function cadastroitemDigital()
-    {
-        return view('cadastroitemdigital');
-    }
 
     public function cadastroinstituicao()
     {

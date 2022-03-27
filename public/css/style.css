@@ -1,3 +1,12 @@
+.imagem_item_digital{
+	height: 310px;
+}
+
+.card-body p {
+	margin-bottom: 0;
+	font-size: 15px;
+}
+
 .custom-file .custom-file-label::after {
 	display: none;
 }

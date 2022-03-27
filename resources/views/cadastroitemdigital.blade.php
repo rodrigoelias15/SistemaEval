@@ -11,6 +11,12 @@ Cadastro de Itens Digitais
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
         
+        @if(!empty($mensagem))
+        <div class="alert alert-success">
+            {{ $mensagem  }}
+        </div>
+        @endif
+        
         @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -112,7 +118,7 @@ Cadastro de Itens Digitais
                 <input type="text" class="form-control" id="inputInstituicao" name="nome_instituicao">
             </div>
             <div class="form-group">
-                <label for="inputPlataforma">Plataforma em que o Item está armazenado</label>
+                <label for="inputPlataforma">Plataforma em que o Item Digital está armazenado</label>
                 <input type="text" class="form-control" id="inputPlataforma" name="plataforma_item_digital">
             </div>
             <div class="form-group">
