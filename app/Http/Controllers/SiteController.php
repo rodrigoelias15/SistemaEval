@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\AvaliadorFormRequest;
 use App\Http\Requests\InstituicaoFormRequest;
 use App\Http\Requests\ItemDigitalFormRequest;
+use App\Http\Requests\PreQuestionarioFormRequest;
 use App\Http\Requests\QuestionarioFormRequest;
 use App\Questionario;
 use App\UsuarioAvaliador;
@@ -104,15 +105,15 @@ class SiteController extends Controller
     }
 
 
-
-    public function preQuestionario(Request $request)
+    // Questionario
+    public function preQuestionario()
     {
         $itemdigital = ItemDigital::all();
         $usuarioavaliador = UsuarioAvaliador::all();
         return view('prequestionario', compact('usuarioavaliador', 'itemdigital'));
     }
 
-    public function postPreQuestionario(QuestionarioFormRequest $request)
+    public function postPreQuestionario(PreQuestionarioFormRequest $request)
     {
         $questionario = new Questionario();
         $dados = $request->all();
@@ -136,6 +137,7 @@ class SiteController extends Controller
         $questionario->save();
         return redirect()->route('questionario');
     }
+
 
     // Páginas do sistema
     public function testeCadastroQuestionario(Request $request)

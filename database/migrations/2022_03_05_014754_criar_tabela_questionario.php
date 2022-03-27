@@ -18,19 +18,19 @@ class CriarTabelaQuestionario extends Migration
                 $table->string('nome_avaliador_questionario');
                 $table->string('nome_item_digital_questionario');
                 $table->date('data_item_digital_questionario');
-                $table->integer('questionario_item1');
-                $table->integer('questionario_item2');
-                $table->integer('questionario_item3');
-                $table->integer('questionario_item4');
-                $table->integer('questionario_item5');
-                $table->integer('questionario_item6');
-                $table->integer('questionario_item7');
-                $table->integer('questionario_item8');
-                $table->integer('questionario_item9');
-                $table->integer('questionario_item10');
-                $table->integer('questionario_item11');
-        }
-    );
+                $table->integer('questionario_item1')->nullable();
+                $table->integer('questionario_item2')->nullable();
+                $table->integer('questionario_item3')->nullable();
+                $table->integer('questionario_item4')->nullable();
+                $table->integer('questionario_item5')->nullable();
+                $table->integer('questionario_item6')->nullable();
+                $table->integer('questionario_item7')->nullable();
+                $table->integer('questionario_item8')->nullable();
+                $table->integer('questionario_item9')->nullable();
+                $table->integer('questionario_item10')->nullable();
+                $table->integer('questionario_item11')->nullable();
+            }
+        );
     }
 
     /**

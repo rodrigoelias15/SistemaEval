@@ -1,6 +1,4 @@
 
-// let somaTotal = 0;
-
 function indicador1() {
     let baixa = 0;
     let media = 0;
@@ -364,5 +362,5 @@ function somaInteratividade() {
     else if (somaTotal >= 70 && somaTotal <= 100) {
         document.getElementById("nivel_interatividade").innerHTML = "Alta Interatividade";
     }
-    document.getElementById("count").innerHTML = somaTotal;
+    // document.getElementById("count").innerHTML = somaTotal;
 }

@@ -20,13 +20,13 @@ use App\Http\Controllers\SiteController;
 // Página Inicial
 Route::get('/home_sistema', [SiteController::class, 'home_sistema'])->name('home_avaliador');
 
+// Pré-Questionário
+Route::get('/prequestionario', [SiteController::class,'preQuestionario'])->name('pre_questionario');
+Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
+
 // Questionário e cadastro questionário
 Route::get('/questionario', [SiteController::class,'questionario'])->name('questionario');
 Route::post('/questionario', [SiteController::class,'storeQuestionario']);
-
-// Página Pré Questionário
-Route::get('/prequestionario', [SiteController::class,'preQuestionario'])->name('pre_questionario');
-Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
 
 // Cadastro Admin
 Route::get('/cadastroadmin', [SiteController::class,'cadastroadmin'])->name('cadastro_admin');

@@ -12,6 +12,8 @@ Questionário de Interatividade
     {{-- Script de interatividade --}}
     <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 <div class="row">
     <div class="cabecalho col-lg-12">
         <div class="logo_titulo d-flex">
@@ -42,7 +44,7 @@ Questionário de Interatividade
     <div class="col-lg-12 my-4">             
 
     {{-- Teste nível de interatividade --}}
-        <span class="justify-content-center row">
+        <span id="interatividade" class="justify-content-center row">
             <p id="count" class="font-weight-bold"></p>
             <p class="pr-3"> Nível de Interatividade: </p>
             <p id="nivel_interatividade" class="font-weight-bold"></p>
@@ -369,9 +371,16 @@ Questionário de Interatividade
                 </p>
             </div>
             <div class="form-group justify-content-end d-flex">
-                <input class="btn btn-primary px-4" type="submit" value="Enviar" onclick="geradorpdf()">
+                <input class="btn btn-primary px-4" type="submit" value="Enviar" onclick="imprimirPagina()">
             </div>
         </form>
+
+        <script type="text/javascript">
+            function imprimirPagina() {
+                window.print();
+            }
+        </script>
+
     </div>
 </div>
 
