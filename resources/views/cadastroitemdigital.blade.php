@@ -11,10 +11,10 @@ Cadastro de Itens Digitais
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
         
-        @if(!empty($mensagem))
-        <div class="alert alert-success">
-            {{ $mensagem  }}
-        </div>
+        @if(session()->has('mensagem'))
+            <div class="alert alert-success text-center">
+                {{ session()->get('mensagem') }}
+            </div>
         @endif
         
         @if ($errors->any())

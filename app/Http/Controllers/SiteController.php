@@ -21,7 +21,7 @@ class SiteController extends Controller
     }
     
     // Item Digital
-    public function exibeCadastroItemDigital()
+    public function exibePaginaCadastroItemDigital()
     {
         return view('cadastroitemdigital');
     }
@@ -32,7 +32,7 @@ class SiteController extends Controller
         return view('testecadastros.exibeitemdigital', compact('itemdigital'));
     }
 
-    public function cadastroItemDigital_bancodados(ItemDigitalFormRequest $request)
+    public function cadastrarItemDigital(ItemDigitalFormRequest $request)
     {
         $itemdigital = new ItemDigital();
         if($request->file('imagem_item_digital')){
@@ -45,6 +45,12 @@ class SiteController extends Controller
         $itemdigital->fill($data);
         $itemdigital->save();
         return redirect()->back()->with('mensagem', 'Item Digital cadastrado com sucesso!');
+    }
+    
+    public function excluirItemDigital(Request $request)
+    {
+        ItemDigital::destroy($request->id);
+        return redirect()->back()->with('mensagem', 'Item Digital excluído com sucesso!');
     }
    
     

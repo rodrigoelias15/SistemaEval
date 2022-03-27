@@ -36,8 +36,9 @@ Route::get('/cadastroavaliador', [SiteController::class,'cadastroavaliador'])->n
 Route::post('/cadastroavaliador', [SiteController::class,'cadastroavaliador_bancodados']);
 
 // Cadastro Itens Digitais
-Route::get('/cadastroitemdigital', [SiteController::class,'exibeCadastroItemDigital'])->name('cadastro_itemdigital');
-Route::post('/cadastroitemdigital', [SiteController::class,'cadastroItemDigital_bancodados'])->name('upload_imagem');
+Route::get('/cadastroitemdigital', [SiteController::class,'exibePaginaCadastroItemDigital'])->name('cadastro_itemdigital');
+Route::post('/cadastroitemdigital', [SiteController::class,'cadastrarItemDigital'])->name('upload_imagem');
+Route::post('/cadastroitemdigital/remover/{id}', [SiteController::class,'excluirItemDigital'])->name('excluir_item_digital');
 
 // Cadastro Instituição
 Route::get('/cadastroinstituicao', [SiteController::class,'cadastroinstituicao'])->name('cadastro_instituicao');
