@@ -16,8 +16,14 @@
     <!--Gerador PDF-->
     <script src="js/pdfGenerator.js"></script>
     <!---->
+        
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <!---->
     
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </head>
 
 <body>
