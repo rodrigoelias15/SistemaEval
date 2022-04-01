@@ -39,7 +39,7 @@ class SiteController extends Controller
         if($request->file('imagem_item_digital')){
             $file= $request->file('imagem_item_digital');
             $filename= date('YmdHi').$file->getClientOriginalName();
-            $file-> move(public_path('public/Imagens'), $filename);
+            $file-> move(public_path('Imagens'), $filename);
             $itemdigital['imagem_item_digital']= $filename;
         }
         $data = $request->except('imagem_item_digital');
