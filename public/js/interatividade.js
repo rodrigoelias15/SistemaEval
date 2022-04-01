@@ -1,29 +1,29 @@
 
 function indicador1() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 3;
     var item_a = document.getElementById("indicador1a");
     var item_b = document.getElementById("indicador1b");
     var item_c = document.getElementById("indicador1c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -33,30 +33,30 @@ function indicador1() {
 }
 
 function indicador2() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 3;
     var item_a = document.getElementById("indicador2a");
     var item_b = document.getElementById("indicador2b");
     var item_c = document.getElementById("indicador2c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -66,30 +66,30 @@ function indicador2() {
 }
 
 function indicador3() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 2;
     var item_a = document.getElementById("indicador3a");
     var item_b = document.getElementById("indicador3b");
     var item_c = document.getElementById("indicador3c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -99,30 +99,30 @@ function indicador3() {
 }
 
 function indicador4() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 3;
     var item_a = document.getElementById("indicador4a");
     var item_b = document.getElementById("indicador4b");
     var item_c = document.getElementById("indicador4c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -132,30 +132,30 @@ function indicador4() {
 }
 
 function indicador5() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 1;
     var item_a = document.getElementById("indicador5a");
     var item_b = document.getElementById("indicador5b");
     var item_c = document.getElementById("indicador5c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -165,30 +165,30 @@ function indicador5() {
 }
 
 function indicador6() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 2;
     var item_a = document.getElementById("indicador6a");
     var item_b = document.getElementById("indicador6b");
     var item_c = document.getElementById("indicador6c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -198,30 +198,30 @@ function indicador6() {
 }
 
 function indicador7() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 3;
     var item_a = document.getElementById("indicador7a");
     var item_b = document.getElementById("indicador7b");
     var item_c = document.getElementById("indicador7c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -231,30 +231,30 @@ function indicador7() {
 }
 
 function indicador8() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 2;
     var item_a = document.getElementById("indicador8a");
     var item_b = document.getElementById("indicador8b");
     var item_c = document.getElementById("indicador8c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -264,30 +264,30 @@ function indicador8() {
 }
 
 function indicador9() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 2;
     var item_a = document.getElementById("indicador9a");
     var item_b = document.getElementById("indicador9b");
     var item_c = document.getElementById("indicador9c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -297,30 +297,30 @@ function indicador9() {
 }
 
 function indicador10() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 3;
     var item_a = document.getElementById("indicador10a");
     var item_b = document.getElementById("indicador10b");
     var item_c = document.getElementById("indicador10c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -330,30 +330,30 @@ function indicador10() {
 }
 
 function indicador11() {
-    let baixa = 0;
-    let media = 0;
-    let alta = 0;
+    let conceito_criterio_baixo = 0;
+    let conceito_criterio_mediano = 0;
+    let conceito_criterio_alto = 0;
     let somatorio = 0;
     let grau_relevancia = 1;
     var item_a = document.getElementById("indicador11a");
     var item_b = document.getElementById("indicador11b");
     var item_c = document.getElementById("indicador11c");
     if (item_a.checked == true && item_b.checked == false && item_c.checked == false) {
-        baixa = 1;
-        media = 0;
-        alta = 0;
+        conceito_criterio_baixo = 1;
+        conceito_criterio_mediano = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == true && item_c.checked == false) {
-        media = 2;
-        baixa = 0;
-        alta = 0;
+        conceito_criterio_mediano = 2;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_alto = 0;
     }
     else if (item_a.checked == false && item_b.checked == false && item_c.checked == true) {
-        alta = 3;
-        baixa = 0;
-        media = 0;
+        conceito_criterio_alto = 3;
+        conceito_criterio_baixo = 0;
+        conceito_criterio_mediano = 0;
     }
-    somatorio = baixa + media + alta;
+    somatorio = conceito_criterio_baixo + conceito_criterio_mediano + conceito_criterio_alto;
     if (somatorio == 1 || somatorio == 2 || somatorio == 3) {
         return somatorio;
     }
@@ -363,15 +363,16 @@ function indicador11() {
 }
 
 function somaInteratividade() {
-    var somaTotal = (indicador1() + indicador2() + indicador3() + indicador4() + indicador5() + indicador6() + indicador7() + indicador8() + indicador9() + indicador10() + indicador11())/2;
-    if (somaTotal < 40) {
+    var interatividadeTotal = ( (3*indicador1() + 3*indicador2() + 2*indicador3() + 3*indicador4() + 1*indicador5() + 2*indicador6())/15 + (3*indicador7() + 2*indicador8() + 2*indicador9() + 3*indicador10() + 1*indicador11() )/14)/2;
+
+    if (interatividadeTotal < 1.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Baixa Interatividade";
     }
-    else if (somaTotal >= 40 && somaTotal < 70) {
+    else if (1.5 <= interatividadeTotal && interatividadeTotal < 2.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Média Interatividade";
     }
-    else if (somaTotal >= 70 && somaTotal <= 100) {
+    else if (interatividadeTotal >= 2.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Alta Interatividade";
     }
-    // document.getElementById("count").innerHTML = somaTotal;
+    // document.getElementById("count").innerHTML = interatividadeTotal.toFixed(2);
 }
