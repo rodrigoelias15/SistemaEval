@@ -34,23 +34,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('pre_questionario')}}">Questionário</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Item Digital</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_itemdigital')}}">Cadastrar Item Digital</a>
                       <a class="dropdown-item" href="{{route('exibir_item_digital')}} ">Visualizar Itens Digitais</a>
                     </div>
-                </li>                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Instituição</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="{{route('cadastro_instituicao')}}">Cadastrar Instituição</a>
-                      <a class="dropdown-item" href="{{route('exibir_instituicao')}}">Visualizar Instituições</a>
-                    </div>
-                </li>
+                </li>   
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Avaliador</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -59,10 +49,21 @@
                     </div>
                 </li>                
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('pre_questionario')}}">Avaliar Item</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Instituição</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{route('cadastro_instituicao')}}">Cadastrar Instituição</a>
+                      <a class="dropdown-item" href="{{route('exibir_instituicao')}}">Visualizar Instituições</a>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
                 </li>                                           
                 <li class="nav-item">
-                    <a class="nav-link" href="/sair">Sair</a>
+                    <a class="nav-link" href="/sair" onclick="return confirm('Deseja sair do sistema?')">Sair</a>
                 </li>
             </ul>
         </div>
