@@ -1,3 +1,17 @@
+.barra_progresso{
+	height: 2rem !important;
+	margin: 0 auto;
+}
+
+#myBar{
+	font-weight: bold;
+	background-color: #b72626 !important;
+}
+
+#interatividade :nth-child(2), #nivel_interatividade{
+	font-size: x-large;
+}
+
 #mostrar_senha_icon {
 	position: absolute;
 	right: 0;
