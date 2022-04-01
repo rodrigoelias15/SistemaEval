@@ -51,7 +51,7 @@ Login
 
                 <div class="form-group">
                     <input class="btn btn-primary w-100 mt-2" type="submit" value="Entrar">
-                    <a href="/registrar" class="btn btn-primary w-100 mt-2">Criar Conta</a>
+                    <a href={{route('registrar_novo_usuario')}} class="btn btn-primary w-100 mt-2">Criar Conta</a>
                 </div>
                 <div class="form-group">
                     <a href="#" target="_blank">Esqueci minha senha</a>

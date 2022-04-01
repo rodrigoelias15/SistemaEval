@@ -64,7 +64,7 @@ Route::post('/', [EntrarController::class, 'entrar']);
 
 
 // Registro de Login
-Route::get('/registrar', [RegistroController::class,'create']);
+Route::get('/registrar', [RegistroController::class,'create'])->name('registrar_novo_usuario');
 Route::post('/registrar', [RegistroController::class,'store']);
 
 // Logout
