@@ -122,9 +122,9 @@ Questionário de Interatividade
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texo (enunciado)." onclick="somaInteratividade()">
+                        <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado)." onclick="somaInteratividade()">
                         <label class="form-check-label" for="indicador3b">
-                            Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texo (enunciado).
+                            Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).
                         </label>
                     </div>
                     
