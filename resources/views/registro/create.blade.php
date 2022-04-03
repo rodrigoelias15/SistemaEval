@@ -18,7 +18,7 @@ Novo Registro
     
     <div class="row justify-content-center">
         <div class="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3">
-            <div class="logo d-flex mt-4">
+            <div class="logo d-flex my-3">
                 <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
             </div>
 
