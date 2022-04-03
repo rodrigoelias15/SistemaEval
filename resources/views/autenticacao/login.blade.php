@@ -17,8 +17,8 @@ Login
 @endif
 
 <div class="row justify-content-center">
-    <div class="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3">
-        <div class="logo d-flex mt-4">
+    <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <div class="logo d-flex my-3">
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
 
@@ -59,7 +59,7 @@ Login
             </form>
             <div class="text-right" style="font-style: italic; font-size: 14px">
                 <span>
-                    v1.8.2
+                    v1.8.3
                 </span>
             </div>
         </div>
