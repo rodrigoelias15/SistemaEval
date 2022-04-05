@@ -25,7 +25,7 @@ Questionário
       @csrf
       <div class="form-row">
         <div class="form-group col-sm-8">
-          <label for="inputNome">Nome</label>
+          <label for="inputNome">Nome do Avaliador</label>
           <select name="nome_avaliador_questionario" id="inputNome" class="form-control">
             @foreach ($usuarioavaliador as $usuario)
             <option value="{{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}">
