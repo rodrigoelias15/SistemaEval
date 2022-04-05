@@ -350,6 +350,7 @@ function indicador11() {
         return 0;
     }
 }
+
 function somaInteratividade() {
     var progresso = 0;
     var interatividadeTotal = ( (indicador1() + indicador2() + indicador3() + indicador4() + indicador5() + indicador6())/15 + (indicador7() + indicador8() + indicador9() + indicador10() + indicador11() )/14 )/2;
@@ -357,16 +358,18 @@ function somaInteratividade() {
     var elem = document.getElementById("myBar");
     progresso = (interatividadeTotal/2.58)*100;
     elem.style.width = progresso.toFixed(2) + '%';
-    elem.innerHTML = interatividadeTotal.toFixed(2);
-
+    
     if (interatividadeTotal < 1.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Baixa Interatividade";
+        elem.innerHTML = 1; //interatividadeTotal.toFixed(2);
     }
-    else if (1.5 <= interatividadeTotal && interatividadeTotal < 2.5) {
+    else if (1.5 <= interatividadeTotal && interatividadeTotal <= 2.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Média Interatividade";
+        elem.innerHTML = 2; //interatividadeTotal.toFixed(2);
     }
-    else if (interatividadeTotal >= 2.5) {
+    else if (interatividadeTotal > 2.5) {
         document.getElementById("nivel_interatividade").innerHTML = "Alta Interatividade";
+        elem.innerHTML = 3; //interatividadeTotal.toFixed(2);
     }
     // document.getElementById("count").innerHTML = interatividadeTotal.toFixed(2);
     
