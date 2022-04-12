@@ -27,7 +27,6 @@ class CriarTabelaItemDigital extends Migration
             $table->string('nome_instituicao');
             $table->string('plataforma_item_digital');
             $table->string('instituicao_plataforma');
-            $table->string('instituicao_item_digital');
         });        
     }
 

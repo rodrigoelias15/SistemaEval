@@ -29,7 +29,6 @@ Visualizar Item Digital
                     <p> <b>Nome da Instituição:</b> {{$item->nome_instituicao}}</p>
                     <p> <b>Plataforma em que o Item Digital está armazenado:</b> {{$item->plataforma_item_digital}}</p>
                     <p> <b>Instituição responsável pela plataforma</b> {{$item->instituicao_plataforma}}</p>
-                    <p> <b>Instituição que desenvolveu o Item Digital:</b> {{$item->instituicao_item_digital}}</p> 
                 </div>
                 <form class="text-center mb-3" method="post" action="/cadastroitemdigital/remover/{{$item->id}}" onsubmit="return confirm('Deseja excluir o Item Digital {{$item->nome_item_digital}}?')">
                     @csrf

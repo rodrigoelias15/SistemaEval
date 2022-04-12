@@ -47,7 +47,7 @@ Cadastro de Itens Digitais
                 </div>
             </div>
             <div class="form-group">
-                <label for="inputURL">URL Item Digital</label>
+                <label for="inputURL">URL do Item</label>
                 <input type="text" class="form-control" id="inputURL" name="url_item_digital">
             </div>           
             <div class="form-group">
@@ -55,7 +55,7 @@ Cadastro de Itens Digitais
                 <textarea id="campo_descricao_item" class="form-control" name="descricao_item_digital"></textarea>
             </div>
             <div class="form-group">
-                <label for="custom-control-label">Item foi utilizado em larga escala?</label>
+                <label for="custom-control-label">Item foi utilizado em Avaliação em Larga Escala?</label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="customRadio1" name="item_utilizado" class="custom-control-input" value="Sim" checked>
@@ -68,16 +68,16 @@ Cadastro de Itens Digitais
                 </div>
             </div>
             <div class="form-group">
-                <label for="inputAvaliacao">Nome da Avaliação</label>
+                <label for="inputAvaliacao">Nome da Avaliação em que o Item foi utilizado</label>
                 <input type="text" class="form-control" id="inputAvaliacao" name="nome_avaliacao_item_digital">
             </div>
             <div class="form-group">
-                <label for="inputAnoAvaliacao">Ano</label>
+                <label for="inputAnoAvaliacao">Ano da Avaliação</label>
                 <input type="text" class="form-control col-md-2" id="inputAnoAvaliacao" name="ano_item_digital">
             </div>
             
             <div class="form-group">
-                <label>Escolher Arquivo de Imagem</label>
+                <label>Escolher Arquivo de Imagem do Item</label>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="inputUploadImagem">Adicionar</label>
@@ -114,7 +114,7 @@ Cadastro de Itens Digitais
             {{--  --}}
 
             <div class="form-group">
-                <label for="inputInstituicao">Nome da Instituição</label>
+                <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
                 <input type="text" class="form-control" id="inputInstituicao" name="nome_instituicao">
             </div>
             <div class="form-group">
@@ -124,11 +124,7 @@ Cadastro de Itens Digitais
             <div class="form-group">
                 <label for="inputInstPlataforma">Instituição responsável pela plataforma</label>
                 <input type="text" class="form-control" id="inputInstPlataforma" name="instituicao_plataforma">
-            </div>
-            <div class="form-group">
-                <label for="inputInstituicaoItem">Instituição que desenvolveu item digital</label>
-                <input type="text" class="form-control" id="inputInstituicaoItem" name="instituicao_item_digital">
-            </div>
+            </div>           
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
             </div>
