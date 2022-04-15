@@ -12,6 +12,8 @@ use App\UsuarioAvaliador;
 use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
+use Illuminate\Support\Facades\App;
+use Barryvdh\DomPDF\PDF;
 
 class SiteController extends Controller
 {
@@ -112,7 +114,7 @@ class SiteController extends Controller
         $usuarioavaliador = UsuarioAvaliador::all();
         return view('prequestionario', compact('usuarioavaliador', 'itemdigital'));
     }
-
+    
     public function postPreQuestionario(PreQuestionarioFormRequest $request)
     {
         $questionario = new Questionario();
@@ -120,6 +122,13 @@ class SiteController extends Controller
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         return redirect()->route('questionario');
+    }
+    
+    public function pdfGenerator()
+    {
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->loadHTML('<h1>Test</h1>');
+        return $pdf->download('relatorio.pdf');
     }
 
     public function questionario(QuestionarioFormRequest $request)

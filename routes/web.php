@@ -28,6 +28,9 @@ Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
 Route::get('/questionario', [SiteController::class,'questionario'])->name('questionario');
 Route::post('/questionario', [SiteController::class,'storeQuestionario']);
 
+// pdf
+Route::get('/pdf', [SiteController::class,'pdfGenerator'])->name('pdf');
+
 // Cadastro Admin
 Route::get('/cadastroadmin', [SiteController::class,'cadastroadmin'])->name('cadastro_admin');
 

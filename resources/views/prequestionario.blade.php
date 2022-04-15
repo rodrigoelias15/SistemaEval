@@ -54,6 +54,7 @@ Questionário
       
       <div class="form-group text-center">
         <button type="submit" class="btn btn-primary py-2 my-3">Responder Questionário</button>
+        <a class="btn btn-primary" href="{{route('pdf')}}">Teste PDF</a>
       </div>
     </form>
     
