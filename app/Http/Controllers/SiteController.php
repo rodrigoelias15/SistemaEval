@@ -13,7 +13,8 @@ use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
 use Illuminate\Support\Facades\App;
-use Barryvdh\DomPDF\PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 class SiteController extends Controller
 {
@@ -126,9 +127,8 @@ class SiteController extends Controller
     
     public function pdfGenerator()
     {
-        $pdf = App::make('dompdf.wrapper');
-        $pdf->loadHTML('<h1>Test</h1>');
-        return $pdf->download('relatorio.pdf');
+        $pdf = PDF::loadView('questionario');
+        return $pdf->download('invoice.pdf');
     }
 
     public function questionario(QuestionarioFormRequest $request)
