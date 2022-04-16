@@ -127,8 +127,8 @@ class SiteController extends Controller
     
     public function pdfGenerator()
     {
-        $pdf = PDF::loadView('questionario');
-        return $pdf->download('invoice.pdf');
+        $pdf = PDF::loadView('home_sistema')->setOptions(['defaultFont' => 'sans-serif']);
+        return $pdf->download('relatorio.pdf');        
     }
 
     public function questionario(QuestionarioFormRequest $request)
