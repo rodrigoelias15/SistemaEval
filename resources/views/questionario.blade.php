@@ -5,14 +5,9 @@ Questionário de Interatividade
 @endsection
 
 @section('content')
-    
-    {{-- Gerador PDF --}}
-    <script async src="js/pdfGenerator.js"></script> {{-- script baixado e executado durante carregamento da página (assíncrono) --}}
 
-    {{-- Script de interatividade --}}
-    <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+{{-- Script de interatividade --}}
+<script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
 <div class="row">
     <div class="cabecalho col-lg-12">
@@ -374,16 +369,10 @@ Questionário de Interatividade
                     Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).
                 </p>
             </div>
-            <div class="form-group justify-content-end d-flex">
-                <input class="btn btn-primary px-4" type="submit" value="Enviar" onclick="imprimirPagina()">
+            <div class="form-group justify-content-end text-right">
+                <input class="btn btn-primary px-4" type="submit" value="Gerar Relatório">
             </div>
         </form>
-
-        <script type="text/javascript">
-            function imprimirPagina() {
-                window.print();
-            }
-        </script>
 
     </div>
 </div>

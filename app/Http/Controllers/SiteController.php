@@ -124,19 +124,13 @@ class SiteController extends Controller
         $request->session()->put('questionario', $questionario);
         return redirect()->route('questionario');
     }
-    
-    public function pdfGenerator()
-    {
-        $pdf = PDF::loadView('home_sistema')->setOptions(['defaultFont' => 'sans-serif']);
-        return $pdf->download('relatorio.pdf');        
-    }
-
+        
     public function questionario(QuestionarioFormRequest $request)
     {
         $questionario = $request->session()->get('questionario');
         return view('questionario', compact('questionario'));
     }
-
+    
     public function storeQuestionario(QuestionarioFormRequest $request)
     {
         $questionario = $request->session()->get('questionario');
@@ -144,10 +138,12 @@ class SiteController extends Controller
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         $questionario->save();
-        return redirect()->route('questionario');
+        $pdf = PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif']);
+        return $pdf->download('relatorio.pdf');   
+        // return redirect()->route('questionario');
     }
-
-
+    
+    
     // Páginas do sistema
     public function testeCadastroQuestionario(Request $request)
     {

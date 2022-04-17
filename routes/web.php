@@ -31,8 +31,6 @@ Route::post('/questionario', [SiteController::class,'storeQuestionario']);
 // Cadastro Admin
 Route::get('/cadastroadmin', [SiteController::class,'cadastroadmin'])->name('cadastro_admin');
 
-Route::get('/pdf', [SiteController::class,'pdfGenerator'])->name('pdf');
-
 // Cadastro Avaliador
 Route::get('/cadastroavaliador', [SiteController::class,'exibirPaginaCadastroAvaliador'])->name('cadastro_avaliador');
 Route::get('/avaliador', [SiteController::class,'exibirAvaliador'])->name('exibir_avaliador');
