@@ -6,7 +6,7 @@ Questionário
 
 @section("content")
 <div class="row justify-content-center">
-  <div class="col-sm-8 col-md-6">
+  <div class="col-sm-8 col-lg-6 col-7 col-md-7">
     @if ($errors->any())
     <div class="alert alert-danger">
       <ul>
@@ -53,7 +53,7 @@ Questionário
       </div>
       
       <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary py-2 my-3">Responder Questionário</button>
+        <button type="submit" class="btn btn-primary py-2 my-3">Avaliar Item</button>
       </div>
     </form>
     
