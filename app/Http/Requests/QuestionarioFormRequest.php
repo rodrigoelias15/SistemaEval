@@ -24,17 +24,17 @@ class QuestionarioFormRequest extends FormRequest
     public function rules()
     {
         return [           
-            // 'questionario_item1' => 'required',
-            // 'questionario_item2' => 'required',
-            // 'questionario_item3' => 'required',
-            // 'questionario_item4' => 'required',
-            // 'questionario_item5' => 'required',
-            // 'questionario_item6' => 'required',
-            // 'questionario_item7' => 'required',
-            // 'questionario_item8' => 'required',
-            // 'questionario_item9' => 'required',
-            // 'questionario_item10' => 'required',
-            // 'questionario_item11' => 'required',        
+            'questionario_item1' => 'required',
+            'questionario_item2' => 'required',
+            'questionario_item3' => 'required',
+            'questionario_item4' => 'required',
+            'questionario_item5' => 'required',
+            'questionario_item6' => 'required',
+            'questionario_item7' => 'required',
+            'questionario_item8' => 'required',
+            'questionario_item9' => 'required',
+            'questionario_item10' => 'required',
+            'questionario_item11' => 'required'
         ];
     }
 

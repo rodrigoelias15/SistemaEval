@@ -9,9 +9,26 @@ Questionário de Interatividade
 {{-- Script de interatividade --}}
 <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
+@if ($errors->any())
+<div class="d-flex justify-content-center">
+    <div class="alert alert-danger text-center">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>
+@endif
+
 <div class="row">
     <div class="cabecalho col-lg-12">
-        <div class="logo_titulo d-flex">
+
+        @if ($errors->any()) 
+            <div class="d-flex">
+        @else 
+            <div class="logo_titulo d-flex">
+        @endif
             <div class="logo justify-content-center d-flex flex-column">
                 <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
             </div>
@@ -37,6 +54,7 @@ Questionário de Interatividade
     </div>
 
     <div class="col-lg-12 my-4">        
+        
 
         <div class="progress barra_progresso w-50 mb-2">
             <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>

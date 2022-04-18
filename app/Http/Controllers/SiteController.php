@@ -121,11 +121,17 @@ class SiteController extends Controller
         $questionario = new Questionario();
         $dados = $request->all();
         $questionario->fill($dados);
-        $request->session()->put('questionario', $questionario);
+        if(empty($request->session()->get('questionario'))){
+            $request->session()->put('questionario', $questionario);
+        }else{
+            $request->session()->forget($request->all());
+            $request->session()->put('questionario', $questionario);
+        }
+        // return view('questionario', compact('questionario'));
         return redirect()->route('questionario');
     }
         
-    public function questionario(QuestionarioFormRequest $request)
+    public function questionario(Request $request)
     {
         $questionario = $request->session()->get('questionario');
         return view('questionario', compact('questionario'));
