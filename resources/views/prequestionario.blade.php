@@ -7,10 +7,6 @@ Questionário
 @section("content")
 <div class="row justify-content-center">
   <div class="col-sm-8 col-md-6">
-    <div class="logo my-3">
-      <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
-    </div>
-
     @if ($errors->any())
     <div class="alert alert-danger">
       <ul>
@@ -20,6 +16,10 @@ Questionário
       </ul>
     </div>
     @endif
+    <div class="logo my-3">
+      <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
+    </div>
+
 
     <form method="post" class="form-group">
       @csrf
