@@ -12,9 +12,10 @@ use App\UsuarioAvaliador;
 use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
+use App\Relatorio;
 use Illuminate\Support\Facades\App;
 use Barryvdh\DomPDF\Facade\Pdf;
-
+use Illuminate\Support\Facades\File;
 
 class SiteController extends Controller
 {
@@ -42,6 +43,9 @@ class SiteController extends Controller
         if($request->file('imagem_item_digital')){
             $file= $request->file('imagem_item_digital');
             $filename= date('YmdHi').$file->getClientOriginalName();
+            if(!File::exists(public_path('/Imagens'))){
+                File::makeDirectory(public_path('/Imagens'));
+            }
             $file-> move(public_path('Imagens'), $filename);
             $itemdigital['imagem_item_digital']= $filename;
         }
@@ -56,7 +60,7 @@ class SiteController extends Controller
         ItemDigital::destroy($request->id);
         return redirect()->back()->with('mensagem', 'Item Digital excluído com sucesso!');
     }
-   
+    
     
     // Avaliador
     public function cadastrarAvaliador(AvaliadorFormRequest $request)
@@ -144,9 +148,28 @@ class SiteController extends Controller
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         $questionario->save();
-        $pdf = PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif']);
-        return $pdf->download('relatorio.pdf');   
-        // return redirect()->route('questionario');
+        return redirect()->route('relatoriopdf');
+    }
+
+    public function exibeRelatorio(Request $request)
+    {
+        $relatorio_questionario = Questionario::all();
+        return view('exibircadastros.exibirelatorio', compact('relatorio_questionario'));
+    }
+    
+    public function storeRelatorio(Request $request)
+    {
+        $questionario = $request->session()->get('questionario');
+        if(!File::exists(public_path('/Relatorios'))){
+            File::makeDirectory(public_path('/Relatorios'));
+        }
+        return PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->save(public_path('/Relatorios/relatorio.pdf'))->stream('relatorio.pdf');
+    }
+
+    public function excluirRelatorio(Request $request)
+    {
+        Questionario::destroy($request->id);
+        return redirect()->back()->with('mensagem', 'Relatório excluído com sucesso!');
     }
     
     

@@ -24,6 +24,11 @@ Route::get('/home_sistema', [SiteController::class, 'home_sistema'])->name('home
 Route::get('/prequestionario', [SiteController::class,'preQuestionario'])->name('pre_questionario');
 Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
 
+// Relatório
+Route::get('/relatoriopdf', [SiteController::class,'storeRelatorio'])->name('relatoriopdf');
+Route::get('/relatorio', [SiteController::class,'exibeRelatorio'])->name('relatorio');
+Route::post('/relatorio/remover/{id}', [SiteController::class,'excluirRelatorio']);
+
 // Questionário e cadastro questionário
 Route::get('/questionario', [SiteController::class,'questionario'])->name('questionario');
 Route::post('/questionario', [SiteController::class,'storeQuestionario']);
