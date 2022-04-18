@@ -6,18 +6,17 @@ Login
 
 @section("content")
 
-@if ($errors->any())
-<div class="alert alert-danger">
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
-
 <div class="row justify-content-center">
     <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+       @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
         <div class="logo d-flex my-3">
             <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
         </div>
