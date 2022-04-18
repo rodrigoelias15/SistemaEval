@@ -43,9 +43,6 @@ class SiteController extends Controller
         if($request->file('imagem_item_digital')){
             $file= $request->file('imagem_item_digital');
             $filename= date('YmdHi').$file->getClientOriginalName();
-            if(!File::exists(public_path('/Imagens'))){
-                File::makeDirectory(public_path('/Imagens'));
-            }
             $file-> move(public_path('Imagens'), $filename);
             $itemdigital['imagem_item_digital']= $filename;
         }
@@ -159,11 +156,8 @@ class SiteController extends Controller
     
     public function storeRelatorio(Request $request)
     {
-        $questionario = $request->session()->get('questionario');
-        if(!File::exists(public_path('/Relatorios'))){
-            File::makeDirectory(public_path('/Relatorios'));
-        }
-        return PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->save(public_path('/Relatorios/relatorio.pdf'))->stream('relatorio.pdf');
+        $questionario = $request->session()->get('questionario');        
+        return PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('relatorio.pdf');
     }
 
     public function excluirRelatorio(Request $request)
