@@ -6,12 +6,6 @@ Visualizar Item Digital
 
 @section('content')
     
-    @if(session()->has('mensagem'))
-        <div class="alert alert-success text-center">
-            {{ session()->get('mensagem') }}
-        </div>
-    @endif
-
     <div class="row">
         @foreach($itemdigital as $item)
         <div class="col-sm-6 my-3">
