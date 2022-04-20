@@ -33,17 +33,21 @@ class SiteController extends Controller
 
     public function exibirItemDigital()
     {
-        $itemdigital = ItemDigital::all();
+        $itemdigital = ItemDigital::all();     
         return view('exibircadastros.exibiritemdigital', compact('itemdigital'));
     }
-
+           
     public function cadastrarItemDigital(ItemDigitalFormRequest $request)
     {
         $itemdigital = new ItemDigital();
         if($request->file('imagem_item_digital')){
             $file= $request->file('imagem_item_digital');
             $filename= date('YmdHi').$file->getClientOriginalName();
-            $file-> move(public_path('Imagens'), $filename);
+            if($_SERVER['SERVER_NAME'] == "127.0.0.1"){
+                $file-> move(public_path('Imagens'), $filename);
+            }else{
+                $file-> move(base_path('Imagens'), $filename);
+            }
             $itemdigital['imagem_item_digital']= $filename;
         }
         $data = $request->except('imagem_item_digital');
