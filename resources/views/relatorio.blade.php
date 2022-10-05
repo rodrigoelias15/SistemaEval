@@ -1,4 +1,6 @@
 
+{{-- Criação de relatório para download --}}
+
 <body>    
     <p><span class="cabecalho"> Título do Item: </span> {{$questionario->nome_item_digital_questionario}} </p>
     <p><span class="cabecalho"> Nome do Avaliador: </span> {{$questionario->nome_avaliador_questionario}} </p>
