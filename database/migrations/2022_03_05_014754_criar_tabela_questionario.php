@@ -13,22 +13,22 @@ class CriarTabelaQuestionario extends Migration
      */
     public function up()
     {
-        Schema::create('questionario', function (Blueprint $table) {
+        Schema::connection('pgsql')->create('questionario', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('nome_avaliador_questionario');
                 $table->string('nome_item_digital_questionario');
                 $table->date('data_item_digital_questionario');
-                $table->integer('questionario_item1');
-                $table->integer('questionario_item2');
-                $table->integer('questionario_item3');
-                $table->integer('questionario_item4');
-                $table->integer('questionario_item5');
-                $table->integer('questionario_item6');
-                $table->integer('questionario_item7');
-                $table->integer('questionario_item8');
-                $table->integer('questionario_item9');
-                $table->integer('questionario_item10');
-                $table->integer('questionario_item11');
+                $table->string('questionario_item1',500);
+                $table->string('questionario_item2',500);
+                $table->string('questionario_item3',500);
+                $table->string('questionario_item4',500);
+                $table->string('questionario_item5',500);
+                $table->string('questionario_item6',500);
+                $table->string('questionario_item7',500);
+                $table->string('questionario_item8',500);
+                $table->string('questionario_item9',500);
+                $table->string('questionario_item10',500);
+                $table->string('questionario_item11',500);
             }
         );
     }
