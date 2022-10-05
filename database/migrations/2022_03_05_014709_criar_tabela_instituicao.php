@@ -13,7 +13,7 @@ class CriarTabelaInstituicao extends Migration
      */
     public function up()
     {
-        Schema::create('instituicao', function(Blueprint $table){
+        Schema::connection('pgsql')->create('instituicao', function(Blueprint $table){
             $table->increments('id');
             $table->string('nome_instituicao');
             $table->string('endereco_instituicao');
