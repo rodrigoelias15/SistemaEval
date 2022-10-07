@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="row">
-        <select class="custom-select" name="ordenaRelatorio" id="ordena">
+    <div class="justify-content-center row">
+        <select class="custom-select col-xl-3" name="ordenaRelatorio" id="ordena">
             <option selected>Escolha uma ordenação</option>
             <option value="1">
                 Ordena por nome
