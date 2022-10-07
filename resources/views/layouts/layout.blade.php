@@ -56,7 +56,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('relatorio')}}">Exibir Relatórios</a>
+                    <a class="nav-link" href="{{route('relatorio')}}">Relatórios</a>
                 </li>                                           
                 <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
