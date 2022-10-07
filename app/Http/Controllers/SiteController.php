@@ -12,10 +12,7 @@ use App\UsuarioAvaliador;
 use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
-use App\Relatorio;
-use Illuminate\Support\Facades\App;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Illuminate\Support\Facades\File;
 
 class SiteController extends Controller
 {
@@ -156,6 +153,18 @@ class SiteController extends Controller
     {
         $relatorio_questionario = Questionario::all();
         return view('exibircadastros.exibirelatorio', compact('relatorio_questionario'));
+    }
+
+    public function exibeRelatorioOrdenadoNome(Request $request)
+    {
+        $relatorio_questionario = Questionario::all();
+        return view('exibircadastros.exibeRelatorioOrdenadoNome', compact('relatorio_questionario'));    
+    }
+
+    public function exibeRelatorioOrdenadoData(Request $request)
+    {
+        $relatorio_questionario = Questionario::all();
+        return view('exibircadastros.exibeRelatorioOrdenadoData', compact('relatorio_questionario'));    
     }
     
     public function storeRelatorio(Request $request)
