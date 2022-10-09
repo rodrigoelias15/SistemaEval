@@ -21,10 +21,10 @@ Teste de Cadastrado
                     <p> <b>E-mail do avaliador:</b> {{$usuario->email_avaliador}}</p>
                     <p> <b>Endereço do avaliador:</b> {{$usuario->endereco_avaliador}}</p>
                     <p> <b>Cidade do avaliador:</b> {{$usuario->cidade_avaliador}}</p>
-                    <p> <b>CPF do avaliador:</b> {{$usuario->cpf_avaliador}}</p>
                     <p> <b>Instituição do avaliador:</b> {{$usuario->instituicao_avaliador}}</p>
                     <p> <b>Formação do avaliador:</b> {{$usuario->formacao_avaliador}}</p>
                     <p> <b>Ocupação do avaliador:</b> {{$usuario->ocupacao_avaliador}}</p>
+                    <p> <b>Área de Atuação do avaliador:</b> {{$usuario->area_atuacao_avaliador}}</p>
                     <p> <b>Estado de residência do avaliador:</b> {{$usuario->estado_avaliador}}</p>
                     <p> <b>País de residência do avaliador:</b> {{$usuario->pais_avaliador}}</p>
                     <p> <b>CEP do avaliador:</b> {{$usuario->cep_avaliador}}</p>               
