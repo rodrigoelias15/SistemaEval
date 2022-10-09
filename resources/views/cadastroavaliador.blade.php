@@ -52,10 +52,6 @@ Cadastro Avaliador
         <input type="text" class="form-control" id="inputCidade" name="cidade_avaliador">
       </div>
       <div class="form-group">
-        <label for="inputCPF">CPF</label>
-        <input type="text" class="form-control" id="inputCPF" name="cpf_avaliador">
-      </div>
-      <div class="form-group">
         <label for="inputInstituicao">Instituição</label>
         <input type="text" class="form-control" id="inputInstituicao" name="instituicao_avaliador">
       </div>
@@ -66,6 +62,10 @@ Cadastro Avaliador
       <div class="form-group">
         <label for="inputOcupAval">Ocupação do Avaliador</label>
         <input type="text" class="form-control" id="inputOcupAval" name="ocupacao_avaliador">
+      </div>
+      <div class="form-group">
+        <label for="inputAreaAtuacao">Área de Atuação</label>
+        <input type="text" class="form-control" id="inputAreaAtuacao" name="area_atuacao_avaliador">
       </div>
       <div class="form-row">
         <div class="col-sm-6 form-group">

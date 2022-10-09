@@ -58,11 +58,11 @@ Cadastro de Itens Digitais
                 <label for="custom-control-label">Item foi utilizado em Avaliação em Larga Escala?</label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio1" name="item_utilizado" class="custom-control-input" value="Sim" checked>
+                        <input type="radio" id="customRadio1" name="item_utilizado_larga_escala" class="custom-control-input" value="Sim" checked>
                         <label class="custom-control-label" for="customRadio1">Sim</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio2" name="item_utilizado" class="custom-control-input" value="Não">
+                        <input type="radio" id="customRadio2" name="item_utilizado_larga_escala" class="custom-control-input" value="Não">
                         <label class="custom-control-label" for="customRadio2">Não</label>
                     </div>
                 </div>

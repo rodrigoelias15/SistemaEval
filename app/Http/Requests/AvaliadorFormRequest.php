@@ -28,7 +28,7 @@ class AvaliadorFormRequest extends FormRequest
             'sobrenome_avaliador' => 'required',
             'endereco_avaliador' => 'required',
             'cidade_avaliador' => 'required',
-            'cpf_avaliador' => 'required',
+            'area_atuacao_avaliador' => 'required',
             'instituicao_avaliador' => 'required',
             'estado_avaliador' => 'required',
             'cep_avaliador' => 'required'
@@ -42,7 +42,7 @@ class AvaliadorFormRequest extends FormRequest
             'sobrenome_avaliador.required' => 'O campo Sobrenome é obrigatório',
             'endereco_avaliador.required' => 'O campo Endereço é obrigatório',
             'cidade_avaliador.required' => 'O campo Cidade é obrigatório',
-            'cpf_avaliador.required' => 'O campo CPF é obrigatório',
+            'area_atuacao_avaliador.required' => 'O campo Área de Atuação é obrigatório',
             'instituicao_avaliador.required' => 'O campo Instituição é obrigatório',
             'estado_avaliador.required' => 'O campo Estado é obrigatório',
             'cep_avaliador.required' => 'O campo CEP é obrigatório',
