@@ -27,6 +27,8 @@ Route::post('/prequestionario', [SiteController::class,'postPreQuestionario']);
 // Relatório
 Route::get('/relatoriopdf', [SiteController::class,'storeRelatorio'])->name('relatoriopdf');
 Route::get('/relatorio', [SiteController::class,'exibeRelatorio'])->name('relatorio');
+Route::get('/relatorio_ordenado_nome', [SiteController::class,'exibeRelatorioOrdenadoNome'])->name('relatorioOrdenadoNome');
+Route::get('/relatorio_ordenado_data', [SiteController::class,'exibeRelatorioOrdenadoData'])->name('relatorioOrdenadoData');
 Route::post('/relatorio/remover/{id}', [SiteController::class,'excluirRelatorio']);
 
 // Questionário e cadastro questionário
