@@ -21,6 +21,7 @@ class CriarTabelaItemDigital extends Migration
             $table->string('url_item_digital');
             $table->string('descricao_item_digital');
             $table->string('item_utilizado');
+            $table->string('item_multidisciplinar');
             $table->string('nome_avaliacao_item_digital');
             $table->integer('ano_item_digital');
             $table->string('imagem_item_digital')->nullable();

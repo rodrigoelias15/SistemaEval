@@ -18,6 +18,7 @@ Visualizar Item Digital
                     <p> <b>URL do Item Digital:</b> {{$item->url_item_digital}}</p>
                     <p> <b>Descrição do Item Digital:</b> {{$item->descricao_item_digital}}</p>
                     <p> <b>Item foi utilizado em larga escala:</b> {{$item->item_utilizado}}</p>
+                    <p> <b>Item é multidisciplinar:</b> {{$item->item_multidisciplinar}}</p>
                     <p> <b>Nome da avaliação em que Item Digital foi utilizado:</b> {{$item->nome_avaliacao_item_digital}}</p>
                     <p> <b>Ano do Item Digital:</b> {{$item->ano_item_digital}}</p>
                     <p> <b>Nome da Instituição:</b> {{$item->nome_instituicao}}</p>

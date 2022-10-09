@@ -68,6 +68,19 @@ Cadastro de Itens Digitais
                 </div>
             </div>
             <div class="form-group">
+                <label for="custom-control-label">O item digital é multidisciplinar?</label>
+                <div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadio3" name="item_multidisciplinar" class="custom-control-input" value="Sim" checked>
+                        <label class="custom-control-label" for="customRadio3">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadio4" name="item_multidisciplinar" class="custom-control-input" value="Não">
+                        <label class="custom-control-label" for="customRadio4">Não</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="inputAvaliacao">Nome da Avaliação em que o Item foi utilizado</label>
                 <input type="text" class="form-control" id="inputAvaliacao" name="nome_avaliacao_item_digital">
             </div>
