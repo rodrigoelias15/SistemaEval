@@ -55,9 +55,15 @@
                       <a class="dropdown-item" href="{{route('exibir_instituicao')}}">Visualizar Instituições</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('relatorio')}}">Relatórios</a>
-                </li>                                           
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Relatórios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{{route('relatorioOrdenadoNome')}}">Ordenados Por Nome</a>
+                      <a class="dropdown-item" href="{{route('relatorioOrdenadoData')}}">Ordenados Por Data</a>
+                    </div>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
                 </li>                                           
