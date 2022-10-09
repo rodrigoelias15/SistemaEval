@@ -17,7 +17,7 @@ Visualizar Item Digital
                     <p> <b>Escolaridade do Item Digital:</b> {{$item->escolaridade_item_digital}}</p>
                     <p> <b>URL do Item Digital:</b> {{$item->url_item_digital}}</p>
                     <p> <b>Descrição do Item Digital:</b> {{$item->descricao_item_digital}}</p>
-                    <p> <b>Item foi utilizado em larga escala:</b> {{$item->item_utilizado}}</p>
+                    <p> <b>Item foi utilizado em larga escala:</b> {{$item->item_utilizado_larga_escala}}</p>
                     <p> <b>Item é multidisciplinar:</b> {{$item->item_multidisciplinar}}</p>
                     <p> <b>Nome da avaliação em que Item Digital foi utilizado:</b> {{$item->nome_avaliacao_item_digital}}</p>
                     <p> <b>Ano do Item Digital:</b> {{$item->ano_item_digital}}</p>
