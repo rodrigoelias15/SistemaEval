@@ -327,7 +327,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividadeTotal()">
+                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador10a">
                             O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item.
                         </label>
