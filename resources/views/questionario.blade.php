@@ -55,9 +55,8 @@ Questionário de Interatividade
 
     <div class="col-lg-12 my-4">        
         
-
         <div class="progress barra_progresso w-50 mb-2">
-            <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
     {{-- Teste nível de interatividade --}}
@@ -76,21 +75,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." onclick="somaInteratividadeTotal()">
+                        <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador1a">
                             Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais. 
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." onclick="somaInteratividadeTotal()">
+                        <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador1b">
                             Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação. 
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." onclick="somaInteratividadeTotal()">
+                        <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador1c">
                             Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais.
                         </label>
@@ -104,21 +103,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." onclick="somaInteratividadeTotal()">
+                        <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador2a">
                             Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen" onclick="somaInteratividadeTotal()">
+                        <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen" onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador2b">
                             Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                       <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc." onclick="somaInteratividadeTotal()">
+                       <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc." onclick="exibeNivelInteratividade()">
                        <label class="form-check-label" for="indicador2c">
                            Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.
                         </label>
@@ -132,21 +131,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade ">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão." onclick="somaInteratividadeTotal()">
+                        <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador3a">
                             Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado)." onclick="somaInteratividadeTotal()">
+                        <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado)." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador3b">
                             Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador3c" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual)." onclick="somaInteratividadeTotal()">
+                        <input id="indicador3c" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual)." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador3c">
                             Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).
                         </label>
@@ -160,21 +159,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade ">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador4a" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida." onclick="somaInteratividadeTotal()">
+                        <input id="indicador4a" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador4a">
                             Apresenta possibilidade para que o usuário seja capaz de se mover na questão somente para frente ou para trás por meio de uma sequência linear e pré-definida.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador4b" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva na questão por meio de uma sequência não linear e pré-definidas (Ex.: menus)." onclick="somaInteratividadeTotal()">
+                        <input id="indicador4b" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva na questão por meio de uma sequência não linear e pré-definidas (Ex.: menus)." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador4b">
                             Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva na questão por meio de uma sequência não linear e pré-definidas (Ex.: menus).
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador4c" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão de forma livre e autônoma." onclick="somaInteratividadeTotal()">
+                        <input id="indicador4c" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta possibilidade para que o usuário seja capaz de se mover na questão de forma livre e autônoma." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador4c">
                             Apresenta possibilidade para que o usuário seja capaz de se mover na questão de forma livre e autônoma.
                         </label>
@@ -188,21 +187,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador5a" class="form-check-input" type="radio" name="questionario_item5" value="Não apresenta opção de ajuda ou retorno." onclick="somaInteratividadeTotal()">
+                        <input id="indicador5a" class="form-check-input" type="radio" name="questionario_item5" value="Não apresenta opção de ajuda ou retorno." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador5a">
                             Não apresenta opção de ajuda ou retorno.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador5b" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta retorno como mensagens ou feedbacks." onclick="somaInteratividadeTotal()">
+                        <input id="indicador5b" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta retorno como mensagens ou feedbacks." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador5b">
                             Apresenta retorno como mensagens ou feedbacks.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador5c" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta opção de ajuda e retorno como mensagens ou feedbacks." onclick="somaInteratividadeTotal()">
+                        <input id="indicador5c" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta opção de ajuda e retorno como mensagens ou feedbacks." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador5c">
                             Apresenta opção de ajuda e retorno como mensagens ou feedbacks.
                         </label>
@@ -216,21 +215,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador6a" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida." onclick="somaInteratividadeTotal()">
+                        <input id="indicador6a" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador6a">
                             Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência linear e pré-definida.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador6b" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência não linear." onclick="somaInteratividadeTotal()">
+                        <input id="indicador6b" class="form-check-input" type="radio" name="questionario_item6" value="Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência não linear." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador6b">
                             Após a ação do usuário em finalizar, o sistema apresenta o próximo item do processo avaliativo numa sequência não linear.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador6c" class="form-check-input" type="radio" name="questionario_item6" value="As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo (uso de chatbots/inteligência artificial etc)." onclick="somaInteratividadeTotal()">
+                        <input id="indicador6c" class="form-check-input" type="radio" name="questionario_item6" value="As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo (uso de chatbots/inteligência artificial etc)." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador6c">
                             As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo (uso de chatbots/inteligência artificial etc).
                         </label>
@@ -244,21 +243,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador7a" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada." onclick="somaInteratividadeTotal()">
+                        <input id="indicador7a" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador7a">
                             O enunciado e respostas não apresentam possibilidades diversas e flexíveis, com sistemas de entrada e saídas para resolução d o item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                        <input id="indicador7b" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas apresentam pelo menos duas possibilidades flexíveis, com sistemas de entrada e saídas, para resolução do item, permitindo o uso de mais do que um recurso para que se chegue à resposta esperada." onclick="somaInteratividadeTotal()">
+                        <input id="indicador7b" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas apresentam pelo menos duas possibilidades flexíveis, com sistemas de entrada e saídas, para resolução do item, permitindo o uso de mais do que um recurso para que se chegue à resposta esperada." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador7b">
                             O enunciado e respostas apresentam pelo menos duas possibilidades flexíveis, com sistemas de entrada e saídas, para resolução do item, permitindo o uso de mais do que um recurso para que se chegue à resposta esperada.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador7c" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas apresentam mais de duas possibilidades flexíveis, com sistemas de entrada e saídas, múltiplos caminhos, para resolução do item, ou seja, permite uso de mais do que um recurso." onclick="somaInteratividadeTotal()">
+                        <input id="indicador7c" class="form-check-input" type="radio" name="questionario_item7" value="O enunciado e respostas apresentam mais de duas possibilidades flexíveis, com sistemas de entrada e saídas, múltiplos caminhos, para resolução do item, ou seja, permite uso de mais do que um recurso." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador7c">
                             O enunciado e respostas apresentam mais de duas possibilidades flexíveis, com sistemas de entrada e saídas, múltiplos caminhos, para resolução do item, ou seja, permite uso de mais do que um recurso.
                         </label>
@@ -272,21 +271,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador8a" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="somaInteratividadeTotal()">
+                        <input id="indicador8a" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador8a">
                             O enunciado e respostas não criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                        <input id="indicador8b" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área porém não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="somaInteratividadeTotal()">
+                        <input id="indicador8b" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área porém não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador8b">
                             O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área porém não possibilitam ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                        <input id="indicador8c" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou possibilita ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="somaInteratividadeTotal()">
+                        <input id="indicador8c" class="form-check-input" type="radio" name="questionario_item8" value="O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou possibilita ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador8c">
                             O enunciado e respostas criam elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área e/ou possibilita ações coletivas e colaborativas para sua resolução e/ou arquiteta percursos hipertextuais.
                         </label>
@@ -300,21 +299,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador9a" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações." onclick="somaInteratividadeTotal()">
+                        <input id="indicador9a" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador9a">
                             O enunciado e respostas não criam possibilidades de associações, simulações e conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar/promover outras conexões/ligações.
                         </label>
                     </div>
 
                     <div class="form-group form-check">
-                        <input id="indicador9b" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações e simulações, porém não há  conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações." onclick="somaInteratividadeTotal()">
+                        <input id="indicador9b" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações e simulações, porém não há  conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador9b">
                             O enunciado e respostas criam possibilidades de associações e simulações, porém não há  conectividade, ou seja, não há interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador9c" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações, simulações e a conectividade, ou seja, há a interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações." onclick="somaInteratividadeTotal()">
+                        <input id="indicador9c" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas criam possibilidades de associações, simulações e a conectividade, ou seja, há a interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador9c">
                             O enunciado e respostas criam possibilidades de associações, simulações e a conectividade, ou seja, há a interligação de temas, de experiências, de modo a se desdobrar em outras conexões/ligações.
                         </label>
@@ -328,21 +327,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item." onclick="somaInteratividadeTotalTotal()">
+                        <input id="indicador10a" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividadeTotal()">
                         <label class="form-check-label" for="indicador10a">
                             O enunciado e respostas não promovem e/ou não favorecem a interferência/manipulação do usuário no objeto/item.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador10b" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item." onclick="somaInteratividadeTotal()">
+                        <input id="indicador10b" class="form-check-input" type="radio" name="questionario_item10" value="O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador10b">
                             O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador10c" class="form-check-input" type="radio" name="questionario_item10" value=" O enunciado e respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item." onclick="somaInteratividadeTotal()">
+                        <input id="indicador10c" class="form-check-input" type="radio" name="questionario_item10" value=" O enunciado e respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador10c">
                             O enunciado e respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item.
                         </label>
@@ -356,21 +355,21 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador11a" class="form-check-input" type="radio" name="questionario_item11" value=" O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos." onclick="somaInteratividadeTotal()">
+                        <input id="indicador11a" class="form-check-input" type="radio" name="questionario_item11" value=" O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador11a">
                             O enunciado e respostas não promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador11b" class="form-check-input" type="radio" name="questionario_item11" value="O enunciado e respostas promovem ações do usuário no item em direções específicas e direcionadas, mas com mídias, recursos e formatos diversos." onclick="somaInteratividadeTotal()">
+                        <input id="indicador11b" class="form-check-input" type="radio" name="questionario_item11" value="O enunciado e respostas promovem ações do usuário no item em direções específicas e direcionadas, mas com mídias, recursos e formatos diversos." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador11b">
                             O enunciado e respostas promovem ações do usuário no item em direções específicas e direcionadas, mas com mídias, recursos e formatos diversos.
                         </label>
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador11c" class="form-check-input" type="radio" name="questionario_item11" value="O enunciado e respostas promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos." onclick="somaInteratividadeTotal()">
+                        <input id="indicador11c" class="form-check-input" type="radio" name="questionario_item11" value="O enunciado e respostas promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador11c">
                             O enunciado e respostas promovem ações do usuário no item em múltiplas direções, em múltiplos formatos e com diversas mídias e recursos.
                         </label>

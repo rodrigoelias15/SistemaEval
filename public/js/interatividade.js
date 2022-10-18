@@ -1,224 +1,180 @@
 
-function retornaClassificacaoCriterio(item_a, item_b, item_c){
+function retornaNivelInteratividadeIndicador(item_a, item_b, item_c){
     
-    let conceito_criterio_baixo, conceito_criterio_mediano, conceito_criterio_alto;
+    let nivel_interatividade_baixo, nivel_interatividade_medio, nivel_interatividade_alto;
     
     if (item_a.checked == true) {
-        conceito_criterio_baixo = 1;
-        return conceito_criterio_baixo;
+        nivel_interatividade_baixo = 1;
+        return nivel_interatividade_baixo;
     }
     else if (item_b.checked == true) {
-        conceito_criterio_mediano = 2;
-        return conceito_criterio_mediano;
+        nivel_interatividade_medio = 2;
+        return nivel_interatividade_medio;
     }
     else if (item_c.checked == true) {
-        conceito_criterio_alto = 3;
-        return conceito_criterio_alto;
+        nivel_interatividade_alto = 3;
+        return nivel_interatividade_alto;
     }
     return 0;
 }
 
-function nivelCriterioIndicador1() {
+function retornaValorIndicador1() {
     
-    let classificacao_criterio;
+    let nivel_interatividade;
+    const grau_relevancia = 3;
     const item_a = document.getElementById("indicador1a");
     const item_b = document.getElementById("indicador1b");
     const item_c = document.getElementById("indicador1c");
 
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador2() {
+function retornaValorIndicador2() {
     
-    let classificacao_criterio;
+    let nivel_interatividade;
+    const grau_relevancia = 3;
     const item_a = document.getElementById("indicador2a");
     const item_b = document.getElementById("indicador2b");
     const item_c = document.getElementById("indicador2c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador3() {
-    let classificacao_criterio;
+function retornaValorIndicador3() {
+    let nivel_interatividade;
+    const grau_relevancia = 2;
     const item_a = document.getElementById("indicador3a");
     const item_b = document.getElementById("indicador3b");
     const item_c = document.getElementById("indicador3c");
 
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador4() {
-    let classificacao_criterio;
+function retornaValorIndicador4() {
+    let nivel_interatividade;
+    const grau_relevancia = 3;
     const item_a = document.getElementById("indicador4a");
     const item_b = document.getElementById("indicador4b");
     const item_c = document.getElementById("indicador4c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador5() {
-    let classificacao_criterio;
+function retornaValorIndicador5() {
+    let nivel_interatividade;
+    const grau_relevancia = 1;
     const item_a = document.getElementById("indicador5a");
     const item_b = document.getElementById("indicador5b");
     const item_c = document.getElementById("indicador5c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador6() {
-    let classificacao_criterio;
+function retornaValorIndicador6() {
+    let nivel_interatividade;
+    const grau_relevancia = 2;
     const item_a = document.getElementById("indicador6a");
     const item_b = document.getElementById("indicador6b");
     const item_c = document.getElementById("indicador6c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador7() {
-    let classificacao_criterio;
+function retornaValorIndicador7() {
+    let nivel_interatividade;
+    const grau_relevancia = 3;
     const item_a = document.getElementById("indicador7a");
     const item_b = document.getElementById("indicador7b");
     const item_c = document.getElementById("indicador7c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador8() {
-    let classificacao_criterio;
+function retornaValorIndicador8() {
+    let nivel_interatividade;
+    const grau_relevancia = 2;
     const item_a = document.getElementById("indicador8a");
     const item_b = document.getElementById("indicador8b");
     const item_c = document.getElementById("indicador8c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador9() {
-    let classificacao_criterio;
+function retornaValorIndicador9() {
+    let nivel_interatividade;
+    const grau_relevancia = 2;
     const item_a = document.getElementById("indicador9a");
     const item_b = document.getElementById("indicador9b");
     const item_c = document.getElementById("indicador9c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador10() {
-    let classificacao_criterio;
+function retornaValorIndicador10() {
+    let nivel_interatividade;
+    const grau_relevancia = 3;
     const item_a = document.getElementById("indicador10a");
     const item_b = document.getElementById("indicador10b");
     const item_c = document.getElementById("indicador10c");
     
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function nivelCriterioIndicador11() {
-    let classificacao_criterio;
+function retornaValorIndicador11() {
+    let nivel_interatividade;
+    const grau_relevancia = 1;
     const item_a = document.getElementById("indicador11a");
     const item_b = document.getElementById("indicador11b");
     const item_c = document.getElementById("indicador11c");
    
-    classificacao_criterio = retornaClassificacaoCriterio(item_a, item_b, item_c); // critério baixo, médio ou alto
+    nivel_interatividade = retornaNivelInteratividadeIndicador(item_a, item_b, item_c);
     
-    if (classificacao_criterio == 1 || classificacao_criterio == 2 || classificacao_criterio == 3) {
-        return 3*classificacao_criterio;
-    }
-    else {
-        return 0;
-    }
+    return grau_relevancia*nivel_interatividade;
 }
 
-function somaInteratividadeTotal() {
-    var progresso = 0;
-    var interatividadeTotal = 0;
-    const nivel_interatividade = document.getElementById("nivel_interatividade").innerHTML;
-    const elem = document.getElementById("myBar");
+function exibeNivelInteratividade() {
     
-    interatividadeTotal = ( (nivelCriterioIndicador1() + nivelCriterioIndicador2() + nivelCriterioIndicador3() + nivelCriterioIndicador4() + nivelCriterioIndicador5() + nivelCriterioIndicador6())/15 + (nivelCriterioIndicador7() + nivelCriterioIndicador8() + nivelCriterioIndicador9() + nivelCriterioIndicador10() + nivelCriterioIndicador11() )/14 )/2;
+    let barra_progresso_width = 0;
+    let nivel_interatividade = 0;
+    let exibe_nivel_interatividade = document.getElementById("nivel_interatividade").innerHTML;
+    const barra_progresso = document.getElementById("myBar");
+    
+    nivel_interatividade = (((retornaValorIndicador1() + retornaValorIndicador2() + retornaValorIndicador3() + retornaValorIndicador4() + retornaValorIndicador5() + retornaValorIndicador6())/15) + 
+    ((retornaValorIndicador7() + retornaValorIndicador8() + retornaValorIndicador9() + retornaValorIndicador10() + retornaValorIndicador11())/14))/2;
 
-    progresso = (interatividadeTotal/2.58)*100;
-    elem.style.width = progresso.toFixed(2) + '%';
-    
-    if (interatividadeTotal < 1.5) {
-        nivel_interatividade = "Baixa Interatividade";
-        elem.innerHTML = 1; //interatividadeTotal.toFixed(2);
+    barra_progresso_width = ((nivel_interatividade/2.58)*100).toFixed(2) + '%';
+    barra_progresso.style.width = barra_progresso_width;
+    if (nivel_interatividade < 1.5) {
+        exibe_nivel_interatividade = "Baixa Interatividade";
+        barra_progresso.innerHTML = 1; // valor se mantém até que interatividade mude
     }
-    else if (1.5 <= interatividadeTotal && interatividadeTotal <= 2.5) {
-        nivel_interatividade = "Média Interatividade";
-        elem.innerHTML = 2; //interatividadeTotal.toFixed(2);
+    else if (1.5 <= nivel_interatividade && nivel_interatividade < 2.5) {
+        exibe_nivel_interatividade = "Média Interatividade";
+        barra_progresso.innerHTML = 2; // valor se mantém até que interatividade mude
     }
-    else if (interatividadeTotal > 2.5) {
-        nivel_interatividade = "Alta Interatividade";
-        elem.innerHTML = 3; //interatividadeTotal.toFixed(2);
+    else if (nivel_interatividade > 2.5) {
+        exibe_nivel_interatividade = "Alta Interatividade";
+        barra_progresso.innerHTML = 3; // valor se mantém até que interatividade mude
     }
-    // document.getElementById("count").innerHTML = interatividadeTotal.toFixed(2);
-    
+
 }
