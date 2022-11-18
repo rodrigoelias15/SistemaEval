@@ -34,7 +34,9 @@ class QuestionarioFormRequest extends FormRequest
             'questionario_item8' => 'required',
             'questionario_item9' => 'required',
             'questionario_item10' => 'required',
-            'questionario_item11' => 'required'
+            'questionario_item11' => 'required',
+            'questionario_item12' => 'required',
+            'questionario_item13' => 'required'
         ];
     }
 
@@ -52,6 +54,8 @@ class QuestionarioFormRequest extends FormRequest
         'questionario_item9.required' => 'Questão 9 é obrigatória',
         'questionario_item10.required' => 'Questão 10 é obrigatória',
         'questionario_item11.required' => 'Questão 11 é obrigatória',
+        'questionario_item12.required' => 'Questão 12 é obrigatória',
+        'questionario_item13.required' => 'Questão 13 é obrigatória',
         ];
     }
 }
