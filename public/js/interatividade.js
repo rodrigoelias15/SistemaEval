@@ -150,28 +150,60 @@ function retornaNivelInteratividadeIndicador11() {
     return nivel_interatividade;
 }
 
+function retornaNivelInteratividadeIndicador12() {
+   
+    let nivel_interatividade;
+    const item_a = document.getElementById("indicador12a");
+    const item_b = document.getElementById("indicador12b");
+    const item_c = document.getElementById("indicador12c");
+    
+    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    
+    return nivel_interatividade;
+}
+
+function retornaNivelInteratividadeIndicador13() {
+   
+    let nivel_interatividade;
+    const item_a = document.getElementById("indicador13a");
+    const item_b = document.getElementById("indicador13b");
+    const item_c = document.getElementById("indicador13c");
+    
+    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    
+    return nivel_interatividade;
+}
+
 function realizaCalculoInteratividade() {
     
     let resultado = 0;
-    let soma_indicadores_tecnologicos = 0;
-    let soma_indicadores_pedagogicos = 0;
-    const grau_relevancia_item1 = 3;
-    const grau_relevancia_item2 = 3;
-    const grau_relevancia_item3 = 2;
-    const grau_relevancia_item4 = 3;
-    const grau_relevancia_item5 = 1;
-    const grau_relevancia_item6 = 2;
-    const grau_relevancia_item7 = 3;
-    const grau_relevancia_item8 = 2;
-    const grau_relevancia_item9 = 2;
-    const grau_relevancia_item10 = 3;
-    const grau_relevancia_item11 = 1;
+    let soma_produtos_indicadores_tecnologicos = 0;
+    let soma_produtos_indicadores_pedagogicos = 0;
+    let soma_graus_relevancia_tecnologicos = 0;
+    let soma_graus_relevancia_pedagogicos = 0;
+    const grau_relevancia_indicador1 = 3;
+    const grau_relevancia_indicador2 = 3;
+    const grau_relevancia_indicador3 = 3;
+    const grau_relevancia_indicador4 = 3;
+    const grau_relevancia_indicador5 = 3;
+    const grau_relevancia_indicador6 = 3;
+    const grau_relevancia_indicador7 = 3;
+    const grau_relevancia_indicador8 = 3;
+    const grau_relevancia_indicador9 = 3;
+    const grau_relevancia_indicador10 = 3;
+    const grau_relevancia_indicador11 = 3;
+    const grau_relevancia_indicador12 = 3;
+    const grau_relevancia_indicador13 = 3;
 
-    soma_indicadores_tecnologicos = grau_relevancia_item1*retornaNivelInteratividadeIndicador1() + grau_relevancia_item2*retornaNivelInteratividadeIndicador2() + grau_relevancia_item3*retornaNivelInteratividadeIndicador3() + grau_relevancia_item4*retornaNivelInteratividadeIndicador4() + grau_relevancia_item5*retornaNivelInteratividadeIndicador5() + grau_relevancia_item6*retornaNivelInteratividadeIndicador6();
+    soma_graus_relevancia_tecnologicos = grau_relevancia_indicador1 + grau_relevancia_indicador2 + grau_relevancia_indicador3 + grau_relevancia_indicador4 + grau_relevancia_indicador5 + grau_relevancia_indicador6 + grau_relevancia_indicador7;
+    
+    soma_graus_relevancia_pedagogicos = grau_relevancia_indicador8 + grau_relevancia_indicador9 + grau_relevancia_indicador10 + grau_relevancia_indicador11 + grau_relevancia_indicador12 + grau_relevancia_indicador13;
+    
+    soma_produtos_indicadores_tecnologicos = grau_relevancia_indicador1*retornaNivelInteratividadeIndicador1() + grau_relevancia_indicador2*retornaNivelInteratividadeIndicador2() + grau_relevancia_indicador3*retornaNivelInteratividadeIndicador3() + grau_relevancia_indicador4*retornaNivelInteratividadeIndicador4() + grau_relevancia_indicador5*retornaNivelInteratividadeIndicador5() + grau_relevancia_indicador6*retornaNivelInteratividadeIndicador6() + grau_relevancia_indicador7*retornaNivelInteratividadeIndicador7();
 
-    soma_indicadores_pedagogicos = grau_relevancia_item7*retornaNivelInteratividadeIndicador7() + grau_relevancia_item8*retornaNivelInteratividadeIndicador8() + grau_relevancia_item9*retornaNivelInteratividadeIndicador9() + grau_relevancia_item10*retornaNivelInteratividadeIndicador10() + grau_relevancia_item11*retornaNivelInteratividadeIndicador11();
+    soma_produtos_indicadores_pedagogicos =  grau_relevancia_indicador8*retornaNivelInteratividadeIndicador8() + grau_relevancia_indicador9*retornaNivelInteratividadeIndicador9() + grau_relevancia_indicador10*retornaNivelInteratividadeIndicador10() + grau_relevancia_indicador11*retornaNivelInteratividadeIndicador11() + grau_relevancia_indicador12*retornaNivelInteratividadeIndicador12() + grau_relevancia_indicador13*retornaNivelInteratividadeIndicador13();
 
-    resultado = (soma_indicadores_tecnologicos/14 + soma_indicadores_pedagogicos/11)/2;
+    resultado = ((soma_produtos_indicadores_tecnologicos/soma_graus_relevancia_tecnologicos) + (soma_produtos_indicadores_pedagogicos/soma_graus_relevancia_pedagogicos))/2;
 
     return resultado.toFixed(2);
 }
@@ -181,9 +213,9 @@ function exibeNivelInteratividade() {
     let barra_progresso_width = 0;
     let nivel_interatividade = realizaCalculoInteratividade();
     const elem_nivel_interatividade = document.getElementById("nivel_interatividade");
-    const elem_barra_progresso = document.getElementById("myBar");    
-
-    barra_progresso_width = ((nivel_interatividade)/2.58)*100 + '%';
+    const elem_barra_progresso = document.getElementById("myBar");
+    
+    barra_progresso_width = (100*nivel_interatividade)/3 + '%'; // calculo da porcentagem, 3 é o maximo que interatividade pode alcançar
     elem_barra_progresso.style.width = barra_progresso_width;
 
     if (nivel_interatividade < 1.5) {
