@@ -29,6 +29,8 @@ class CriarTabelaQuestionario extends Migration
                 $table->string('questionario_item9',500);
                 $table->string('questionario_item10',500);
                 $table->string('questionario_item11',500);
+                $table->string('questionario_item12',500);
+                $table->string('questionario_item13',500);
             }
         );
     }
