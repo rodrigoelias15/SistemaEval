@@ -433,7 +433,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador12a" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e respostas não promovem e/ou não interferência/manipulação do usuário no objeto/item, pois direcionam para caminhos únicos de resolução." onclick="exibeNivelInteratividade()">
+                        <input id="indicador12a" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e respostas não promovem e/ou não interferência/manipulação do usuário no objeto/item, pois direcionam para caminhos únicos de resolução." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador12a">
                             O enunciado e respostas não promovem e/ou não interferência/manipulação do usuário no objeto/item, pois direcionam para caminhos únicos de resolução.
                             <i class="fa-regular fa-circle-question" title="Intervir significa se apropriar de algo ou de algum conhecimento que o favoreça a produzir respostas. Esta opção compreende que o usuário não pode ou não tem capacidade de desenvolver tal construção e, assim, não oferece condições de manipulação ou intervenção. O item é fechado."></i>
@@ -441,7 +441,7 @@ Questionário de Interatividade
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador12b" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividade()">
+                        <input id="indicador12b" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador12b">
                             O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item.
                             <i class="fa-regular fa-circle-question" title="Esta opção oferece ao usuário algum tipo de interferência e /ou manipulação no item, que tanto pode ser de simulação controlada/limitada, ou imagem 3D, por exemplos. Entretanto, tudo é controlado para que o respondente não avance muito a ponto de oferecer elementos, como recursos/ferramentas (um menu) para construção da resposta."></i>
@@ -449,7 +449,7 @@ Questionário de Interatividade
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador12c" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e/ou respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item, de modo a oferecer recursos e pistas para sua execução é construção." onclick="exibeNivelInteratividade()">
+                        <input id="indicador12c" class="form-check-input" type="radio" name="questionario_item12" value="O enunciado e/ou respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item, de modo a oferecer recursos e pistas para sua execução é construção." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador12c">
                             O enunciado e/ou respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item, de modo a oferecer recursos e pistas para sua execução é construção.
                             <i class="fa-regular fa-circle-question" title="Esta opção oferece ao usuário algum tipo de interferência e /ou manipulação no item, que tanto pode ser de simulação controlada/limitada, ou imagem 3D, por exemplos. Entretanto, tudo é controlado para que o respondente não avance muito a ponto de oferecer elementos, como recursos/ferramentas (um menu) para construção da resposta."></i>
@@ -465,7 +465,7 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador13a" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predimínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade." onclick="exibeNivelInteratividade()">
+                        <input id="indicador13a" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predimínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múlltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador13a">
                             O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predimínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade.
                             <i class="fa-regular fa-circle-question" title="Se não é mais do que uma possibilidade ou caminho para resolução de um problema ou questão, não é bidirecionalidade e sim unidirecionalidade."></i>
@@ -473,7 +473,7 @@ Questionário de Interatividade
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador13b" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e as respostas promovem ações do usuário em direções específicas e direcionadas. Há certa flexibilidade ao se considerar que há mais do que um caminho, mas há restrições. há controle, ainda que se integre mais do que uma mídia, recurso e formato." onclick="exibeNivelInteratividade()">
+                        <input id="indicador13b" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e as respostas promovem ações do usuário em direções específicas e direcionadas. Há certa flexibilidade ao se considerar que há mais do que um caminho, mas há restrições. Há controle, ainda que se integre mais do que uma mídia, recurso e formato." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador13b">
                             O enunciado e as respostas promovem ações do usuário em direções específicas e direcionadas. Há certa flexibilidade ao se considerar que há mais do que um caminho, mas há restrições. há controle, ainda que se integre mais do que uma mídia, recurso e formato.
                             <i class="fa-regular fa-circle-question" title="Compreende que pode haver mais do que uma direção e, portanto, forma de pensamento para resolução de problemas, há restrições e limitações que precisam ser impostas. O controle das direções são previstas no item."></i>
@@ -481,7 +481,7 @@ Questionário de Interatividade
                     </div>
                     
                     <div class="form-group form-check">
-                        <input id="indicador13c" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e as respostas promovem ações do usuário em múltiplas direções porque compreende-se que os múltiplos formatos, com diversas mídias e recursos, precisam estar presentes para que se resolva questões e problemas." onclick="exibeNivelInteratividade()">
+                        <input id="indicador13c" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e as respostas promovem ações do usuário em múltiplas direções porque compreende-se que os múltiplos formatos, com diversas mídias e recursos, precisam estar presentes para que se resolva questões e problemas." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador13c">
                             O enunciado e as respostas promovem ações do usuário em múltiplas direções porque compreende-se que os múltiplos formatos, com diversas mídias e recursos, precisam estar presentes para que se resolva questões e problemas.
                             <i class="fa-regular fa-circle-question" title="Para toda resolução de questão/problemas é preciso traçar caminhos e, para tanto, faz-se necessário que se tenha o máximo de recursos e instrumentos possíveis. Esta opção abre os caminhos de múltiplas formas e oferece ao usuário tudo o que for poss;ivel para que ele possa encaminhar o melhor caminho para a resposta."></i>
@@ -489,8 +489,6 @@ Questionário de Interatividade
                     </div>
                 </fieldset>
             </section>
-
-            
 
             <textarea id="campo_observacao" name="observacao" rows="5" cols="33" placeholder="Observações"></textarea>
             <div class="notas_rodape">
