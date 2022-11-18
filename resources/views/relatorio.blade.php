@@ -79,6 +79,7 @@
         <h2 class="criterio">Critério escolhido:</h2>                    
         <p><?php echo $questionario->questionario_item12 ?></p>                    
     </section>
+    
     <section id="indicador13">
         <h1 class="indicador">Indicador 13: Bidirecionalidade</h1>
         <h2 class="criterio">Critério escolhido:</h2>                    
