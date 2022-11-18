@@ -9,17 +9,6 @@ Questionário de Interatividade
 {{-- Script de interatividade --}}
 <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
-@if ($errors->any())
-<div class="d-flex justify-content-center">
-    <div class="alert alert-danger text-center col-md-6">
-        <ul>
-            @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-</div>
-@endif
 
 <div class="row">
     <div class="cabecalho col-lg-12">
@@ -39,7 +28,7 @@ Questionário de Interatividade
                 </span>
             </div>
         </div>
-
+ 
         <div class="row my-2">
             <span class="col-12">
                 Título do Item: {{$questionario->nome_item_digital_questionario}}
@@ -66,6 +55,18 @@ Questionário de Interatividade
             <p id="nivel_interatividade" class="font-weight-bold"></p>
         </span>
     {{-- ---------------------------------- --}}
+   
+        @if ($errors->any())
+        <div class="d-flex justify-content-center">
+            <div class="alert alert-danger text-center col-md-6">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+        @endif
 
         <form id="form1" method="post" class="formulario">
             @csrf
