@@ -208,3 +208,17 @@ textarea {
 .nav-item .nav-link:hover {
 	color: #82aed5 !important;
 }
+
+@media (max-width: 991px){
+	i:hover:after {
+		content: attr(title);
+		padding:5px;
+		border:1px solid #ccc;
+		background: #ebb8b8;
+	}
+}
+
+svg{
+	width: 15.5px;
+	height: 15.5px;
+}
