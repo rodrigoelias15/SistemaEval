@@ -12,19 +12,19 @@ use Illuminate\Database\QueryException;
 
 class RegistroController extends Controller
 {
-    public function create()
+    public function exibirCadastroLogin()
     {
-        return view('registro.create');
+        return view('cadastrologin');
     }
 
-    public function store(AutenticacaoFormRequest $request)
+    public function cadastrarLogin(AutenticacaoFormRequest $request)
     {
         $data = $request->except('__token');
         $data['password'] = Hash::make($data['password']);
         try{
             $user = User::create($data);
             Auth::login($user);    
-            return redirect('/home_sistema');
+            return redirect('/home');
         }catch(QueryException $e){
             $e->getMessage();
         }
