@@ -152,19 +152,19 @@ class SiteController extends Controller
     public function exibeRelatorio(Request $request)
     {
         $relatorio_questionario = Questionario::all();
-        return view('exibircadastros.exibirelatorio', compact('relatorio_questionario'));
+        return view('relatorio.exibirelatorio', compact('relatorio_questionario'));
     }
 
     public function exibeRelatorioOrdenadoNome(Request $request)
     {
         $relatorio_questionario = Questionario::all();
-        return view('exibircadastros.exibeRelatorioOrdenadoNome', compact('relatorio_questionario'));    
+        return view('relatorio.exibeRelatorioOrdenadoNome', compact('relatorio_questionario'));    
     }
 
     public function exibeRelatorioOrdenadoData(Request $request)
     {
         $relatorio_questionario = Questionario::all();
-        return view('exibircadastros.exibeRelatorioOrdenadoData', compact('relatorio_questionario'));    
+        return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorio_questionario'));    
     }
     
     public function storeRelatorio(Request $request)
