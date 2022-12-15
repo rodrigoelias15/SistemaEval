@@ -14,7 +14,11 @@ class RegistroController extends Controller
 {
     public function exibirCadastroLogin()
     {
+<<<<<<< HEAD
         return view('cadastrologin.cadastrologin');
+=======
+        return view('cadastrologin');
+>>>>>>> relatorio
     }
 
     public function cadastrarLogin(AutenticacaoFormRequest $request)

@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\EntrarController;
-use App\Http\Controllers\SiteController;
+use App\Http\Controllers\MainController;
 
 
-Route::controller(SiteController::class)->group(function(){
+Route::controller(MainController::class)->group(function(){
     
     // Página Inicial
     Route::get('/home', 'home')->name('home_avaliador');

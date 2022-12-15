@@ -14,7 +14,7 @@ use App\Instituicao;
 use App\ItemDigital;
 use Barryvdh\DomPDF\Facade\Pdf;
 
-class SiteController extends Controller
+class MainController extends Controller
 {
     
     public function __construct()
