@@ -179,23 +179,21 @@ class SiteController extends Controller
         return redirect()->back()->with('mensagem', 'Relatório excluído com sucesso!');
     }
     
-    
     // Páginas do sistema
     public function testeCadastroQuestionario(Request $request)
     {
         $questionario = Questionario::all();
         return view('exibircadastros.testecadastroquestionario', compact('questionario'));    
     }
-
           
     public function login()
     {
         return view('login');
     }
 
-    public function home_sistema()
+    public function home()
     {
-        return view('home_sistema');
+        return view('home');
     }
 
     // Cadastro
