@@ -760,7 +760,8 @@ Questionário de Interatividade
                 </p>
             </div>
             <div class="form-group justify-content-end text-right">
-                <input class="btn btn-primary px-4" title="Gera Relatório para Impressão/Download" type="submit" value="Gerar Relatório">
+                {{-- <input class="btn btn-primary px-4" title="Gera Relatório para Impressão/Download" type="submit" value="Gerar Relatório"> --}}
+                <a class="btn btn-primary px-4" title="Exibir Relatório" target="_blank" href="{{route("exibeRelatorio")}}">Exibir Relatorio </a>
             </div>
         </form>
 

@@ -67,7 +67,7 @@ class MainController extends Controller
         return redirect()->back()->with('mensagem', 'Avaliador cadastrado com sucesso!');
     }
     
-    public function exibirAvaliador(Request $request)
+    public function exibirAvaliador()
     {
         $usuarioavaliador = UsuarioAvaliador::all();
         return view('exibircadastros.exibiravaliador', compact('usuarioavaliador'));
@@ -148,20 +148,26 @@ class MainController extends Controller
         $questionario->save();
         return redirect()->route('relatoriopdf');
     }
-
+    
     public function exibeRelatorio(Request $request)
     {
-        $relatorio_questionario = Questionario::all();
-        return view('relatorio.exibirelatorio', compact('relatorio_questionario'));
+        $questionario = $request->session()->get('questionario');
+        return view('relatorio.relatorio', compact('questionario'));
     }
 
-    public function exibeRelatorioOrdenadoNome(Request $request)
+    public function exibeRelatorioOrdenado()
+    {
+        $relatorio_questionario = Questionario::all();
+        return view('relatorio.exibeRelatorioOrdenado', compact('relatorio_questionario'));
+    }
+
+    public function exibeRelatorioOrdenadoNome()
     {
         $relatorio_questionario = Questionario::all();
         return view('relatorio.exibeRelatorioOrdenadoNome', compact('relatorio_questionario'));    
     }
 
-    public function exibeRelatorioOrdenadoData(Request $request)
+    public function exibeRelatorioOrdenadoData()
     {
         $relatorio_questionario = Questionario::all();
         return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorio_questionario'));    
@@ -169,8 +175,8 @@ class MainController extends Controller
     
     public function storeRelatorio(Request $request)
     {
-        $questionario = $request->session()->get('questionario');        
-        return PDF::loadView('relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('relatorio.pdf');
+        $questionario = $request->session()->get('questionario');
+        return PDF::loadView('relatorio.relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('relatorio.pdf');
     }
 
     public function excluirRelatorio(Request $request)
@@ -180,7 +186,7 @@ class MainController extends Controller
     }
     
     // Páginas do sistema
-    public function testeCadastroQuestionario(Request $request)
+    public function testeCadastroQuestionario()
     {
         $questionario = Questionario::all();
         return view('exibircadastros.testecadastroquestionario', compact('questionario'));    
