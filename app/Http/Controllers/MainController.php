@@ -146,13 +146,13 @@ class MainController extends Controller
         $questionario->fill($dados);
         $request->session()->put('questionario', $questionario);
         $questionario->save();
-        return redirect()->route('relatoriopdf');
+        return redirect()->route('exibeRelatorio');
     }
     
     public function exibeRelatorio(Request $request)
     {
         $questionario = $request->session()->get('questionario');
-        return view('relatorio.relatorio', compact('questionario'));
+        return view('relatorio.exibeRelatorio', compact('questionario'));
     }
 
     public function exibeRelatorioOrdenado()
@@ -176,7 +176,7 @@ class MainController extends Controller
     public function storeRelatorio(Request $request)
     {
         $questionario = $request->session()->get('questionario');
-        return PDF::loadView('relatorio.relatorio', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('relatorio.pdf');
+        return PDF::loadView('relatorio.relatorioDownload', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('Relatorio.pdf');
     }
 
     public function excluirRelatorio(Request $request)

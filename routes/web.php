@@ -29,7 +29,7 @@ Route::controller(MainController::class)->group(function(){
     
     // Relatório
     Route::get('/relatorio', 'exibeRelatorio')->name('exibeRelatorio');
-    Route::get('/relatoriopdf', 'storeRelatorio')->name('relatoriopdf');
+    Route::get('/relatorio_download', 'storeRelatorio')->name('relatorioDownload');
     Route::get('/relatorio_ordenado', 'exibeRelatorioOrdenado')->name('exibeRelatorioOrdenado');
     Route::get('/relatorio_ordenado_nome', 'exibeRelatorioOrdenadoNome')->name('relatorioOrdenadoNome');
     Route::get('/relatorio_ordenado_data', 'exibeRelatorioOrdenadoData')->name('relatorioOrdenadoData');
