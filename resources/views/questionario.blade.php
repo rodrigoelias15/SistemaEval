@@ -44,16 +44,18 @@ Questionário de Interatividade
 
     <div class="col-lg-12 my-4">        
         
+    {{-- Nível de interatividade --}}
+
         <div class="progress barra_progresso w-50 mb-2">
             <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
-    {{-- Teste nível de interatividade --}}
         <span id="interatividade" class="justify-content-center row">
             <p id="count"></p>
             <p class="pr-3"> Nível de Interatividade: </p>
             <p id="nivel_interatividade" class="font-weight-bold"></p>
         </span>
+
     {{-- ---------------------------------- --}}
    
         @if ($errors->any())
