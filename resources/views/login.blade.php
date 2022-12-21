@@ -58,7 +58,7 @@ Login
             </form>
             <div class="text-right" style="font-style: italic; font-size: 14px">
                 <span>
-                    v1.13.0
+                    v1.14.0
                 </span>
             </div>
         </div>
