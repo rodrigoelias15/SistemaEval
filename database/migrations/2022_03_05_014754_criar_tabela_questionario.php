@@ -13,7 +13,7 @@ class CriarTabelaQuestionario extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('questionario', function (Blueprint $table) {
+        Schema::connection('mysql')->create('questionario', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('nome_avaliador_questionario');
                 $table->string('nome_item_digital_questionario');

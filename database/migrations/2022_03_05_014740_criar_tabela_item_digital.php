@@ -13,7 +13,7 @@ class CriarTabelaItemDigital extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('itemdigital', function(Blueprint $table){
+        Schema::connection('mysql')->create('itemdigital', function(Blueprint $table){
             $table->increments('id');
             $table->string('nome_item_digital');
             $table->string('area_item_digital');

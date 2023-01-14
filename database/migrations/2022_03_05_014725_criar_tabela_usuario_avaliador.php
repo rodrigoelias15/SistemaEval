@@ -13,7 +13,7 @@ class CriarTabelaUsuarioAvaliador extends Migration
      */
     public function up()
     {
-        Schema::connection('pgsql')->create('usuarioavaliador', function(Blueprint $table){
+        Schema::connection('mysql')->create('usuarioavaliador', function(Blueprint $table){
             $table->increments('id');
             $table->string('nome_avaliador');
             $table->string('sobrenome_avaliador');
