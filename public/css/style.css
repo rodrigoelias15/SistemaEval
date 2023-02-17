@@ -222,3 +222,7 @@ svg{
 	width: 15.5px;
 	height: 15.5px;
 }
+
+#texto_apresentacao {
+	border: solid #3871ae 2px;
+}
