@@ -128,7 +128,13 @@ Cadastro de Itens Digitais
 
             <div class="form-group">
                 <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
-                <input type="text" class="form-control" id="inputInstituicao" name="nome_instituicao">
+                <select name="nome_instituicao" id="inputInstituicao" class="form-control">
+                    @foreach ($instituicaoCadastrada as $instituicao)
+                    <option value="{{$instituicao->nome_instituicao}}">
+                        {{$instituicao->nome_instituicao}}
+                    </option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="inputPlataforma">Plataforma em que o Item Digital está armazenado</label>

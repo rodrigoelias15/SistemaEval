@@ -25,7 +25,8 @@ class MainController extends Controller
     // Item Digital
     public function exibirPaginaCadastroItemDigital()
     {
-        return view('cadastroitemdigital');
+        $instituicaoCadastrada = Instituicao::all();     
+        return view('cadastroitemdigital', compact('instituicaoCadastrada'));
     }
 
     public function exibirItemDigital()
@@ -33,7 +34,7 @@ class MainController extends Controller
         $itemdigital = ItemDigital::all();     
         return view('exibircadastros.exibiritemdigital', compact('itemdigital'));
     }
-           
+
     public function cadastrarItemDigital(ItemDigitalFormRequest $request)
     {
         $itemdigital = new ItemDigital();
@@ -129,7 +130,6 @@ class MainController extends Controller
             $request->session()->forget($request->all());
             $request->session()->put('questionario', $questionario);
         }
-        // return view('questionario', compact('questionario'));
         return redirect()->route('questionario');
     }
         
