@@ -72,13 +72,16 @@ class MainController extends Controller
     
     public function exibirAvaliador()
     {
-        $usuarioavaliador = UsuarioAvaliador::all();
-        return view('exibircadastros.exibiravaliador', compact('usuarioavaliador'));
+        $usuarioAvaliador = UsuarioAvaliador::all();
+        $existeUsuarioAvaliador = DB::table('usuarioavaliador')->whereNotNull('id')->exists();
+        return view('exibircadastros.exibiravaliador', compact('usuarioAvaliador', 'existeUsuarioAvaliador'));
     }
     
     public function exibirPaginaCadastroAvaliador()
     {
-        return view('cadastroavaliador');
+        $instituicaoCadastrada = Instituicao::all();
+        $existeInstituicao = DB::table('instituicao')->whereNotNull('id')->exists();
+        return view('cadastroavaliador', compact('instituicaoCadastrada', 'existeInstituicao'));
     }
     
     public function excluirAvaliador(Request $request)

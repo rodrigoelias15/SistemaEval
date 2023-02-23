@@ -34,7 +34,7 @@ Instituições Cadastradas
                     <button class="btn btn-danger px-4" type="submit">Excluir</button>
                 </form>
             </div>
-        </div>   
+        </div>
     </div>
     @endforeach
     @else

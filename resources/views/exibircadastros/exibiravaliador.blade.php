@@ -7,13 +7,18 @@ Teste de Cadastrado
 @section('content')
 
     @if(session()->has('mensagem'))
-        <div class="alert alert-success text-center">
-            {{ session()->get('mensagem') }}
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="alert alert-success text-center">
+                {{ session()->get('mensagem') }}
+            </div>
         </div>
+    </div>
     @endif
 
+    @if($existeUsuarioAvaliador)
     <div class="row">
-        @foreach($usuarioavaliador as $usuario)
+        @foreach($usuarioAvaliador as $usuario)
         <div class="col-sm-6 my-3">
             <div class="card">
                 <div class="card-body">
@@ -36,6 +41,11 @@ Teste de Cadastrado
             </div>
         </div>
         @endforeach
+        @else
+        <div class="mt-4 text-center">
+            <h1>Nenhum Usuário Avaliador Cadastrado</h1>
+        </div>
+        @endif
     </div>
 
 

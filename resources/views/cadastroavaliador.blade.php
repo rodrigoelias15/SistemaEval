@@ -52,8 +52,18 @@ Cadastro Avaliador
         <input type="text" class="form-control" id="inputCidade" name="cidade_avaliador">
       </div>
       <div class="form-group">
-        <label for="inputInstituicao">Instituição</label>
-        <input type="text" class="form-control" id="inputInstituicao" name="instituicao_avaliador">
+        <label for="inputInstituicao">Instituição do Avaliador</label>
+        <select id="inputInstituicao" class="form-control" name="nome_instituicao">
+            @if ($existeInstituicao)
+            @foreach ($instituicaoCadastrada as $instituicao)
+            <option value="{{$instituicao->nome_instituicao}}">
+                {{$instituicao->nome_instituicao}}
+            </option>
+            @endforeach
+            @else
+            <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+            @endif
+        </select>
       </div>
       <div class="form-group">
         <label for="inputFormAval">Formação do Avaliador</label>
