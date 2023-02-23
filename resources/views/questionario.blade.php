@@ -712,9 +712,9 @@ Questionário de Interatividade
                 <fieldset class="indicador_interatividade">
                     <legend>Critérios:</legend>
                     <div class="form-group form-check">
-                        <input id="indicador13a" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predimínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múlltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade." onclick="exibeNivelInteratividade()">
+                        <input id="indicador13a" class="form-check-input" type="radio" name="questionario_item13" value="O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predomínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade." onclick="exibeNivelInteratividade()">
                         <label class="form-check-label" for="indicador13a">
-                            O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predimínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade.
+                            O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predomínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade.
                             <i title="Se não é mais do que uma possibilidade ou caminho para resolução de um problema ou questão, não é bidirecionalidade e sim unidirecionalidade.">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
