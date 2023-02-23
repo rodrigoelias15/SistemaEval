@@ -56,7 +56,7 @@ Route::controller(MainController::class)->group(function(){
     
     // Cadastro Instituição
     Route::get('/cadastroinstituicao', 'exibirPaginaCadastroinstituicao')->name('cadastro_instituicao');
-    Route::get('/instituicao', 'exibirInstituicao')->name('exibir_instituicao');
+    Route::get('/exibirinstituicao', 'exibirInstituicao')->name('exibir_instituicao');
     Route::post('/cadastroinstituicao', 'cadastrarInstituicao');
     Route::post('/cadastroinstituicao/remover/{id}', 'excluirInstituicao');
     
