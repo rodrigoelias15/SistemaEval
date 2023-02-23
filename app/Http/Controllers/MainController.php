@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
@@ -25,8 +26,9 @@ class MainController extends Controller
     // Item Digital
     public function exibirPaginaCadastroItemDigital()
     {
-        $instituicaoCadastrada = Instituicao::all();     
-        return view('cadastroitemdigital', compact('instituicaoCadastrada'));
+        $instituicaoCadastrada = Instituicao::all();        
+        $existeInstituicao = DB::table('instituicao')->whereNotNull('id')->exists();
+        return view('cadastroitemdigital', compact('instituicaoCadastrada', 'existeInstituicao'));
     }
 
     public function exibirItemDigital()
@@ -96,7 +98,8 @@ class MainController extends Controller
     public function exibirInstituicao(Request $request)
     {
         $instituicaoensino = Instituicao::all();
-        return view('exibircadastros.exibirinstituicao', compact('instituicaoensino'));
+        $existeInstituicao = DB::table('instituicao')->whereNotNull('id')->exists();
+        return view('exibircadastros.exibirinstituicao', compact('instituicaoensino', 'existeInstituicao'));
     }
 
     public function exibirPaginaCadastroInstituicao()

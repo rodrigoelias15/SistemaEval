@@ -128,12 +128,16 @@ Cadastro de Itens Digitais
 
             <div class="form-group">
                 <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
-                <select name="nome_instituicao" id="inputInstituicao" class="form-control">
+                <select id="inputInstituicao" class="form-control" name="nome_instituicao">
+                    @if ($existeInstituicao)
                     @foreach ($instituicaoCadastrada as $instituicao)
                     <option value="{{$instituicao->nome_instituicao}}">
                         {{$instituicao->nome_instituicao}}
                     </option>
                     @endforeach
+                    @else
+                    <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+                    @endif
                 </select>
             </div>
             <div class="form-group">

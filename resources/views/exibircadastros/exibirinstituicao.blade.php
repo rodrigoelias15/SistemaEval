@@ -7,11 +7,16 @@ Instituições Cadastradas
 @section('content')
 
     @if(session()->has('mensagem'))
-        <div class="alert alert-success text-center">
-            {{ session()->get('mensagem') }}
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="alert alert-success text-center">
+                {{ session()->get('mensagem') }}
+            </div>
         </div>
+    </div>
     @endif
 
+    @if($existeInstituicao)
     <div class="row">
         @foreach($instituicaoensino as $instituicao)
         <div class="col-sm-6 my-3">
@@ -30,6 +35,11 @@ Instituições Cadastradas
                 </form>
             </div>
         </div>   
-        @endforeach
     </div>
+    @endforeach
+    @else
+    <div class="mt-4 text-center">
+        <h1>Nenhuma Instituição Cadastrada</h1>
+    </div>
+    @endif
 @endsection
