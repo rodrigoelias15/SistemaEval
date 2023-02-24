@@ -226,3 +226,11 @@ svg{
 #texto_apresentacao {
 	border: solid #3871ae 2px;
 }
+
+#texto_apresentacao section {
+	padding: 12px;
+}
+
+#img_inicial {
+	max-width: 100%;
+}
