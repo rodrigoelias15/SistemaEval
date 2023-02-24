@@ -10,7 +10,7 @@
             <img id="img_inicial" src="img/questionario.jpeg">
             <section>
                 O Sistema e-VAL tem por objetivo auxiliar instituições, professores e desenvolvedores de itens digitais quanto a seu nível de interatividade, através de um questionário interativo, o sistema calcula a pontuação do item digital que está sendo avaliado, que é mostrado em tempo real.
-                O sistema permite a geração de um relatório com todas as questões respondidas, e caso seja relevante para o usuário, a possibilidade de download.
+                O sistema permite a geração de um relatório com todas as questões respondidas, e caso o usuário deseje, poderá realizar o download do mesmo.
             </section>
         </div>
     </div>
