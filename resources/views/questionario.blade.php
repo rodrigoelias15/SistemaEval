@@ -7,8 +7,10 @@ Questionário de Interatividade
 @section('content')
 
 {{-- Script de interatividade --}}
+
 <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
+<script defer src="js/transparencia.js"></script>
 
 <div class="row">
     <div class="cabecalho col-lg-12">
@@ -46,15 +48,16 @@ Questionário de Interatividade
         
     {{-- Nível de interatividade --}}
 
+    <div id="barra">
         <div class="progress barra_progresso w-50 mb-2">
             <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-
         <span id="interatividade" class="justify-content-center row">
             <p id="count"></p>
             <p class="pr-3"> Nível de Interatividade: </p>
             <p id="nivel_interatividade" class="font-weight-bold"></p>
         </span>
+    </div>
 
     {{-- ---------------------------------- --}}
    

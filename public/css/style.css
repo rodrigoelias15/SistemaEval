@@ -234,3 +234,10 @@ svg{
 #img_inicial {
 	max-width: 100%;
 }
+
+#barra {
+	position: sticky;
+	top: 0;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}  
