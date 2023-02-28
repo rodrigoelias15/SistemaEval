@@ -5,10 +5,67 @@ Cadastro de Itens Digitais
 @endsection
 
 @section("content")
-<div class="row justify-content-center">
+
+<style>
+    body{
+        background-color: #FCD34D; 
+    }
+    form {
+        padding: 1.5rem; 
+        background-color: #93C5FD; 
+        border-radius: 0.75rem; 
+        border-width: 1px; 
+        border-color: #E5E7EB; 
+    }
+    input {
+        display: flex; 
+        padding: 1.5rem; 
+        background-color: #DBEAFE; 
+        border-radius: 0.75rem; 
+        border-width: 1px; 
+        border-color: #E5E7EB;
+    }
+    button {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem; 
+        padding-left: 2.5rem;
+        padding-right: 2.5rem; 
+        background-color: #1D4ED8; 
+        color: #ffffff; 
+        font-size: 0.75rem;
+        line-height: 1rem; 
+        font-weight: 600; 
+        text-transform: uppercase; 
+        border-radius: 1rem; 
+    }
+    button:hover{
+        background-color: #1E3A8A;
+    }
+    .aviso {
+        font-size: 0.82rem;
+        border-width: 1.5rem; 
+        border-radius: 1.5rem;
+        color: #ffffff;
+        background-color: #1E3A8A;
+        padding: 0.3rem; 
+        font-weight: 600; 
+        margin-bottom: 1.0rem;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+</style>
+
+<div class="row justify-content-center"
+    style='background-color: #FEF3C7'
+>
     <div class="col-sm-8 col-md-5">
+
         <div class="logo my-3">
-            <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
+            <img class="img-fluid center" src="img/caedlogo.png" alt="Logo Caed">
         </div>
         
         @if(session()->has('mensagem'))
@@ -27,63 +84,151 @@ Cadastro de Itens Digitais
         </div>
         @endif
 
+        
         <form method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
-            <div class="form-group">
-                <label for="inputItemDigital">Nome do Item Digital</label>
-                <input type="text" class="form-control" id="inputItemDigital" name="nome_item_digital">
+            <div class='center aviso'>
+                -Items com * são obrigatórios-
             </div>
             <div class="form-group">
-                <label for="inputAreaDisciplina">Área/Disciplina</label>
-                <input type="text" class="form-control" id="inputAreaDisciplina" name="area_item_digital">
+                <label for="inputItemDigital">
+                    *Nome do Item Digital*
+                </label>
+                <input class="form-control" 
+                    type="text" 
+                    id="inputItemDigital" 
+                    name="nome_item_digital"
+                    value="{{ old('nome_item_digital') }}"
+                    placeholder="Nome identificador do item"
+                    required
+                >
             </div>
+
+            <div class="form-group">
+                <label for="inputAreaDisciplina">
+                    *Área/Disciplina*
+                </label>
+                <input class="form-control" 
+                    type="text" 
+                    id="inputAreaDisciplina"
+                    name="area_item_digital"
+                    value="{{ old('area_item_digital') }}"
+                    placeholder="Linguas, Matemática, Ciências..."
+                    required
+                >
+            </div>
+
             <div class="form-group form-row">
-                <div class="col-md-5">
-                    <select name="escolaridade_item_digital" id="escolaridade1" class="form-control">
+                <div class="col-md-7">
+                    <div class='mb-2'>
+                        *Grau de Escolaridade*
+                    </div>
+                    <select class="form-control"
+                        name="escolaridade_item_digital"
+                        id="escolaridade1"
+                        value="{{ old('escolaridade_item_digital') }}"
+                        type="text"
+                        placeholder="Escolher"
+                        required>
+                    >
                         <option>Ensino Fundamental</option>
                         <option>Ensino Médio</option>
                         <option>Ensino Superior</option>
                     </select>
                 </div>
             </div>
+
             <div class="form-group">
-                <label for="inputURL">URL do Item</label>
-                <input type="text" class="form-control" id="inputURL" name="url_item_digital">
+                <label for="inputURL">
+                    *URL do Item*
+                </label>
+                <input class="form-control"
+                    type="text"
+                    id="inputURL"
+                    name="url_item_digital"
+                    value="{{ old('url_item_digital') }}"
+                    placeholder="URL/Link para o item digital"
+                    required
+                >
             </div>           
+            
             <div class="form-group">
-                <label for="campo_descricao_item">Descrição do Item</label>
-                <textarea id="campo_descricao_item" class="form-control" name="descricao_item_digital"></textarea>
+                <label for="campo_descricao_item">
+                    *Descrição do Item*
+                </label>
+                <textarea class="form-control"
+                    id="campo_descricao_item"
+                    name="descricao_item_digital"
+                    placeholder="Escreva uma breve descrição"
+                    required
+                >{{{ old('descricao_item_digital') }}}</textarea>
             </div>
+
             <div class="form-group">
-                <label for="custom-control-label">Item foi utilizado em Avaliação em Larga Escala?</label>
+                <label for="custom-control-label">
+                    Item foi utilizado em Avaliação em Larga Escala?
+                </label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio1" name="item_utilizado_larga_escala" class="custom-control-input" value="Sim" checked>
-                        <label class="custom-control-label" for="customRadio1">Sim</label>
+                        <input class="custom-control-input"
+                            type="radio"
+                            id="customRadio1"
+                            name="item_utilizado_larga_escala"
+                            value="Sim"
+                            checked
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio1"
+                        >Sim</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio2" name="item_utilizado_larga_escala" class="custom-control-input" value="Não">
-                        <label class="custom-control-label" for="customRadio2">Não</label>
+                        <input class="custom-control-input"
+                            type="radio"
+                            id="customRadio2"
+                            name="item_utilizado_larga_escala"
+                            value="Não"
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio2"
+                        >Não</label>
                     </div>
                 </div>
             </div>
+
             <div class="form-group">
                 <label for="custom-control-label">O item digital é multidisciplinar?</label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio3" name="item_multidisciplinar" class="custom-control-input" value="Sim" checked>
-                        <label class="custom-control-label" for="customRadio3">Sim</label>
+                        <input class="custom-control-input"
+                            type="radio"
+                            id="customRadio3"
+                            name="item_multidisciplinar"
+                            value="Sim"
+                            checked
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio3"
+                        >Sim</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadio4" name="item_multidisciplinar" class="custom-control-input" value="Não">
-                        <label class="custom-control-label" for="customRadio4">Não</label>
+                        <input class="custom-control-input"
+                            type="radio" 
+                            id="customRadio4"
+                            name="item_multidisciplinar"
+                            value="Não"
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio4"
+                        >Não</label>
                     </div>
                 </div>
             </div>
+
             <div class="form-group">
                 <label for="inputAvaliacao">Nome da Avaliação em que o Item foi utilizado</label>
                 <input type="text" class="form-control" id="inputAvaliacao" name="nome_avaliacao_item_digital">
             </div>
+
             <div class="form-group">
                 <label for="inputAnoAvaliacao">Ano da Avaliação</label>
                 <input type="text" class="form-control col-md-2" id="inputAnoAvaliacao" name="ano_item_digital">
@@ -147,10 +292,12 @@ Cadastro de Itens Digitais
             <div class="form-group">
                 <label for="inputInstPlataforma">Instituição responsável pela plataforma</label>
                 <input type="text" class="form-control" id="inputInstPlataforma" name="instituicao_plataforma">
-            </div>           
-            <div class="form-group text-center">
-                <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
             </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="py-2 w-50 my-3">Cadastrar</button>
+            </div>
+
         </form>
     </div>
 </div>
