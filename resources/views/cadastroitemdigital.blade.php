@@ -57,6 +57,10 @@ Cadastro de Itens Digitais
         margin-right: auto;
         width: 50%;
     }
+    .line{
+        height: 0.2rem;
+        border-bottom: 0.1rem solid black;
+    }
 </style>
 
 <div class="row justify-content-center"
@@ -90,6 +94,10 @@ Cadastro de Itens Digitais
             <div class='center aviso'>
                 -Items com * são obrigatórios-
             </div>
+            
+            <h3 class='text-center'>Informações do Item</h3>
+            <div class="form-group line"></div>
+            
             <div class="form-group">
                 <label for="inputItemDigital">
                     *Nome do Item Digital*
@@ -127,8 +135,8 @@ Cadastro de Itens Digitais
                         name="escolaridade_item_digital"
                         id="escolaridade1"
                         value="{{ old('escolaridade_item_digital') }}"
+                        placeholder="Escolher grau"
                         type="text"
-                        placeholder="Escolher"
                         required>
                     >
                         <option>Ensino Fundamental</option>
@@ -137,6 +145,50 @@ Cadastro de Itens Digitais
                     </select>
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="campo_descricao_item">
+                    *Descrição do Item*
+                </label>
+                <textarea class="form-control"
+                    id="campo_descricao_item"
+                    name="descricao_item_digital"
+                    placeholder="Escreva uma breve descrição"
+                    required
+                >{{{ old('descricao_item_digital') }}}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="custom-control-label">*O item digital é multidisciplinar ?*</label>
+                <div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input class="custom-control-input"
+                            type="radio"
+                            id="customRadio3"
+                            name="item_multidisciplinar"
+                            value="Sim"
+                            checked
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio3"
+                        >Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input class="custom-control-input"
+                            type="radio" 
+                            id="customRadio4"
+                            name="item_multidisciplinar"
+                            value="Não"
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio4"
+                        >Não</label>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class='text-center'>Informações de Local</h3>
+            <div class="form-group line"></div>
 
             <div class="form-group">
                 <label for="inputURL">
@@ -153,20 +205,39 @@ Cadastro de Itens Digitais
             </div>           
             
             <div class="form-group">
-                <label for="campo_descricao_item">
-                    *Descrição do Item*
+                <label for="inputPlataforma">
+                    *Plataforma em que o Item Digital está armazenado*
                 </label>
-                <textarea class="form-control"
-                    id="campo_descricao_item"
-                    name="descricao_item_digital"
-                    placeholder="Escreva uma breve descrição"
+                <input class="form-control"
+                    type="text"
+                    id="inputPlataforma"
+                    name="plataforma_item_digital"
+                    value="{{ old('plataforma_item_digital') }}"
+                    placeholder="Digite a plataforma"
                     required
-                >{{{ old('descricao_item_digital') }}}</textarea>
+                >
             </div>
+            
+            <div class="form-group">
+                <label for="inputInstPlataforma">
+                    *Instituição responsável pela plataforma*
+                </label>
+                <input class="form-control"
+                    type="text"
+                    id="inputInstPlataforma"
+                    name="instituicao_plataforma"
+                    value="{{ old('instituicao_plataforma') }}"
+                    placeholder="Digite a instituição"
+                    required
+                >
+            </div>
+            
+            <h3 class='text-center'>Informações de Avaliação</h3>
+            <div class="form-group line"></div>
 
             <div class="form-group">
                 <label for="custom-control-label">
-                    Item foi utilizado em Avaliação em Larga Escala?
+                    *Item foi utilizado em Avaliação em Larga Escala ?*
                 </label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
@@ -195,45 +266,54 @@ Cadastro de Itens Digitais
                 </div>
             </div>
 
+            <h5 class='text-center mb-4'>Forneça mais informações caso sim</h5>
+            
             <div class="form-group">
-                <label for="custom-control-label">O item digital é multidisciplinar?</label>
-                <div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input"
-                            type="radio"
-                            id="customRadio3"
-                            name="item_multidisciplinar"
-                            value="Sim"
-                            checked
-                        >
-                        <label class="custom-control-label"
-                            for="customRadio3"
-                        >Sim</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input"
-                            type="radio" 
-                            id="customRadio4"
-                            name="item_multidisciplinar"
-                            value="Não"
-                        >
-                        <label class="custom-control-label"
-                            for="customRadio4"
-                        >Não</label>
-                    </div>
-                </div>
+                <label for="inputAvaliacao">
+                    Nome da Avaliação em que o Item foi utilizado
+                </label>
+                <input type="text" 
+                    class="form-control" 
+                    id="inputAvaliacao" 
+                    name="nome_avaliacao_item_digital"
+                    value="{{ old('nome_avaliacao_item_digital') }}"
+                    placeholder="Digite a Avaliação"
+                >
             </div>
 
             <div class="form-group">
-                <label for="inputAvaliacao">Nome da Avaliação em que o Item foi utilizado</label>
-                <input type="text" class="form-control" id="inputAvaliacao" name="nome_avaliacao_item_digital">
-            </div>
-
-            <div class="form-group">
-                <label for="inputAnoAvaliacao">Ano da Avaliação</label>
-                <input type="text" class="form-control col-md-2" id="inputAnoAvaliacao" name="ano_item_digital">
+                <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
+                <select id="inputInstituicao"
+                    class="form-control"
+                    name="nome_instituicao"
+                    value="{{ old('nome_instituicao') }}"
+                >
+                    @if ($existeInstituicao)
+                        @foreach ($instituicaoCadastrada as $instituicao)
+                            <option value="{{$instituicao->nome_instituicao}}">
+                                {{$instituicao->nome_instituicao}}
+                            </option>
+                        @endforeach
+                    @else
+                        <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+                    @endif
+                </select>
             </div>
             
+            <div class="form-group">
+                <label for="inputAnoAvaliacao">Ano da Avaliação</label>
+                <input type="text" 
+                    class="form-control col-md-2"
+                    id="inputAnoAvaliacao"
+                    name="ano_item_digital"
+                    value="{{ old('ano_item_digital') }}"
+                    placeholder="Ano"
+                >
+            </div>
+            
+            <h3 class='text-center'>Visualização do Item</h3>
+            <div class="form-group line"></div>
+
             <div class="form-group">
                 <label>Escolher Arquivo de Imagem do Item</label>
                 <div class="form-group input-group">
@@ -270,29 +350,6 @@ Cadastro de Itens Digitais
                     });                     
                 </script>
             {{--  --}}
-
-            <div class="form-group">
-                <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
-                <select id="inputInstituicao" class="form-control" name="nome_instituicao">
-                    @if ($existeInstituicao)
-                    @foreach ($instituicaoCadastrada as $instituicao)
-                    <option value="{{$instituicao->nome_instituicao}}">
-                        {{$instituicao->nome_instituicao}}
-                    </option>
-                    @endforeach
-                    @else
-                    <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
-                    @endif
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="inputPlataforma">Plataforma em que o Item Digital está armazenado</label>
-                <input type="text" class="form-control" id="inputPlataforma" name="plataforma_item_digital">
-            </div>
-            <div class="form-group">
-                <label for="inputInstPlataforma">Instituição responsável pela plataforma</label>
-                <input type="text" class="form-control" id="inputInstPlataforma" name="instituicao_plataforma">
-            </div>
 
             <div class="form-group text-center">
                 <button type="submit" class="py-2 w-50 my-3">Cadastrar</button>
