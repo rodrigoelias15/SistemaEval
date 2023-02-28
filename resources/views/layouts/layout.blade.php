@@ -29,8 +29,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('tutorial')}}">Tutorial</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Item Digital/Instituições</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Item Digital e Instituições</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="{{route('cadastro_itemdigital')}}">Cadastrar Item Digital</a>
                       <a class="dropdown-item" href="{{route('exibir_item_digital')}} ">Visualizar Itens Digitais</a>
@@ -48,7 +51,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('pre_questionario')}}">Avaliar Item</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Relatórios</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,7 +58,6 @@
                       <a class="dropdown-item" href="{{route('relatorioOrdenadoData')}}">Ordenados Por Data</a>
                     </div>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="/contatoadmin">Contato com Administrador do Sistema</a>
                 </li>                                           

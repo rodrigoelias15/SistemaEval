@@ -23,6 +23,9 @@ Route::controller(MainController::class)->group(function(){
     // Página Inicial
     Route::get('/home', 'home')->name('home_avaliador');
     
+    // Tutorial
+    Route::get('/tutorial', 'exibirTutorial')->name('tutorial');
+
     // Pré-Questionário
     Route::get('/prequestionario', 'preQuestionario')->name('pre_questionario');
     Route::post('/prequestionario', 'postPreQuestionario');

@@ -31,6 +31,11 @@ class MainController extends Controller
         return view('cadastroitemdigital', compact('instituicaoCadastrada', 'existeInstituicao'));
     }
 
+    public function exibirTutorial()
+    {
+        return view('tutorial');
+    }
+
     public function exibirItemDigital()
     {
         $itemdigital = ItemDigital::all();     
