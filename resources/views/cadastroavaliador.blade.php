@@ -53,15 +53,15 @@ Cadastro Avaliador
       </div>
       <div class="form-group">
         <label for="inputInstituicao">Instituição do Avaliador</label>
-        <select id="inputInstituicao" class="form-control" name="nome_instituicao">
+        <select id="inputInstituicao" class="form-control" name="instituicao_avaliador">
             @if ($existeInstituicao)
-            @foreach ($instituicaoCadastrada as $instituicao)
-            <option value="{{$instituicao->nome_instituicao}}">
-                {{$instituicao->nome_instituicao}}
-            </option>
-            @endforeach
+              @foreach ($instituicaoCadastrada as $instituicao)
+              <option value="{{$instituicao->nome_instituicao}}">
+                  {{$instituicao->nome_instituicao}}
+              </option>
+              @endforeach
             @else
-            <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+              <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
             @endif
         </select>
       </div>
