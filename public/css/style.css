@@ -223,11 +223,11 @@ svg{
 	height: 15.5px;
 }
 
-#texto_apresentacao {
+#texto_apresentacao, #instrucao_questionario {
 	border: solid #3871ae 2px;
 }
 
-#texto_apresentacao section {
+#texto_apresentacao section, #instrucao_questionario section {
 	padding: 12px;
 }
 
