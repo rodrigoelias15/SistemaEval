@@ -18,7 +18,7 @@
                 Liamara Scortegagna (CAEd/UFJF) <br>
                 Adriana Rocha Bruno (CAEd/UNIRIO) <br>
                 Rodrigo Oliveira Elias (UFJF) <br>
-                Alexandre (UFJF) <br>
+                Alexandre Vitor Silva Braga (UFJF) <br>
                 Projeto de Pesquisa financiado pelo Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF) <br>
             </section>
         </div>
