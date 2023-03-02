@@ -6,6 +6,14 @@ Cadastro de Itens Digitais
 
 @section("content")
 
+<?php
+$grausEscolaridade = [
+    "Ensino Fundamental" => " Ensino Fundamental",
+    "Ensino Médio" => "Ensino Médio",
+    "Ensino Superior" => "Ensino Superior",
+];
+?>
+
 <style>
     body{
         background-color: #FCD34D; 
@@ -134,14 +142,19 @@ Cadastro de Itens Digitais
                     <select class="form-control"
                         name="escolaridade_item_digital"
                         id="escolaridade1"
-                        value="{{ old('escolaridade_item_digital') }}"
                         placeholder="Escolher grau"
                         type="text"
                         required>
                     >
-                        <option>Ensino Fundamental</option>
-                        <option>Ensino Médio</option>
-                        <option>Ensino Superior</option>
+                        @foreach($grausEscolaridade as $grau)
+                            <option value="{{ $grau }}"
+                                @if(old('escolaridade_item_digital') == $grau)
+                                    selected
+                                @endif
+                            >
+                                {{$grau}}
+                            </option>
+                        @endforeach
                     </select>
                 </div>
             </div>
@@ -286,11 +299,14 @@ Cadastro de Itens Digitais
                 <select id="inputInstituicao"
                     class="form-control"
                     name="nome_instituicao"
-                    value="{{ old('nome_instituicao') }}"
                 >
                     @if ($existeInstituicao)
-                        @foreach ($instituicaoCadastrada as $instituicao)
-                            <option value="{{$instituicao->nome_instituicao}}">
+                        @foreach($instituicaoCadastrada as $instituicao)
+                            <option value="{{ $instituicao->nome_instituicao }}"
+                                @if(old('nome_instituicao') == $instituicao->nome_instituicao)
+                                    selected
+                                @endif
+                            >
                                 {{$instituicao->nome_instituicao}}
                             </option>
                         @endforeach
@@ -352,7 +368,7 @@ Cadastro de Itens Digitais
             {{--  --}}
 
             <div class="form-group text-center">
-                <button type="submit" class="py-2 w-50 my-3">Cadastrar</button>
+                <button type="submit" class="py-2 w-50 my-3">Cadastrar item</button>
             </div>
 
         </form>
