@@ -7,11 +7,15 @@ Cadastro de Itens Digitais
 @section("content")
 
 <?php
+
 $grausEscolaridade = [
     "Ensino Fundamental" => " Ensino Fundamental",
     "Ensino Médio" => "Ensino Médio",
     "Ensino Superior" => "Ensino Superior",
 ];
+
+$radioSelecionado = 0;
+
 ?>
 
 <style>
@@ -180,7 +184,7 @@ $grausEscolaridade = [
                             id="customRadio3"
                             name="item_multidisciplinar"
                             value="Sim"
-                            checked
+                            {{ old('item_multidisciplinar') == "Sim" ? 'checked' : '' }}
                         >
                         <label class="custom-control-label"
                             for="customRadio3"
@@ -192,6 +196,7 @@ $grausEscolaridade = [
                             id="customRadio4"
                             name="item_multidisciplinar"
                             value="Não"
+                            {{ old('item_multidisciplinar') == "Não" ? 'checked' : '' }}
                         >
                         <label class="custom-control-label"
                             for="customRadio4"
@@ -254,79 +259,79 @@ $grausEscolaridade = [
                 </label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input"
+                        <input class="custom-control-input hidden-controller"
                             type="radio"
                             id="customRadio1"
-                            name="item_utilizado_larga_escala"
-                            value="Sim"
-                            checked
-                        >
-                        <label class="custom-control-label"
-                            for="customRadio1"
-                        >Sim</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input"
-                            type="radio"
-                            id="customRadio2"
                             name="item_utilizado_larga_escala"
                             value="Não"
                         >
                         <label class="custom-control-label"
-                            for="customRadio2"
+                            for="customRadio1"
                         >Não</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input class="custom-control-input hidden-controller"
+                            type="radio"
+                            id="customRadio2"
+                            name="item_utilizado_larga_escala"
+                            value="Sim"
+                        >
+                        <label class="custom-control-label"
+                            for="customRadio2"
+                        >Sim</label>
                     </div>
                 </div>
             </div>
-
-            <h5 class='text-center mb-4'>Forneça mais informações caso sim</h5>
             
-            <div class="form-group">
-                <label for="inputAvaliacao">
-                    Nome da Avaliação em que o Item foi utilizado
-                </label>
-                <input type="text" 
-                    class="form-control" 
-                    id="inputAvaliacao" 
-                    name="nome_avaliacao_item_digital"
-                    value="{{ old('nome_avaliacao_item_digital') }}"
-                    placeholder="Digite a Avaliação"
-                >
+            <div id='hiddenform' style='display:none'>
+                <h5 class='text-center mb-4'>Forneça mais informações</h5>
+                
+                <div class="form-group">
+                    <label for="inputAvaliacao">
+                        Nome da Avaliação em que o Item foi utilizado
+                    </label>
+                    <input type="text"
+                        class="form-control"
+                        id="inputAvaliacao"
+                        name="nome_avaliacao_item_digital"
+                        value="{{ old('nome_avaliacao_item_digital') }}"
+                        placeholder="Digite a Avaliação"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
+                    <select id="inputInstituicao"
+                        class="form-control"
+                        name="nome_instituicao"
+                    >
+                        @if ($existeInstituicao)
+                            @foreach($instituicaoCadastrada as $instituicao)
+                                <option value="{{ $instituicao->nome_instituicao }}"
+                                    @if(old('nome_instituicao') == $instituicao->nome_instituicao)
+                                        selected
+                                    @endif
+                                >
+                                    {{$instituicao->nome_instituicao}}
+                                </option>
+                            @endforeach
+                        @else
+                            <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+                        @endif
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inputAnoAvaliacao">Ano da Avaliação</label>
+                    <input type="text"
+                        class="form-control col-md-2"
+                        id="inputAnoAvaliacao"
+                        name="ano_item_digital"
+                        value="{{ old('ano_item_digital') }}"
+                        placeholder="Ano"
+                    >
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="inputInstituicao">Instituição responsável pela Avaliação</label>
-                <select id="inputInstituicao"
-                    class="form-control"
-                    name="nome_instituicao"
-                >
-                    @if ($existeInstituicao)
-                        @foreach($instituicaoCadastrada as $instituicao)
-                            <option value="{{ $instituicao->nome_instituicao }}"
-                                @if(old('nome_instituicao') == $instituicao->nome_instituicao)
-                                    selected
-                                @endif
-                            >
-                                {{$instituicao->nome_instituicao}}
-                            </option>
-                        @endforeach
-                    @else
-                        <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
-                    @endif
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="inputAnoAvaliacao">Ano da Avaliação</label>
-                <input type="text" 
-                    class="form-control col-md-2"
-                    id="inputAnoAvaliacao"
-                    name="ano_item_digital"
-                    value="{{ old('ano_item_digital') }}"
-                    placeholder="Ano"
-                >
-            </div>
-            
             <h3 class='text-center'>Visualização do Item</h3>
             <div class="form-group line"></div>
 
@@ -348,6 +353,7 @@ $grausEscolaridade = [
             </div>    
 
             {{-- Scripts --}}
+                
                 <script>
                     function exibeImagem() {
                         $('#image_preview').show();
@@ -364,6 +370,19 @@ $grausEscolaridade = [
                             reader.readAsDataURL(this.files[0]);                        
                         });                       
                     });                     
+                </script>
+
+                <script>
+                    $('.hidden-controller').on('change', function(){
+                        if($(this).val() == 'Sim')
+                        {
+                            document.getElementById('hiddenform').style['display'] = 'block';
+                        }
+                        else
+                        {
+                            document.getElementById('hiddenform').style['display'] = 'none';
+                        }
+                    });
                 </script>
             {{--  --}}
 
