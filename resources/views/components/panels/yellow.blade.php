@@ -1,7 +1,7 @@
 <style>
     .yellowpanel {
         background-color: #FEF3C7;
-        border-style: inset;
+        border-style: groove;
         border-radius: 0.75rem;
         border-color: #fcd34d; 
     }
