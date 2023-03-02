@@ -4,6 +4,10 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        background-color: #4dcefc; 
+        border-radius: 0.75rem;
+        border-style: outset;
+        border-color: #fcd34d; 
     }
 </style>
 

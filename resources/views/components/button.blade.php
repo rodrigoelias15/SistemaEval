@@ -10,7 +10,9 @@
         line-height: 1rem; 
         font-weight: 600; 
         text-transform: uppercase; 
-        border-radius: 1rem; 
+        border-radius: 1rem;
+        border-style: outset;
+        border-color: #1D4ED8; 
     }
     button:hover{
         background-color: #1E3A8A;

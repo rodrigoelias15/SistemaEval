@@ -5,28 +5,12 @@ Cadastro Avaliador
 @endsection
 
 @section("content")
-<div class="row justify-content-center">
-  <div class="col-sm-8 col-md-6">
-    <div class="logo my-3">
-      <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
-    </div>
+<x-panels.yellow>
+  <x-icons.logo/>
+  
+  <x-alert />
 
-    @if(session()->has('mensagem'))
-      <div class="alert alert-success text-center">
-          {{ session()->get('mensagem') }}
-      </div>
-    @endif
-
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-
+  <x-panels.blue>
     <form method="post" class="form-group">
       @csrf
       <div class="form-row">
@@ -126,7 +110,7 @@ Cadastro Avaliador
         <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
       </div>
     </form>
-  </div>
-</div>
+  </x-panels.blue>
+</x-panels.yellow>
 
 @endsection
