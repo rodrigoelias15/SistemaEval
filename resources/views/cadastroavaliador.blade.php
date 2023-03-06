@@ -105,10 +105,9 @@ Cadastro Avaliador
           <input type="text" class="form-control" id="inputCEP" name="cep_avaliador">
         </div>
       </div>
-
-      <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
-      </div>
+      <x-button>
+        Cadastrar
+      </x-button>
     </form>
   </x-panels.form>
 </x-panels.content>

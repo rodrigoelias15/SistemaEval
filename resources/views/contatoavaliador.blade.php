@@ -25,9 +25,9 @@ Contato
                 <textarea id="campo_mensagem" class="form-control" name="mensagem"></textarea>
             </div>
         </form>
-        <div class="form-group text-right">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
+        <x-button>
+          Enviar
+        </x-button>
     </div>
 </div>
 

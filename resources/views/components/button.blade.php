@@ -1,5 +1,5 @@
 <style>
-    button {
+    .botao {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem; 
         padding-left: 2.5rem;
@@ -15,13 +15,13 @@
         border-color: #F57F17; 
         
     }
-    button:hover{
+    .botao:hover{
         background-color: #F57F17;
     }
 </style>
 
 <div class="form-group text-center">
-    <button type="submit" class="py-2 w-50 my-3">
+    <button type="submit" class="botao py-2 w-50 my-3">
         {{ $slot }}
     </button>
 </div>
