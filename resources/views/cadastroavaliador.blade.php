@@ -5,12 +5,12 @@ Cadastro Avaliador
 @endsection
 
 @section("content")
-<x-panels.yellow>
+<x-panels.content>
   <x-icons.logo/>
   
   <x-alert />
 
-  <x-panels.blue>
+  <x-panels.form>
     <form method="post" class="form-group">
       @csrf
       <div class="form-row">
@@ -110,7 +110,7 @@ Cadastro Avaliador
         <button type="submit" class="btn btn-primary py-2 w-50 my-3">Cadastrar</button>
       </div>
     </form>
-  </x-panels.blue>
-</x-panels.yellow>
+  </x-panels.form>
+</x-panels.content>
 
 @endsection

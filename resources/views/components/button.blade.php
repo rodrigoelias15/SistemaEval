@@ -4,18 +4,19 @@
         padding-bottom: 0.5rem; 
         padding-left: 2.5rem;
         padding-right: 2.5rem; 
-        background-color: #1D4ED8; 
-        color: #ffffff; 
+        background-color: #FCD34D; 
+        color: #000000; 
         font-size: 0.75rem;
         line-height: 1rem; 
         font-weight: 600; 
         text-transform: uppercase; 
         border-radius: 1rem;
         border-style: outset;
-        border-color: #1D4ED8; 
+        border-color: #F57F17; 
+        
     }
     button:hover{
-        background-color: #1E3A8A;
+        background-color: #F57F17;
     }
 </style>
 

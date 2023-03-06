@@ -5,10 +5,10 @@ Cadastro Usuário Administrador
 @endsection
 
 @section('content')
-<x-panels.yellow>
+<x-panels.content>
     <x-icons.logo/>
 
-    <x-panels.blue>
+    <x-panels.form>
       <form method="post" class="form-group">
         @csrf
           <div class="form-row">
@@ -79,7 +79,7 @@ Cadastro Usuário Administrador
           <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
       </form>
-    </x-panels.blue>
-</x-panels.yellow>
+    </x-panels.form>
+</x-panels.content>
 
 @endsection

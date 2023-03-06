@@ -16,12 +16,12 @@ $grausEscolaridade = [
 
 ?>
 
-<x-panels.yellow>
+<x-panels.content>
     <x-icons.logo/>
     
     <x-alert />
     
-    <x-panels.blue>
+    <x-panels.form>
         <form method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
             <x-aviso>
@@ -297,6 +297,6 @@ $grausEscolaridade = [
                 Cadastrar item
             </x-button>
         </form>
-    </x-panels.blue>
-</x-panels.yellow>
+    </x-panels.form>
+</x-panels.content>
 @endsection
