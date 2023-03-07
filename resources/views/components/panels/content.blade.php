@@ -5,6 +5,7 @@
         background-image: url(img/bluepanel.png);
         background-size: cover;
         background-attachment: fixed;
+        margin-top: 4rem;
     }
 </style>
 <div class="row justify-content-center contentpanel">

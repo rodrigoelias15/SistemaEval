@@ -32,7 +32,7 @@
     background-size: 100%'
 >
     <x-navbar/>
-    <div class="container">
+    <div class="container mt-2 mb-2">
         @yield('content')
     </div>
 </body>

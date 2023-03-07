@@ -26,7 +26,7 @@ html {
 
 /*-------------Nav-------------*/
 #nav-wrapper {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -51,8 +51,8 @@ html {
 
 .nav {
   display: flex;
-  height: 4em;
-  line-height: 4em;
+  height: 2rem;
+  line-height: 3rem;
   flex-grow: 1;
 }
 
@@ -64,21 +64,22 @@ html {
 span.gradient {
   background: #f37335;
   background: linear-gradient(45deg, #f37335, #fee140);
-  padding: 0 1em;
+  padding: 0 1rem;
   position: relative;
-  right: 1em;
+  right: 1rem;
   margin-right: auto;
+  border-radius: 0.3rem;
 }
 span.gradient:hover {
   animation-name: logo-hover;
-  animation-duration: 0.3s;
+  animation-duration: 0.9s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
 }
 
 h1.logo {
-  font-weight: 300;
-  font-size: 1.75em;
+  font-weight: 700;
+  font-size: 1.8em;
   line-height: 3.75rem;
   color: #101728;
 }
@@ -96,11 +97,15 @@ h1.logo a, a:active, a:hover, a:visited {
 
 a:link, a:visited, a:active {
   text-decoration: none;
-  color: #f37335;
+  color: #ade5e5;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.nav-menu {
+  background-color: #101728;
 }
 
 .right {
@@ -115,19 +120,27 @@ a:hover {
   padding-right: 2em;
 }
 
+.ulnav {
+  list-style-type: none;
+}
+
 @media (min-width: 800px) {
   #nav-wrapper {
-    overflow: hidden;
+    overflow: visible;
   }
   #nav {
-    overflow: hidden;
+    overflow: visible;
     flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
   }
   .nav-link {
     border-top: none;
   }
   .right {
-    overflow: hidden;
+    overflow: visible;
     flex-direction: row;
     justify-content: flex-end;
     position: relative;
@@ -148,35 +161,46 @@ a:hover {
   }
   .nav-link {
     transform: skew(-20deg);
-    color: #777;
-    text-decoration: none;
+    border-style: outset;
+    border-color: #f37335 !important;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
+    margin-bottom: 0.3rem;
+    border-style: outset;
+    border-width: 0.1rem 0rem;
+    background-color: #101728;
   }
-  .nav-link:last-child {
-    padding-right: 3em;
+  .nav-menu {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  .nav-item {
+    transform: skew(-20deg);
+    border-style: outset;
+    border-color: #f37335 !important;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
+    margin-bottom: 0.3rem;
+    background-color: #101728;
+    opacity: 0.95;
+  }
+  .ultimonav {
+    padding-right: 2em;
   }
   a:hover.nav-link:not(.active) {
     color: #000;
     background: #fee140;
     background: linear-gradient(45deg, #f37335, #fee140);
   }
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-  }
-  /* Links inside the dropdown */
-  .dropdown-menu a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {
-    display: block;
+  .nav-item:hover {
+    color: #000;
+    border-color: #000;
+    background: #fee140;
+    background: linear-gradient(45deg, #f37335, #fee140);
   }
 }
 @keyframes logo-hover {

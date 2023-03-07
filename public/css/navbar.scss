@@ -1,8 +1,8 @@
 $color-primary: #f37335;
 $color-secondary: #fee140;
+$color-light: #9da6c9;
+$color-light2: #ade5e5;
 $color-neutral-lt: #101728;
-// $color-neutral-lt2: #9da6c9;
-// $color-neutral-lt3: #ade5e5;
 $color-neutral-med: #fee140;
 $color-neutral-dk: #000;
 $a-tags: "a, a:active, a:hover, a:visited";
@@ -19,6 +19,15 @@ $shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 @mixin shadow-box {
   background-color: $color-neutral-lt;
   box-shadow: $shadow;
+}
+
+@mixin borders {
+  border-style: outset;
+  border-color: $color-primary !important;
+  border-width: 0.2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.48rem);
+  margin-bottom: 0.3rem;
 }
 
 @mixin skew {
@@ -57,7 +66,7 @@ html {
 
 /*-------------Nav-------------*/
 #nav-wrapper {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -82,8 +91,8 @@ html {
 
 .nav {
   display: flex;
-  height: 4em;
-  line-height: 4em;
+  height: 2rem;
+  line-height: 3rem;
   flex-grow: 1;
 }
 
@@ -94,22 +103,23 @@ html {
 
 span.gradient {
   @include main-gradient;
-  padding: 0 1em;
+  padding: 0 1rem;
   position: relative;
-  right: 1em;
+  right: 1rem;
   margin-right: auto;
+  border-radius: 0.3rem;
 
   &:hover {
     animation-name: logo-hover;
-    animation-duration: 0.3s;
+    animation-duration: 0.9s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
   }
 }
 
 h1.logo {
-  font-weight: 300;
-  font-size: 1.75em;
+  font-weight: 700;
+  font-size: 1.8em;
   line-height: 3.75rem;
   color: $color-neutral-lt;
 }
@@ -127,11 +137,16 @@ h1.logo #{$a-tags} {
 
 #{$a-tags-no-hov} {
   text-decoration: none;
-  color: $color-primary;
+  color: $color-light2;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+
+.nav-menu{
+  background-color: $color-neutral-lt;
 }
 
 .right {
@@ -146,14 +161,22 @@ a:hover {
   padding-right: 2em;
 }
 
+.ulnav{
+  list-style-type: none;
+}
+
 @media (min-width: 800px) {
   #nav-wrapper {
-    overflow: hidden;
+    overflow: visible;
   }
 
   #nav {
-    overflow: hidden;
+    overflow: visible;
     flex-direction: row;
+    background-color: rgba(255,255,255,0.0);
+    border-color: rgba(255,255,255,0.0);
+    backdrop-filter: blur(0.48rem);
+
   }
 
   .nav-link {
@@ -161,7 +184,7 @@ a:hover {
   }
 
   .right {
-    overflow: hidden;
+    overflow: visible;
     flex-direction: row;
     justify-content: flex-end;
     position: relative;
@@ -187,12 +210,26 @@ a:hover {
 
   .nav-link {
     @include skew;
-    color: #777;
-    text-decoration: none;
+    @include borders;
+    border-style: outset;
+    border-width: 0.1rem 0rem;
+    background-color: $color-neutral-lt;
+  }
 
-    &:last-child {
-      padding-right: 3em;
-    }
+  .nav-menu{
+    background-color: rgba(255,255,255,0.0);
+    border-color: rgba(255,255,255,0.0);
+  }
+  
+  .nav-item{
+    @include skew;
+    @include borders;
+    background-color: $color-neutral-lt;
+    opacity: 0.95;
+  }
+
+  .ultimonav {
+    padding-right: 2em;
   }
 
   a:hover.nav-link:not(.active) {
@@ -201,25 +238,14 @@ a:hover {
     background: linear-gradient(45deg, $color-primary, $color-secondary);
   }
 
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
+  .nav-item:hover {
+    color: $color-neutral-dk;
+    border-color: $color-neutral-dk;
+    background: $color-neutral-med;
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
   }
-
-  /* Links inside the dropdown */
-  .dropdown-menu a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {display: block;}
 }
+
 
 @keyframes logo-hover {
   20% {

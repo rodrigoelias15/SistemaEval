@@ -5,59 +5,52 @@ Questionário
 @endsection
 
 @section("content")
-<div class="row justify-content-center">
-  <div class="col-sm-8 col-lg-6 col-7 col-md-7">
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-    <div class="logo my-3">
-      <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
-    </div>
 
+<x-panels.content>
+    <x-icons.logo />
 
-    <form method="post" class="form-group">
-      @csrf
-      <div class="form-row">
-        <div class="form-group col-sm-8">
-          <label for="inputNome">Nome do Avaliador</label>
-          <select name="nome_avaliador_questionario" id="inputNome" class="form-control">
-            @foreach ($usuarioavaliador as $usuario)
-            <option value="{{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}">
-              {{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}
-            </option>
-            @endforeach
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-sm-8">
-          <label for="inputItemDigital">Nome do Item Digital</label>
-          <select name="nome_item_digital_questionario" id="inputItemDigital" class="form-control">
-            @foreach ($itemdigital as $item)
-              <option value="{{$item->nome_item_digital}}">
-                {{$item->nome_item_digital}}
+    <x-alert />
+  
+  
+  
+    <x-panels.form>
+      <form method="post" class="form-group">
+        @csrf
+        <div class="form-row">
+          <div class="form-group col-sm-8">
+            <label for="inputNome">Nome do Avaliador</label>
+            <select name="nome_avaliador_questionario" id="inputNome" class="form-control">
+              @foreach ($usuarioavaliador as $usuario)
+              <option value="{{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}">
+                {{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}
               </option>
-            @endforeach
-          </select>
+              @endforeach
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="inputDataAvaliacao">Data da Avaliação</label>
-        <input type="date" class="form-control col-md-6 col-xl-4 col-lg-4 col-6" id="inputDataAvaliacao" name="data_item_digital_questionario">
-      </div>
-      
-      <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary py-2 my-3">Avaliar Item</button>
-      </div>
-    </form>
-    
-  </div>
-</div>
+        <div class="form-row">
+          <div class="form-group col-sm-8">
+            <label for="inputItemDigital">Nome do Item Digital</label>
+            <select name="nome_item_digital_questionario" id="inputItemDigital" class="form-control">
+              @foreach ($itemdigital as $item)
+                <option value="{{$item->nome_item_digital}}">
+                  {{$item->nome_item_digital}}
+                </option>
+              @endforeach
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputDataAvaliacao">Data da Avaliação</label>
+          <input type="date" class="form-control col-md-6 col-xl-4 col-lg-4 col-6" id="inputDataAvaliacao" name="data_item_digital_questionario">
+        </div>
+
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary py-2 my-3">Avaliar Item</button>
+        </div>
+      </form>
+    </x-panels.form>
+</x-panels.content>
+
 
 @endsection
