@@ -81,7 +81,7 @@ html {
   flex-direction: column;
   font-family: $headings-font !important;
   height: 4em;
-  overflow: hidden;
+  overflow: visible;
 
   &.nav-visible {
     height: 100%;
@@ -133,7 +133,9 @@ h1.logo #{$a-tags} {
   text-transform: uppercase;
   text-align: center;
   border-top: 0.5px solid $color-neutral-med;
+  background-color: $color-neutral-lt;
 }
+
 
 #{$a-tags-no-hov} {
   text-decoration: none;
@@ -162,7 +164,10 @@ a:hover {
 }
 
 .ulnav{
+  background-color: $color-neutral-lt;
+  margin-top: 2rem;
   list-style-type: none;
+  justify-content: flex-start;
 }
 
 @media (min-width: 800px) {
@@ -176,6 +181,7 @@ a:hover {
     background-color: rgba(255,255,255,0.0);
     border-color: rgba(255,255,255,0.0);
     backdrop-filter: blur(0.48rem);
+    box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem rgba(0, 0, 0, .2);
 
   }
 
@@ -190,6 +196,11 @@ a:hover {
     position: relative;
     left: 1.5em;
     height: auto;
+  }
+  
+  .ulnav{
+    background-color: rgba(255,255,255,0.0);
+    margin-top: 0rem;
   }
 
   .btn-nav {

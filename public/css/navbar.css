@@ -42,7 +42,7 @@ html {
   flex-direction: column;
   font-family: "Saira Semi Condensed", sans-serif !important;
   height: 4em;
-  overflow: hidden;
+  overflow: visible;
 }
 #nav.nav-visible {
   height: 100%;
@@ -93,6 +93,7 @@ h1.logo a, a:active, a:hover, a:visited {
   text-transform: uppercase;
   text-align: center;
   border-top: 0.5px solid #fee140;
+  background-color: #101728;
 }
 
 a:link, a:visited, a:active {
@@ -121,7 +122,10 @@ a:hover {
 }
 
 .ulnav {
+  background-color: #101728;
+  margin-top: 2rem;
   list-style-type: none;
+  justify-content: flex-start;
 }
 
 @media (min-width: 800px) {
@@ -135,6 +139,7 @@ a:hover {
     border-color: rgba(255, 255, 255, 0);
     -webkit-backdrop-filter: blur(0.48rem);
             backdrop-filter: blur(0.48rem);
+    box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
   }
   .nav-link {
     border-top: none;
@@ -146,6 +151,10 @@ a:hover {
     position: relative;
     left: 1.5em;
     height: auto;
+  }
+  .ulnav {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0rem;
   }
   .btn-nav {
     display: none;

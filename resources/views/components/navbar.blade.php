@@ -10,7 +10,9 @@
             <button id="menu" class="btn-nav" type="button"
                 data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-            ><span class="fas fa-bars"></span></button>
+            >
+                <span class="fas fa-bars"></span>
+            </button>
         </div>
     
         <div class="nav right collapse navbar-collapse" id="navbarNav">
@@ -78,8 +80,16 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right nav-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item nav-item" href="{{route('relatorioOrdenadoNome')}}">Ordenados Por Nome</a></li>
-                        <li><a class="dropdown-item nav-item" href="{{route('relatorioOrdenadoData')}}">Ordenados Por Data</a></li>
+                        <li>
+                            <a class="dropdown-item nav-item" href="{{route('relatorioOrdenadoNome')}}">
+                                <span class="nav-link-span">Por Nome</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item nav-item" href="{{route('relatorioOrdenadoData')}}">
+                                <span class="nav-link-span">Por Data</span>
+                            </a>                        
+                        </li>
                     </ul>
                 </li>
                 <li>
