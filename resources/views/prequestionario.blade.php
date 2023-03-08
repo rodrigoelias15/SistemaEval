@@ -45,9 +45,8 @@ Questionário
           <input type="date" class="form-control col-md-6 col-xl-4 col-lg-4 col-6" id="inputDataAvaliacao" name="data_item_digital_questionario">
         </div>
 
-        <div class="form-group text-center">
-          <button type="submit" class="btn btn-primary py-2 my-3">Avaliar Item</button>
-        </div>
+        <x-button>Avaliar Item</x-button>
+
       </form>
     </x-panels.form>
 </x-panels.content>

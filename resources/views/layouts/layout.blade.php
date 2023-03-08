@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body style='background-image: url(img/background.png); 
@@ -35,6 +36,8 @@
     <div class="container mt-2 mb-2">
         @yield('content')
     </div>
+    <x-footer/>
+
 </body>
 
 </html>

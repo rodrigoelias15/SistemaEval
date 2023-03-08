@@ -13,7 +13,6 @@
         border-radius: 1rem;
         border-style: outset;
         border-color: #F57F17; 
-        
     }
     .botao:hover{
         background-color: #F57F17;

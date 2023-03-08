@@ -1,0 +1,128 @@
+/*-------------Foot-------------*/
+#foot-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  color: #ade5e5;
+}
+
+#foot {
+  background-color: #101728;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Semi Condensed", sans-serif !important;
+  height: 4rem;
+  overflow: visible;
+}
+#foot.foot-visible {
+  height: 100%;
+  overflow: auto;
+}
+
+.foot {
+  display: flex;
+  height: 4rem;
+  line-height: 1rem;
+  flex-grow: 1;
+}
+
+.foot-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient2 {
+  background: #9da6c9;
+  background: linear-gradient(45deg, #9da6c9, #ade5e5);
+  padding: 0 1rem;
+  position: relative;
+  right: 1rem;
+  margin-right: auto;
+  border-radius: 0.3rem;
+}
+
+.foot-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid #fee140;
+  background-color: #101728;
+}
+
+@media (min-width: 800px) {
+  #foot-wrapper {
+    overflow: visible;
+  }
+  #foot {
+    overflow: visible;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
+    box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+  }
+  .foot-link {
+    border-top: none;
+  }
+  .foot a:link.active, a:visited.active, a:active.active {
+    background: #9da6c9;
+    background: linear-gradient(45deg, #9da6c9, #ade5e5);
+    color: #fff;
+  }
+  .foot-link-span {
+    transform: skew(20deg);
+    display: inline-block;
+    font-size: small;
+  }
+  .foot-link {
+    transform: skew(-20deg);
+    border-style: outset;
+    border-color: #f37335 !important;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
+    margin-bottom: 0.3rem;
+    border-style: outset;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+    border-width: 0.1rem 0rem;
+    background-color: #101728;
+  }
+  .foot-item {
+    transform: skew(-20deg);
+    border-style: outset;
+    border-color: #f37335 !important;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(0.48rem);
+            backdrop-filter: blur(0.48rem);
+    margin-bottom: 0.3rem;
+    background-color: #101728;
+    opacity: 0.95;
+  }
+  a:hover.foot-link:not(.active) {
+    color: #000;
+    background: #fee140;
+    background: linear-gradient(45deg, #9da6c9, #ade5e5);
+  }
+  .foot-item:hover {
+    color: #000;
+    border-color: #000;
+    background: #fee140;
+    background: linear-gradient(45deg, #9da6c9, #ade5e5);
+  }
+}
+/* Add animation (fade in the team) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=footer.css.map */
