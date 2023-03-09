@@ -33,57 +33,28 @@
 </style>
 
 @section('content')
+
     <!-- <x-panels.gridcontent /> -->
     <x-panels.gridcontent>
-        
-        <div id="texto_apresentacao" class='popup justify-content-center row class="text-justify' 
-            style="background: url(img/graypanel.png);
-            border-radius: 1.75rem;
-            margin: 0.5rem;
-            border: #ffffff"
-        >   
-            <img id="img_inicial" src="img/questionario.jpeg"
-                style="border-radius: 1.75rem;
-                padding: 0.5rem;"
-            >
-            <section>
-                O Sistema e-VAL tem por objetivo auxiliar instituições, professores e desenvolvedores de itens digitais quanto a seu nível de interatividade, através de um questionário interativo, o sistema calcula a pontuação do item digital que está sendo avaliado, que é mostrado em tempo real.
-                O sistema permite a geração de um relatório com todas as questões respondidas, e caso o usuário deseje, poderá realizar o download do mesmo.
-                <br>
-            </section>
 
-            <button id="close" style="  top: 50%;
-                width: 100%;
-                text-align: center;"
-            >
-                Entendi, vamos começar !
-            </button>
-            
-        </div>
+ 
     </x-panels.gridcontent>
 
     <script>
-        window.addEventListener("load", function(){
-            setTimeout(
-                function open(event){
-                    document.querySelector(".popup").style.display = "block";
-                },
-                1000
-            )
-        });
-        document.querySelector("#close").addEventListener("click", function(){
-            document.querySelector(".popup").style.display = "none";
+        Swal.fire({
+            imageUrl: "img/questionario.jpeg",
+            title: "Boas vindas ao Sistema E-Val!",
+            html:
+                '<p>O <b>Sistema e-VAL</b> tem por objetivo auxiliar instituições, professores e desenvolvedores de itens digitais quanto a seu nível de interatividade.' +
+                'Através de um questionário interativo, o sistema calcula a pontuação do item digital que está sendo avaliado, que é mostrado em tempo real.' +
+                'O sistema permite a geração de um relatório com todas as questões respondidas, e caso o usuário deseje, poderá realizar o download do mesmo.</p>',
+            confirmButtonText: "Entendi, vamos começar !",
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
         });
     </script>
-
-    <!-- <script type='text/javascript'>//<![CDATA[ 
-        window.onload=function(){
-        (function() {
-            var visited = localStorage.getItem('visited');
-            if (!visited) {
-                document.getElementById("texto_apresentacao").style.visibility = "visible";
-                localStorage.setItem('visited', true);
-            }
-        })();
-    }//]]>  -->
 @endsection

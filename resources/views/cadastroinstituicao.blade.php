@@ -9,9 +9,13 @@ Cadastro Instituição
     <x-icons.logo/>
     
     <x-alert />
+    <button data-swal-toast-template="#form-confirmation">
+        Trigger toast
+    </button>
+
 
     <x-panels.form>
-      <form method="post" class="form-group">
+      <form id='instituicaoform' method="post" class="form-group">
         @csrf
         <div class="form-group">
           <label for="inputInstituicao">Nome da Instituição</label>
@@ -74,6 +78,62 @@ Cadastro Instituição
         </x-button>
       </form>
     </x-panels.form>
+
+    <script>
+      $('#instituicaoform').submit(function (e, params) {
+        var localParams = params || {};
+        if (!localParams.send) {
+            e.preventDefault();
+            Swal.fire({
+              template: '#form-confirmation',
+              toast: true,
+              type: "warning",
+              showCancelButton: true,
+            })
+            .then((result) => {
+              if (result['isConfirmed']){
+                $(e.currentTarget).trigger(e.type, { 'send': true });
+
+                // Swal.fire({
+                //   title: "O que deseja a seguir ?",
+                //   showDenyButton: true,
+                //   showCancelButton: true,
+                //   cancelButtonText: 'Continuar Cadastrando',
+                //   confirmButtonText: 'Cadastrar Item',
+                //   denyButtonText: `Página Inicial`,
+                //   toast: true,
+                // })
+                // .then((result) => {
+                //   if (result['isConfirmed']){
+                //       Swal.fire({
+                //       title: "Redirecionando",
+                //       type: "success",
+                //       timer: 1500,
+                //       })
+                //       .then(function() {
+                //         setTimeout(function () {
+                //           window.location.href = "/cadastroitemdigital";
+                //         }, 3000); //will call the function after 2 secs.
+                //       });
+                //   }
+                //   else if (result['isDenied']){
+                //       Swal.fire({
+                //       title: "Redirecionando",
+                //       type: "success",
+                //       timer: 1500,
+                //       })
+                //       .then(function() {
+                //       window.location = "/home";
+                //       });
+                //   }
+                // });
+              } else {
+                //additional run on cancel  functions can be done hear
+              }
+            });
+        }
+      });
+    </script>
 
 </x-panels.content>
 
