@@ -9,7 +9,7 @@ Cadastro de Itens Digitais
 <?php
 
 $grausEscolaridade = [
-    "Ensino Fundamental" => " Ensino Fundamental",
+    "Ensino Fundamental" => "Ensino Fundamental",
     "Ensino Médio" => "Ensino Médio",
     "Ensino Superior" => "Ensino Superior",
 ];
@@ -22,19 +22,17 @@ $grausEscolaridade = [
     
     <x-alerts.success />
     <x-alerts.error />
+    <x-aviso />
 
     <x-panels.form>
         <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
-            <x-aviso>
-                Items com * são obrigatórios
-            </x-aviso>
         
             <h3 class='text-center'>Informações do Item</h3>
             <x-icons.line/>
             <div class="form-group">
                 <label for="inputItemDigital">
-                    *Nome do Item Digital*
+                    Nome do Item Digital*
                 </label>
                 <input class="form-control"
                     type="text"
@@ -47,7 +45,7 @@ $grausEscolaridade = [
             </div>
             <div class="form-group">
                 <label for="inputAreaDisciplina">
-                    *Área/Disciplina*
+                    Área/Disciplina*
                 </label>
                 <input class="form-control"
                     type="text"
@@ -61,7 +59,7 @@ $grausEscolaridade = [
             <div class="form-group form-row">
                 <div class="col-md-7">
                     <div class='mb-2'>
-                        *Grau de Escolaridade*
+                        Grau de Escolaridade*
                     </div>
                     <select class="form-control"
                         name="escolaridade_item_digital"
@@ -84,7 +82,7 @@ $grausEscolaridade = [
             </div>
             <div class="form-group">
                 <label for="campo_descricao_item">
-                    *Descrição do Item*
+                    Descrição do Item*
                 </label>
                 <textarea class="form-control"
                     id="campo_descricao_item"
@@ -126,7 +124,7 @@ $grausEscolaridade = [
             <x-icons.line/>
             <div class="form-group">
                 <label for="inputURL">
-                    *URL do Item*
+                    URL do Item*
                 </label>
                 <input class="form-control"
                     type="text"
@@ -140,7 +138,7 @@ $grausEscolaridade = [
         
             <div class="form-group">
                 <label for="inputPlataforma">
-                    *Plataforma em que o Item Digital está armazenado*
+                    Plataforma em que o Item Digital está armazenado*
                 </label>
                 <input class="form-control"
                     type="text"
@@ -154,7 +152,7 @@ $grausEscolaridade = [
         
             <div class="form-group">
                 <label for="inputInstPlataforma">
-                    *Instituição responsável pela plataforma*
+                    Instituição responsável pela plataforma*
                 </label>
                 <input class="form-control"
                     type="text"
@@ -170,7 +168,7 @@ $grausEscolaridade = [
             <x-icons.line/>
             <div class="form-group">
                 <label for="custom-control-label">
-                    *Item foi utilizado em Avaliação em Larga Escala ?*
+                    Item foi utilizado em Avaliação em Larga Escala ?*
                 </label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">

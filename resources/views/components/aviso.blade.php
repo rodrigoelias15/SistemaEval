@@ -1,21 +1,22 @@
-<style>
-    .aviso {
-        font-size: 0.80rem; 
-        border-radius: 1.5rem;
-        border-style: outset;
-        border-color: #F57F17; 
-        color: #000000;
-        background-color: #FCD34D;
-        padding: 0.3rem; 
-        font-weight: 600; 
-        margin-bottom: 1.0rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-</style>
-
-<div class='center aviso'>
-    {{ $slot }}
-</div>
+<script>
+    @if(!session()->has('mensagem'))
+        Swal.fire({
+            background: "#FCD34D",
+            icon: "info",
+            iconColor: "#101728",
+            color: '#101728',
+            width: '25 rem',
+            title: "Preencha o form a seguir para efetuar o cadastro",
+            html: "<b>As questões com * são obrigatórias de serem respondidas</b>",
+            confirmButtonText: "Entendi, vamos preencher !",
+            confirmButtonColor: "#101728",
+            backdrop: `rgba(0,0,0,0.4)`,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
+    @endif
+</script>

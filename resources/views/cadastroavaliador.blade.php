@@ -10,6 +10,7 @@ Cadastro Avaliador
   
   <x-alerts.success />
   <x-alerts.error />
+  <x-aviso />
 
   <x-panels.form>
     <form id="avaliadorform" method="post" class="form-group">
