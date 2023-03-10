@@ -22,7 +22,7 @@ $grausEscolaridade = [
     
     <x-alerts.success />
     <x-alerts.error />
-    <x-aviso />
+    <x-sweetalerts.info_form />
 
     <x-panels.form>
         <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
@@ -232,16 +232,23 @@ $grausEscolaridade = [
                         @endif
                     </select>
                 </div>
-        
-                <div class="form-group">
-                    <label for="inputAnoAvaliacao">Ano da Avaliação</label>
-                    <input type="text" pattern="\d{4}"
-                        class="form-control col-md-2"
+                <div class="form-row">
+                    <div class="col-sm-6 col-md-6 form-group">
+                        <label for="inputAnoAvaliacao">Ano da Avaliação</label>
+                        <input type="text" pattern="\d{4}"
+                        class="form-control"
                         id="inputAnoAvaliacao"
                         name="ano_item_digital"
-                        value="{{ old('ano_item_digital'), '-' }}"
+                        value="{{ old('ano_item_digital'), '0000' }}"
                         placeholder="Ano"
-                    >
+                        >
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="cadinst_redirect">Cadastrar Instituição</label>
+                        <div class="btn btn-danger form-control" onClick="redirecionaCadastroInst()" id="cadinst_redirect">
+                            Cadastrar Nova <span class="fa fa-plus"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <h3 class='text-center'>Visualização do Item</h3>
@@ -300,6 +307,7 @@ $grausEscolaridade = [
     </x-panels.form>
 
     <x-sweetalerts.redirect_avalitem />
+    <x-sweetalerts.redirect_cadinst />
     <x-sweetalerts.confirmation_form />
 
 </x-panels.content>
