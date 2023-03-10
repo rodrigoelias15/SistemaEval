@@ -6,8 +6,9 @@ Instituições Cadastradas
 
 @section('content')
 
+    <x-alerts.success />
+    <x-alerts.error />
     <x-panels.gridcontent>
-        <x-alert />
         
         @if($instituicaoensino->count() > 1)
             @foreach($instituicaoensino as $instituicao)
