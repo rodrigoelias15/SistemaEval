@@ -9,7 +9,6 @@ Instituições Cadastradas
     <x-alerts.success />
     <x-alerts.error />
     <x-panels.gridcontent>
-        
         @if($instituicaoensino->count() > 1)
             @foreach($instituicaoensino as $instituicao)
                 <x-cards.instituicao

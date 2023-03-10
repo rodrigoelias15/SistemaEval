@@ -40,6 +40,7 @@ $estadosBrasileiros = [
 ];
 
 ?>
+
 <x-panels.content>
     <x-icons.logo/>
     
@@ -134,6 +135,7 @@ $estadosBrasileiros = [
             >
           </div>
         </div>
+
         <x-button>
           Cadastrar
         </x-button>

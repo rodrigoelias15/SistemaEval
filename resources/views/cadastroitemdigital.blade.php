@@ -207,7 +207,7 @@ $grausEscolaridade = [
                         class="form-control"
                         id="inputAvaliacao"
                         name="nome_avaliacao_item_digital"
-                        value="{{ old('nome_avaliacao_item_digital') }}"
+                        value="{{ old('nome_avaliacao_item_digital', '-') }}"
                         placeholder="Digite a Avaliação"
                     >
                 </div>
@@ -235,11 +235,11 @@ $grausEscolaridade = [
         
                 <div class="form-group">
                     <label for="inputAnoAvaliacao">Ano da Avaliação</label>
-                    <input type="text"
+                    <input type="text" pattern="\d{4}"
                         class="form-control col-md-2"
                         id="inputAnoAvaliacao"
                         name="ano_item_digital"
-                        value="{{ old('ano_item_digital') }}"
+                        value="{{ old('ano_item_digital'), '-' }}"
                         placeholder="Ano"
                     >
                 </div>
