@@ -23,6 +23,7 @@ $grausEscolaridade = [
     <x-alerts.success />
     <x-alerts.error />
     <x-sweetalerts.info_form />
+    <x-sweetalerts.info_help />
 
     <x-panels.form>
         <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
@@ -92,7 +93,11 @@ $grausEscolaridade = [
                 >{{{ old('descricao_item_digital') }}}</textarea>
             </div>
             <div class="form-group">
-                <label for="custom-control-label">*O item digital é multidisciplinar ?*</label>
+                <label for="custom-control-label">O item digital é multidisciplinar ?*
+                    <div class="btn btn-danger" onClick="ajudaMultidisciplinar()" id="help_multidisciplinar" style="margin-left:2rem">
+                        <span class="fa fa-question"></span>
+                    </div>
+                </label>
                 <div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input class="custom-control-input"
@@ -239,7 +244,7 @@ $grausEscolaridade = [
                         class="form-control"
                         id="inputAnoAvaliacao"
                         name="ano_item_digital"
-                        value="{{ old('ano_item_digital'), '0000' }}"
+                        value="{{ old('ano_item_digital', '0000') }}"
                         placeholder="Ano"
                         >
                     </div>
