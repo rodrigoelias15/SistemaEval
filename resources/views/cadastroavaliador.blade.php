@@ -217,10 +217,7 @@ $estadosBrasileiros = [
           >
         </div>
       </div>
-
-      <x-button>
-        Cadastrar
-      </x-button>
+      <x-button> Cadastrar </x-button>
     </form>
   </x-panels.form>
 

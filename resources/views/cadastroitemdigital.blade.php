@@ -94,7 +94,8 @@ $grausEscolaridade = [
             </div>
             <div class="form-group">
                 <label for="custom-control-label">O item digital é multidisciplinar ?*
-                    <div class="btn btn-danger" onClick="ajudaMultidisciplinar()" id="help_multidisciplinar" style="margin-left:2rem">
+                    <div class="btn btn-danger" onClick="ajudaMultidisciplinar()" id="help_multidisciplinar" style="margin-left:2rem;
+                        background-image: linear-gradient(45deg, #f37335, #fee140);">
                         <span class="fa fa-question"></span>
                     </div>
                 </label>
@@ -305,9 +306,8 @@ $grausEscolaridade = [
                     });
                 </script>
             {{--  --}}
-            <x-button>
-                Cadastrar item
-            </x-button>
+            
+            <x-button> Cadastrar </x-button>
         </form>
     </x-panels.form>
 

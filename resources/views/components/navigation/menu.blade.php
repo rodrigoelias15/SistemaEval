@@ -1,3 +1,9 @@
+<style>
+    .menubutton {
+        background-image: linear-gradient(45deg, #f37335, #fee140);
+        color: #101728;
+    }
+</style>
 <x-panels.gridcontent>
 
     <x-cards.template>
@@ -15,14 +21,10 @@
 
         <footer>
             <a href="/cadastroitemdigital">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Cadastrar</span>
-                </button>
+                <x-button> Cadastrar </x-button>
             </a>
             <a href="/itemdigital">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Visualizar</span>
-                </button>
+                <x-button> Visualizar </x-button>
             </a>
         </footer>
     </x-cards.template>
@@ -42,14 +44,10 @@
 
         <footer>
             <a href="/cadastroinstituicao">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Cadastrar</span>
-                </button>
+                <x-button> Cadastrar </x-button>
             </a>
             <a href="/exibirinstituicao">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Visualizar</span>
-                </button>
+                <x-button> Visualizar </x-button>
             </a>
         </footer>
     </x-cards.template>
@@ -69,14 +67,10 @@
 
         <footer>
             <a href="/cadastroavaliador">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Cadastrar</span>
-                </button>
+                <x-button> Cadastrar </x-button>
             </a>
             <a href="/avaliador">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Visualizar</span>
-                </button>
+                <x-button> Visualizar </x-button>
             </a>
         </footer>
     </x-cards.template>
@@ -96,14 +90,10 @@
 
         <footer>
             <a href="/prequestionario">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Avaliar</span>
-                </button>
+                <x-button> Avaliar </x-button>
             </a>
             <a href="/cadastroitemdigital">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Cadastre um Item</span>
-                </button>
+                <x-button> Cadastre um item </x-button>
             </a>
         </footer>
     </x-cards.template>
@@ -123,14 +113,10 @@
 
         <footer>
             <a href="/relatorio_ordenado_nome">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Por Nome</span>
-                </button>
+                <x-button> Por Nome </x-button>
             </a>
             <a href="/relatorio_ordenado_data">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Por Data</span>
-                </button>
+                <x-button> Por Data </x-button>
             </a>
         </footer>
     </x-cards.template>
@@ -150,9 +136,7 @@
 
         <footer>
             <a href="/contatoadmin">
-                <button class="btn btn-danger mt-2 px-4" type="submit" style="width:100%">
-                    <span>Fale conosco</span>
-                </button>
+                <x-button> Fale Conosco </x-button>
             </a>
         </footer>
     </x-cards.template>

@@ -75,9 +75,8 @@ Cadastro Usuário Administrador
             <input type="text" class="form-control" id="inputCEP">
           </div>
         </div>
-        <x-button>
-          Cadastrar
-        </x-button>
+        <x-button> Cadastrar </x-button>
+
       </form>
     </x-panels.form>
 

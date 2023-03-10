@@ -26,9 +26,7 @@ Contato
             </div>
         </form>
 
-        <x-button>
-            Enviar
-        </x-button>
+        <x-button> Enviar </x-button>
 
     </x-panels.form>
 

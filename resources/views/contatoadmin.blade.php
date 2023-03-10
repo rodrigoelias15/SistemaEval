@@ -34,9 +34,7 @@ Contato
                 <textarea id="campo_mensagem" class="form-control" name="mensagem"></textarea>
             </div>
         </form>
-        <x-button>
-            Enviar
-        </x-button>
+        <x-button> Enviar </x-button>
     </x-panels.form>
     
     <x-sweetalerts.confirmation_form />

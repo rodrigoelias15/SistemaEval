@@ -1,6 +1,6 @@
 <style>
     .cartao{
-        background-color: rgb(157, 166, 201, 0.2); 
+        background-image: linear-gradient(45deg, rgb(157, 166, 201), rgb(173, 229, 229));
         border-radius: 0.75rem;
         margin-bottom: 1rem;
         backdrop-filter: blur(0.48rem);
