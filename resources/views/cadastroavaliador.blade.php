@@ -87,29 +87,28 @@ $estadosBrasileiros = [
               required
           >
       </div>
-
       <div class="form-group">
-          <label for="inputInstituicao">Instituição do Avaliador</label>
-          <select id="inputInstituicao"
-              class="form-control"
-              name="nome_instituicao"
-          >
-              @if ($existeInstituicao)
-                  @foreach($instituicaoCadastrada as $instituicao)
-                      <option value="{{ $instituicao->nome_instituicao }}"
-                          @if(old('nome_instituicao') == $instituicao->nome_instituicao)
-                              selected
-                          @endif
-                      >
-                          {{$instituicao->nome_instituicao}}
-                      </option>
-                  @endforeach
-              @else
-                  <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
-              @endif
-          </select>
+        <label for="inputInstituicao">Instituição do Avaliador</label>
+        <select id="inputInstituicao"
+            class="form-control"
+            name="instituicao_avaliador"
+        >
+            @if ($existeInstituicao)
+                @foreach($instituicaoCadastrada as $instituicao)
+                    <option value="{{ $instituicao->nome_instituicao }}"
+                        @if(old('instituicao_avaliador') == $instituicao->nome_instituicao)
+                            selected
+                        @endif
+                    >
+                        {{$instituicao->nome_instituicao}}
+                    </option>
+                @endforeach
+            @else
+                <option class="font-italic" selected disabled>Nenhuma Instituição Cadastrada</option>
+            @endif
+        </select>
       </div>
-        
+
       <div class="form-group">
           <label for="inputFormAval">Formação do Avaliador*</label>
           <input type="text"
