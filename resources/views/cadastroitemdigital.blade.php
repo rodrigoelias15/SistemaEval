@@ -20,9 +20,11 @@ $grausEscolaridade = [
 
     <x-icons.logo/>
     
-    <x-alert />
+    <x-alerts.success />
+    <x-alerts.error />
+
     <x-panels.form>
-        <form method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
+        <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
             <x-aviso>
                 Items com * são obrigatórios
@@ -298,6 +300,9 @@ $grausEscolaridade = [
             </x-button>
         </form>
     </x-panels.form>
+
+    <x-sweetalerts.redirect_avalitem />
+    <x-sweetalerts.confirmation_form />
 
 </x-panels.content>
 @endsection

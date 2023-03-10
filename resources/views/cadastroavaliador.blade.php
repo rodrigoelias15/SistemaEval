@@ -8,10 +8,11 @@ Cadastro Avaliador
 <x-panels.content>
   <x-icons.logo/>
   
-  <x-alert />
+  <x-alerts.success />
+  <x-alerts.error />
 
   <x-panels.form>
-    <form method="post" class="form-group">
+    <form id="avaliadorform" method="post" class="form-group">
       @csrf
       <div class="form-row">
         <div class="form-group col-sm-6">
@@ -110,6 +111,10 @@ Cadastro Avaliador
       </x-button>
     </form>
   </x-panels.form>
+
+  <x-sweetalerts.redirect_avalitem />
+  <x-sweetalerts.confirmation_form />
+
 </x-panels.content>
 
 @endsection

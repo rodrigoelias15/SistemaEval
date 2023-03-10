@@ -9,9 +9,8 @@ Questionário
 <x-panels.content>
     <x-icons.logo />
 
-    <x-alert />
-  
-  
+    <x-alerts.success />
+    <x-alerts.error />
   
     <x-panels.form>
       <form method="post" class="form-group">
@@ -49,6 +48,9 @@ Questionário
 
       </form>
     </x-panels.form>
+
+    <x-sweetalerts.confirmation_form />
+
 </x-panels.content>
 
 

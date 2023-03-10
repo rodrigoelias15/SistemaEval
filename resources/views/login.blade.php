@@ -6,21 +6,12 @@ Login
 
 @section("content")
 
-<div class="row justify-content-center">
-    <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
-       @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
-        <div class="logo d-flex my-3">
-            <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
-        </div>
+<x-panels.content>
 
+    <x-alerts.error />
+    <x-icons.logo />
+
+    <x-panels.form>
         <div class="formulario">
             <form method="post">
                 @csrf
@@ -35,7 +26,6 @@ Login
                         <i id="mostrar_senha_icon" class="fas fa-eye mr-2" onclick="mostrarSenha()"></i>
                     </div>
                 </div>
-
                 <script type="text/javascript">
                     function mostrarSenha(){
                         if($('#mostrar_senha_icon').hasClass('fas fa-eye mr-2')){
@@ -47,7 +37,6 @@ Login
                         }
                     };
                 </script>
-
                 <div class="form-group">
                     <input class="btn btn-primary w-100 mt-2" type="submit" value="Entrar">
                     <a href={{route('cadastrar_novo_login')}} class="btn btn-primary w-100 mt-2">Criar Conta</a>
@@ -62,6 +51,7 @@ Login
                 </span>
             </div>
         </div>
-    </div>
-</div>
+    </x-panels.form>
+    
+</x-panels.content>
 @endsection

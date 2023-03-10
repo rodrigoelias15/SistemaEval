@@ -42,12 +42,12 @@
     background-attachment: fixed;
     background-size: 100%'
 >
-    <x-sweettemplates />
-    <x-navbar/>
+    <x-sweetalerts.templates />
+    <x-navigation.navbar/>
     <div class="container mt-2 mb-2">
         @yield('content')
     </div>
-    <x-footer/>
+    <x-navigation.footer/>
 
 </body>
 

@@ -38,6 +38,9 @@ Contato
             Enviar
         </x-button>
     </x-panels.form>
+    
+    <x-sweetalerts.confirmation_form />
+
 </x-panels.content>
 
 @endsection

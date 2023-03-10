@@ -80,6 +80,9 @@ Cadastro Usuário Administrador
         </x-button>
       </form>
     </x-panels.form>
+
+    <x-sweetalerts.confirmation_form />
+
 </x-panels.content>
 
 @endsection
