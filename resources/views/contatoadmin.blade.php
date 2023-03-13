@@ -5,11 +5,10 @@ Contato
 @endsection
 
 @section('content')
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="logo my-3">
-            <img class="img-fluid" src="img/caedlogo.png" alt="Logo Caed">
-        </div>
+<x-panels.content>
+    <x-icons.logo/>
+
+    <x-panels.form>
         <form method="post" class="form-group">
             @csrf
             <div class="form-row">
@@ -35,10 +34,11 @@ Contato
                 <textarea id="campo_mensagem" class="form-control" name="mensagem"></textarea>
             </div>
         </form>
-        <div class="form-group text-right">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-    </div>
-</div>
+        <x-button> Enviar </x-button>
+    </x-panels.form>
+    
+    <x-sweetalerts.confirmation_form />
+
+</x-panels.content>
 
 @endsection

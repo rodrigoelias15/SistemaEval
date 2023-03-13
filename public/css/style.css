@@ -229,8 +229,20 @@ svg{
 
 #texto_apresentacao section, #instrucao_questionario section {
 	padding: 12px;
+	width: 1.7rem;
+	height: 1.7rem;
 }
 
+#texto_apresentacao section {
+	padding: 0.8rem;
+}
+
+#texto_apresentacao {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: row1-start;
+	grid-row-end: 2;
+}
 #img_inicial {
 	max-width: 100%;
 }

@@ -1,0 +1,273 @@
+$color-primary: #f37335;
+$color-secondary: #fee140;
+$color-light: #9da6c9;
+$color-light2: #ade5e5;
+$color-neutral-lt: #101728;
+$color-neutral-med: #fee140;
+$color-neutral-dk: #000;
+$a-tags: "a, a:active, a:hover, a:visited";
+$a-tags-no-hov: "a:link, a:visited, a:active";
+$headings-font: "Saira Semi Condensed", sans-serif;
+$shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+@mixin main-gradient {
+  background: $color-primary;
+  background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary);
+  background: linear-gradient(45deg, $color-primary, $color-secondary);
+}
+
+@mixin shadow-box {
+  background-color: $color-neutral-lt;
+  box-shadow: $shadow;
+}
+
+@mixin borders {
+  border-style: outset;
+  border-color: $color-primary !important;
+  border-width: 0.2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.48rem);
+  margin-bottom: 0.3rem;
+}
+
+@mixin skew {
+  transform: skew(-20deg);
+}
+
+@mixin unskew {
+  transform: skew(20deg);
+}
+
+/*-------------Reset-------------*/
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------Helpers-------------*/
+.skew {
+  @include skew;
+}
+
+.un-skew {
+  @include unskew;
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav {
+  @include shadow-box;
+  display: flex;
+  flex-direction: column;
+  font-family: $headings-font !important;
+  height: 4em;
+  overflow: visible;
+
+  &.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 2rem;
+  line-height: 3rem;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient {
+  @include main-gradient;
+  padding: 0 1rem;
+  position: relative;
+  right: 1rem;
+  margin-right: auto;
+  border-radius: 0.3rem;
+
+  &:hover {
+    animation-name: logo-hover;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+  }
+}
+
+h1.logo {
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 3.75rem;
+  color: $color-neutral-lt;
+}
+
+h1.logo #{$a-tags} {
+  text-decoration: none;
+  color: $color-neutral-lt;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid $color-neutral-med;
+  background-color: $color-neutral-lt;
+}
+
+
+#{$a-tags-no-hov} {
+  text-decoration: none;
+  color: $color-light2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.nav-menu{
+  background-color: $color-neutral-lt;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-nav {
+  color: $color-primary;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.ulnav{
+  background-color: $color-neutral-lt;
+  margin-top: 2rem;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.menubutton{
+  font-family: $headings-font !important;
+  font-size: small;
+}
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: visible;
+  }
+
+  #nav {
+    overflow: visible;
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.0);
+    border-color: rgba(255,255,255,0.0);
+    backdrop-filter: blur(0.48rem);
+    box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem rgba(0, 0, 0, .2);
+
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+
+  .right {
+    overflow: visible;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+  
+  .ulnav{
+    background-color: rgba(255,255,255,0.0);
+    margin-top: 0rem;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .nav #{$a-tags-no-hov} {
+    &.active {
+      @include main-gradient;
+      color: #fff;
+    }
+  }
+
+  .nav-link-span {
+    @include unskew;
+    display: inline-block;
+  }
+
+  .nav-link {
+    @include skew;
+    @include borders;
+    border-style: outset;
+    border-width: 0.1rem 0rem;
+    background-color: $color-neutral-lt;
+  }
+
+  .nav-menu{
+    background-color: rgba(255,255,255,0.0);
+    border-color: rgba(255,255,255,0.0);
+  }
+  
+  .nav-item{
+    @include skew;
+    @include borders;
+    background-color: $color-neutral-lt;
+    opacity: 0.95;
+  }
+
+  .ultimonav {
+    padding-right: 2em;
+  }
+
+  a:hover.nav-link:not(.active) {
+    color: $color-neutral-dk;
+    background: $color-neutral-med;
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
+  }
+
+  .nav-item:hover {
+    color: $color-neutral-dk;
+    border-color: $color-neutral-dk;
+    background: $color-neutral-med;
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
+  }
+}
+
+
+@keyframes logo-hover {
+  20% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}

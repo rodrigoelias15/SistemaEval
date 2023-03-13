@@ -1,0 +1,171 @@
+$color-primary: #f37335;
+$color-secondary: #fee140;
+$color-light: #9da6c9;
+$color-light2: #ade5e5;
+$color-neutral-lt: #101728;
+$color-neutral-med: #fee140;
+$color-neutral-dk: #000;
+$a-tags: "a, a:active, a:hover, a:visited";
+$a-tags-no-hov: "a:link, a:visited, a:active";
+$headings-font: "Saira Semi Condensed", sans-serif;
+$shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+@mixin main-gradient {
+  background: $color-primary;
+  background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary);
+  background: linear-gradient(45deg, $color-primary, $color-secondary);
+}
+
+@mixin main-gradient2 {
+  background: $color-light;
+  background: -webkit-linear-gradient(45deg, $color-light, $color-light2);
+  background: linear-gradient(45deg, $color-light, $color-light2);
+}
+
+@mixin shadow-box {
+  background-color: $color-neutral-lt;
+  box-shadow: $shadow;
+}
+
+@mixin borders {
+  border-style: outset;
+  border-color: $color-primary !important;
+  border-width: 0.2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.48rem);
+  margin-bottom: 0.3rem;
+}
+
+@mixin skew {
+  transform: skew(-20deg);
+}
+
+@mixin unskew {
+  transform: skew(20deg);
+}
+
+/*-------------Foot-------------*/
+#foot-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: -0;
+  left: 0;
+  z-index: 100;
+  color: $color-light2;
+}
+
+#foot {
+  @include shadow-box;
+  display: flex;
+  flex-direction: column;
+  font-family: $headings-font !important;
+  height: 4rem;
+  overflow: visible;
+  &.foot-visible {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+.foot {
+  display: flex;
+  height: 4rem;
+  line-height: 1rem;
+  flex-grow: 1;
+}
+
+.foot-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient2 {
+  @include main-gradient2;
+  padding: 0 1rem;
+  position: relative;
+  right: 1rem;
+  margin-right: auto;
+  border-radius: 0.3rem;
+}
+
+.foot-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid $color-neutral-med;
+  background-color: $color-neutral-lt;
+}
+
+@media (min-width: 800px) {
+  #foot-wrapper {
+    overflow: visible;
+  }
+
+  #foot {
+    overflow: visible;
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.0);
+    border-color: rgba(255,255,255,0.0);
+    backdrop-filter: blur(0.48rem);
+    box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem rgba(0, 0, 0, .2);
+
+  }
+
+  .foot-link {
+    border-top: none;
+  }
+
+  .foot #{$a-tags-no-hov} {
+    &.active {
+      @include main-gradient2;
+      color: #fff;
+    }
+  }
+
+  .foot-link-span {
+    @include unskew;
+    display: inline-block;
+    font-size: small;
+  }
+
+  .foot-link {
+    @include skew;
+    @include borders;
+    border-style: outset;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+    border-width: 0.1rem 0rem;
+    background-color: $color-neutral-lt;
+  }
+  
+  .foot-item{
+    @include skew;
+    @include borders;
+    background-color: $color-neutral-lt;
+    opacity: 0.95;
+  }
+
+  a:hover.foot-link:not(.active) {
+    color: $color-neutral-dk;
+    background: $color-neutral-med;
+    background: linear-gradient(45deg, $color-light, $color-light2);
+  }
+
+  .foot-item:hover {
+    color: $color-neutral-dk;
+    border-color: $color-neutral-dk;
+    background: $color-neutral-med;
+    background: linear-gradient(45deg, $color-light, $color-light2);
+  }
+}
+
+/* Add animation (fade in the team) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
