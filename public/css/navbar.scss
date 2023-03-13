@@ -170,6 +170,11 @@ a:hover {
   justify-content: flex-start;
 }
 
+.menubutton{
+  font-family: $headings-font !important;
+  font-size: small;
+}
+
 @media (min-width: 800px) {
   #nav-wrapper {
     overflow: visible;
