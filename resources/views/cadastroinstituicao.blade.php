@@ -42,11 +42,8 @@ $estadosBrasileiros = [
 ?>
 
 <x-panels.content>
-    <x-icons.logo/>
-    
-    <x-alerts.success />
-    <x-alerts.error />
-    <x-sweetalerts.info_form />
+
+    <x-form_commons />
 
     <x-panels.form>
       <form id='instituicaoform' method="post" class="form-group">
@@ -141,7 +138,6 @@ $estadosBrasileiros = [
     </x-panels.form>
     
     <x-sweetalerts.redirect_caditem />
-    <x-sweetalerts.confirmation_form />
 
 </x-panels.content>
 

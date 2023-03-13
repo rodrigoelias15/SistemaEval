@@ -18,12 +18,7 @@ $grausEscolaridade = [
 
 <x-panels.content>
 
-    <x-icons.logo/>
-    
-    <x-alerts.success />
-    <x-alerts.error />
-    <x-sweetalerts.info_form />
-    <x-sweetalerts.info_help />
+    <x-form_commons />
 
     <x-panels.form>
         <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
@@ -312,8 +307,6 @@ $grausEscolaridade = [
     </x-panels.form>
 
     <x-sweetalerts.redirect_avalitem />
-    <x-sweetalerts.redirect_cadinst />
-    <x-sweetalerts.confirmation_form />
 
 </x-panels.content>
 @endsection

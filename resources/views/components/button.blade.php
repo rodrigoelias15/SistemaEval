@@ -1,6 +1,6 @@
 <style>
     .menubutton {
-        background-image: linear-gradient(45deg, #f37335, #fee140);
+        background-image: linear-gradient(5deg, #f37335, #fee140);
         color: #101728;
         border-radius: 1rem;
     }

@@ -6,7 +6,7 @@
             iconColor: "#101728",
             color: '#101728',
             width: '25 rem',
-            title: "Preencha o form a seguir para efetuar o cadastro",
+            title: "Preencha o formulário a seguir se atentando aos campos",
             html: "<b>As questões com * são obrigatórias de serem respondidas</b>",
             confirmButtonText: "Entendi, vamos preencher !",
             confirmButtonColor: "#101728",

@@ -7,49 +7,89 @@ Questionário
 @section("content")
 
 <x-panels.content>
-    <x-icons.logo />
 
-    <x-alerts.success />
-    <x-alerts.error />
+    <x-form_commons />
   
     <x-panels.form>
       <form method="post" class="form-group">
         @csrf
+
         <div class="form-row">
-          <div class="form-group col-sm-8">
+          <div class="col-sm-6 col-md-6 form-group">
             <label for="inputNome">Nome do Avaliador</label>
-            <select name="nome_avaliador_questionario" id="inputNome" class="form-control">
-              @foreach ($usuarioavaliador as $usuario)
-              <option value="{{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}">
-                {{$usuario->nome_avaliador.' '.$usuario->sobrenome_avaliador}}
-              </option>
-              @endforeach
+            <select id="inputNome"
+                class="form-control"
+                name="nome_avaliador_questionario"
+            >
+                @if ($usuarioavaliador->count() >= 1)
+                    @foreach($usuarioavaliador as $usuario)
+                        <option value="{{ $usuario->nome_avaliador }}"
+                            @if(old('nome_avaliador_questionario') == $usuario->nome_avaliador)
+                                selected
+                            @endif
+                        >
+                            {{$usuario->nome_avaliador}}
+                        </option>
+                    @endforeach
+                @else
+                    <option class="font-italic" selected disabled>Nenhum Avaliador Cadastrado</option>
+                @endif
             </select>
           </div>
+          <div class="col-sm-6 form-group">
+              <label for="cadaval_redirect">Cadastrar Avaliador</label>
+              <div class="btn btn-danger form-control" onClick="redirecionaCadastroAval()" id="cadaval_redirect">
+                  Cadastrar Novo <span class="fa fa-plus"></span>
+              </div>
+          </div>
         </div>
+
         <div class="form-row">
-          <div class="form-group col-sm-8">
+          <div class="col-sm-6 col-md-6 form-group">
             <label for="inputItemDigital">Nome do Item Digital</label>
-            <select name="nome_item_digital_questionario" id="inputItemDigital" class="form-control">
-              @foreach ($itemdigital as $item)
-                <option value="{{$item->nome_item_digital}}">
-                  {{$item->nome_item_digital}}
-                </option>
-              @endforeach
+            <select id="inputItemDigital"
+                class="form-control"
+                name="nome_item_digital_questionario"
+            >
+                @if ($itemdigital->count() >= 1)
+                    @foreach($itemdigital as $item)
+                        <option value="{{ $item->nome_item_digital }}"
+                            @if(old('nome_item_digital_questionario') == $item->nome_item_digital)
+                                selected
+                            @endif
+                        >
+                            {{$item->nome_item_digital}}
+                        </option>
+                    @endforeach
+                @else
+                    <option class="font-italic" selected disabled>Nenhum Item Digital Cadastrado</option>
+                @endif
             </select>
           </div>
+          <div class="col-sm-6 form-group">
+              <label for="caditem_redirect">Cadastrar Item</label>
+              <div class="btn btn-danger form-control" onClick="redirecionaCadastroItem()" id="caditem_redirect">
+                  Cadastrar Novo <span class="fa fa-plus"></span>
+              </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="inputDataAvaliacao">Data da Avaliação</label>
-          <input type="date" class="form-control col-md-6 col-xl-4 col-lg-4 col-6" id="inputDataAvaliacao" name="data_item_digital_questionario">
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="inputDataAvaliacao">Data da Avaliação</label>
+            <input type="date"
+                class="form-control "
+                id="inputDataAvaliacao"
+                name="data_item_digital_questionario"
+                required
+                value="{{ old('data_item_digital_questionario', '') }}">
+          </div>
         </div>
 
         <x-button>Avaliar Item</x-button>
 
       </form>
     </x-panels.form>
-
-    <x-sweetalerts.confirmation_form />
 
 </x-panels.content>
 
