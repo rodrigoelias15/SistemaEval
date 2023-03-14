@@ -63,47 +63,6 @@
 	margin: 15px 0;
 }
 
-.logo_titulo .logo, .logo_titulo .titulo {
-	border: 1px solid black;
-}
-
-.titulo {
-	width: 100%;
-	text-align: center;
-}
-
-@font-face {
-	font-family: "Calibri";
-	src: url("/calibri-font-family/calibri-regular.ttf")
-}
-
-.titulo span {
-	font-weight: bold;
-	font-family: calibri;
-}
-
-@media(min-width: 991px) {
-	.titulo span {
-		font-size: 1.8em;
-	}
-}
-
-@media(min-width:667px) and (max-width: 991px) {
-	.titulo span {
-		font-size: 2.3vw;
-	}
-}
-
-@media(max-width: 667px) {
-	.titulo span {
-		font-size: 0.8em;
-	}
-}
-
-.logo_titulo {
-	margin-top: 50px;
-}
-
 .cabecalho>span {
 	top: 13px;
 	position: relative;
@@ -145,6 +104,10 @@
 		max-height: 100px;
 		width: 30%;
 	}
+	
+	.titulo span {
+		font-size: 1.8em;
+	}
 }
 
 @media(max-width: 991px) {
@@ -154,6 +117,18 @@
 
 	.cadastro_item_digital .logo {
 		max-height: 100px;
+	}
+}
+
+@media(min-width:667px) and (max-width: 991px) {
+	.titulo span {
+		font-size: 2.3vw;
+	}
+}
+
+@media(max-width: 667px) {
+	.titulo span {
+		font-size: 0.8em;
 	}
 }
 
@@ -249,7 +224,7 @@ svg{
 
 #barra {
 	position: sticky;
-	top: 0;
+	top: 5rem;
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out;
 }  
