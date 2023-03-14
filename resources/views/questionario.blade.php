@@ -43,64 +43,24 @@ Questionário de Interatividade
                 </span>
             </div>
         </div>
-<<<<<<< HEAD
- 
-        <div class="row my-2">
-            <span class="col-12">
-                Título do Item: {{$questionario->nome_item_digital_questionario}}
-            </span>
-            <span class="col-12">
-                Nome do Avaliador: {{$questionario->nome_avaliador_questionario}}
-            </span>
-            <span class="col-12">
-                Data da Avaliação: {{ (new DateTime($questionario->data_item_digital_questionario))->format('d/m/Y')}}
-            </span>
-        </div>
-    </div>
-
-    <div class="col-lg-12 my-4">        
-        
-    {{-- Nível de interatividade --}}
-
-    <div id="barra">
-        <div class="progress barra_progresso w-50 mb-2">
-            <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <span id="interatividade" class="justify-content-center row">
-            <p id="count"></p>
-            <p class="pr-3"> Nível de Interatividade: </p>
-            <p id="nivel_interatividade" class="font-weight-bold"></p>
-        </span>
-    </div>
-
-    {{-- ---------------------------------- --}}
-   
-        @if ($errors->any())
-        <div class="d-flex justify-content-center">
-            <div class="alert alert-danger text-center col-md-6">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-=======
     
         <div class="col-lg-12 my-4">
     
-        {{-- Nível de interatividade --}}
-    
-            <div class="progress barra_progresso w-50 mb-2">
-                <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
->>>>>>> alexandre
+            {{-- Nível de interatividade --}}
+
+            <div id="barra" class="transparencia">
+                <div class="progress barra_progresso w-50 mb-2">
+                    <div id="myBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
+                <span id="interatividade" class="justify-content-center row">
+                    <p id="count"></p>
+                    <p class="pr-3"> Nível de Interatividade: </p>
+                    <p id="nivel_interatividade" class="font-weight-bold"></p>
+                </span>
             </div>
-    
-            <span id="interatividade" class="justify-content-center row">
-                <p id="count"></p>
-                <p class="pr-3"> Nível de Interatividade: </p>
-                <p id="nivel_interatividade" class="font-weight-bold"></p>
-            </span>
-    
-        {{-- ---------------------------------- --}}
+        
+            {{-- ---------------------------------- --}}
     
             <x-alerts.error />
     
