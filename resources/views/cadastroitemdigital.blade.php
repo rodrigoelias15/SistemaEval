@@ -101,6 +101,7 @@ $grausEscolaridade = [
                             id="customRadio3"
                             name="item_multidisciplinar"
                             value="Sim"
+                            required
                             {{ old('item_multidisciplinar') == "Sim" ? 'checked' : '' }}
                         >
                         <label class="custom-control-label"
@@ -178,6 +179,7 @@ $grausEscolaridade = [
                             id="customRadio1"
                             name="item_utilizado_larga_escala"
                             value="Não"
+                            required
                         >
                         <label class="custom-control-label"
                             for="customRadio1"
