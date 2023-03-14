@@ -7,4 +7,12 @@
             iconColor: "blue",
         });
     }
+    function ajudaQuestionario(){
+        Swal.fire({
+            title: "Precisa de ajuda ?",
+            text: "$texto",
+            icon: "question",
+            iconColor: "green",
+        });
+    }
 </script>
