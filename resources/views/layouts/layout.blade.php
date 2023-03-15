@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <!--customCSS-->
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="{{asset('css/navbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
 </head>
 
 <body style='background-image: url(img/background.png); 

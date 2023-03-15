@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('titulo_pagina')
-Teste de Cadastrado
+Avaliadores Cadastrados
 @endsection
 
 @section('content')

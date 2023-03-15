@@ -50,6 +50,7 @@ Route::controller(MainController::class)->group(function(){
     Route::get('/avaliador', 'exibirAvaliador')->name('exibir_avaliador');
     Route::post('/cadastroavaliador', 'cadastrarAvaliador');
     Route::post('/avaliador/remover/{id}', 'excluirAvaliador');
+    Route::get('/avaliador/editar/{id}', 'editarAvaliador')->name('editaravaliador');
     
     // Cadastro Itens Digitais
     Route::get('/cadastroitemdigital', 'exibirPaginaCadastroItemDigital')->name('cadastro_itemdigital');
