@@ -75,6 +75,14 @@ class MainController extends Controller
         return redirect()->back()->with('mensagem', 'Avaliador cadastrado com sucesso!');
     }
     
+    public function editarAvaliador($id)
+    {
+        $usuarioAvaliador = UsuarioAvaliador::findOrFail($id);
+        $existeInstituicao = DB::table('instituicao')->whereNotNull('id')->exists();
+        $instituicaoCadastrada = Instituicao::all();
+        return view('editaravaliador', ['usuarioAvaliador' => $usuarioAvaliador], compact('usuarioAvaliador', 'existeInstituicao', 'instituicaoCadastrada'));
+    }
+
     public function exibirAvaliador()
     {
         $usuarioAvaliador = UsuarioAvaliador::all();
