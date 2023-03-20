@@ -19,6 +19,13 @@
         <div class="nav right collapse navbar-collapse" id="navbarNav">
             
             <ul class="navbar ulnav">
+                <li>
+                    <a class="nav-link" href="{{route('tutorial')}}">
+                        <span class="nav-link-span">
+                            <span class="u-nav">Tutorial</span>
+                        </span>
+                    </a>
+                </li>
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" type="button" data-toggle="dropdown">
                         <span class="nav-link-span">
