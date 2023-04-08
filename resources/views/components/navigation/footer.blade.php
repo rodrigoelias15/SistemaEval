@@ -28,8 +28,7 @@
         <div class="foot left team" onmouseover="revealPopup()">
             <span class="gradient2 skew">
                 <h1 class="logo un-skew">
-                    <a href="/contatoadmin" onmouseover="revealPopup()" >Equipe
-                    </a>
+                    <span>Equipe</span>
                     <span class="fa fa-people-group"></span>
                 </h1>
                 <span class="teamtext un-skew" id="myteam">
