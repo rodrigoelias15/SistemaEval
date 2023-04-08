@@ -567,7 +567,7 @@ Questionário de Interatividade
                 <textarea id="campo_observacao" name="observacao" rows="5" cols="33" placeholder="Observações"></textarea>
                 <div class="notas_rodape">
                     <b>Nota de Rodapé:</b>
-                    <p> e-Val: Avaliação da interatividade em itens digitais
+                    <p> e-VAL: Avaliação da interatividade em itens digitais
                         Pesquisadoras: Dra. Liamara Scortegagna (UFJF) e Dra. Adriana Bruno (UNIRIO).
                         Projeto de pesquisa: Itens digitais e interativos em e-Avaliação de larga escala: processos cognitivos, estratégias e produtos didáticos na relação entre meio impresso e meio digital (2020/2021).
                         Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).

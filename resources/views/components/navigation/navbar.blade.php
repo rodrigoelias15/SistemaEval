@@ -3,7 +3,7 @@
         <div class="nav left">
             <span class="gradient skew">
                 <h1 class="logo un-skew">
-                    <a href="/home">Sistema E-VAL</a>
+                    <a href="/home">Sistema e-VAL</a>
                     <span class="fa-solid fa-cube"></span>
                 </h1>
             </span>
