@@ -4,6 +4,8 @@
 
     <h1 class="text-center mt-4">Visualização do relatório</h1><br>
 
+    <x-icons.logo />
+
     <div class="mb-4">
         <p><span class="cabecalho"> Título do Item: </span> {{$questionario->nome_item_digital_questionario}} </p>
         <p><span class="cabecalho"> Nome do Avaliador: </span> {{$questionario->nome_avaliador_questionario}} </p>
