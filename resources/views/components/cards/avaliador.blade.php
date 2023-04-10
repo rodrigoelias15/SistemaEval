@@ -9,7 +9,7 @@
             </h1>
             <span class="mt-2 block text-gray-400 text-xs">
                 <i class="fa fa-house"></i>
-                {{$avaliador->cidade_avaliador}}, {{$avaliador->estado_avaliador}}, {{$avaliador->pais_avaliador}}, {{$avaliador->cep_avaliador}}
+                {{$avaliador->cep_avaliador}}, {{$avaliador->pais_avaliador}}, {{$avaliador->estado_avaliador}}, {{$avaliador->cidade_avaliador}}
                 <br/>
             </span>
             <span class="mt-2 block text-gray-400 text-xs">

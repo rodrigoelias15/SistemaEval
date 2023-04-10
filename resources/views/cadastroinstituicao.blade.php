@@ -60,31 +60,32 @@ $estadosBrasileiros = [
             >
         </div>
 
-        <div class="form-group">
-            <label for="inputEndereco">Logradouro*</label>
+        <div class="form-group form-row">
+          <div class="col-sm-6 col-md-6">
+            <label for="inputCEP">CEP*</label>
             <input type="text"
                 class="form-control"
-                id="inputEndereco"
-                name="endereco_instituicao"
-                value="{{ old('endereco_instituicao') }}"
-                placeholder="Rua 123, Bairro XYZ"
+                id="inputCEP"
+                name="cep_instituicao"
+                value="{{ old('cep_instituicao') }}"
+                placeholder="Insira o CEP"
                 required
             >
-        </div>  
-
-        <div class="form-group">
-            <label for="inputCidade">Cidade*</label>
-            <input type="text"
-                class="form-control"
-                id="inputCidade"
-                name="cidade_instituicao"
-                value="{{ old('cidade_instituicao') }}"
-                placeholder="Insira a cidade"
-                required
-            >
+          </div>
         </div>
 
         <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="inputPais">País*</label>
+            <input type="text"
+                class="form-control"
+                id="inputPais"
+                name="pais_instituicao"
+                value="{{ old('pais_instituicao') }}"
+                placeholder="Insira o país"
+                required
+            >
+          </div>
           <div class="col-sm-6 form-group">
             <div class='mb-2'>
                 Estado*
@@ -107,36 +108,36 @@ $estadosBrasileiros = [
               @endforeach
             </select>
           </div>
-          <div class="form-group col-sm-6">
-            <label for="inputPais">País*</label>
-            <input type="text"
-                class="form-control"
-                id="inputPais"
-                name="pais_instituicao"
-                value="{{ old('pais_instituicao') }}"
-                placeholder="Insira o país"
-                required
-            >
-          </div>
         </div>
-        <div class="form-group form-row">
-          <div class="col-sm-6 col-md-6">
-            <label for="inputCEP">CEP*</label>
-            <input type="text"
-                class="form-control"
-                id="inputCEP"
-                name="cep_instituicao"
-                value="{{ old('cep_instituicao') }}"
-                placeholder="Insira o CEP"
-                required
-            >
-          </div>
+
+        <div class="form-group">
+          <label for="inputCidade">Cidade*</label>
+          <input type="text"
+              class="form-control"
+              id="inputCidade"
+              name="cidade_instituicao"
+              value="{{ old('cidade_instituicao') }}"
+              placeholder="Insira a cidade"
+              required
+          >
         </div>
+
+        <div class="form-group">
+          <label for="inputEndereco">Logradouro*</label>
+          <input type="text"
+              class="form-control"
+              id="inputEndereco"
+              name="endereco_instituicao"
+              value="{{ old('endereco_instituicao') }}"
+              placeholder="Rua 123, Bairro XYZ"
+              required
+          >
+      </div>
 
         <x-button> Cadastrar </x-button>
       </form>
     </x-panels.form>
-    
+
     <x-sweetalerts.redirect_caditem />
 
 </x-panels.content>

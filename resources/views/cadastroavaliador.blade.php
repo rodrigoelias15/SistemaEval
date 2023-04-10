@@ -124,7 +124,7 @@ $estadosBrasileiros = [
                 placeholder="Insira a formação"
                 required
             >
-        </div>  
+        </div>
 
         <div class="form-group">
             <label for="inputOcupAval">Ocupação do Avaliador*</label>
@@ -136,7 +136,7 @@ $estadosBrasileiros = [
                 placeholder="Insira a ocupação"
                 required
             >
-        </div>  
+        </div>
 
         <div class="form-group">
             <label for="inputAreaAtuacao">Área de Atuação*</label>
@@ -148,33 +148,34 @@ $estadosBrasileiros = [
                 placeholder="Matemática Aplicada, Ciências da Terra"
                 required
             >
-        </div>  
+        </div>
 
-        <div class="form-group">
-            <label for="inputEndereco">Logradouro do Avaliador*</label>
+        <div class="form-group form-row">
+            <div class="col-sm-6 col-md-6">
+            <label for="inputCEP">CEP do Avaliador*</label>
             <input type="text"
                 class="form-control"
-                id="inputEndereco"
-                name="endereco_avaliador"
-                value="{{ old('endereco_avaliador') }}"
-                placeholder="Rua 123, Bairro XYZ"
+                id="inputCEP"
+                name="cep_avaliador"
+                value="{{ old('cep_avaliador') }}"
+                placeholder="Insira o CEP"
                 required
             >
-        </div>  
-
-        <div class="form-group">
-            <label for="inputCidade">Cidade do Avaliador*</label>
-            <input type="text"
-                class="form-control"
-                id="inputCidade"
-                name="cidade_avaliador"
-                value="{{ old('cidade_avaliador') }}"
-                placeholder="Insira a cidade"
-                required
-            >
+            </div>
         </div>
 
         <div class="form-row">
+            <div class="form-group col-sm-6">
+            <label for="inputPais">País do Avaliador*</label>
+            <input type="text"
+                class="form-control"
+                id="inputPais"
+                name="pais_avaliador"
+                value="{{ old('pais_avaliador') }}"
+                placeholder="Insira o país"
+                required
+            >
+            </div>
             <div class="col-sm-6 form-group">
             <div class='mb-2'>
                 Estado do Avaliador*
@@ -197,31 +198,32 @@ $estadosBrasileiros = [
                 @endforeach
             </select>
             </div>
-            <div class="form-group col-sm-6">
-            <label for="inputPais">País do Avaliador*</label>
+        </div>
+
+        <div class="form-group">
+            <label for="inputCidade">Cidade do Avaliador*</label>
             <input type="text"
                 class="form-control"
-                id="inputPais"
-                name="pais_avaliador"
-                value="{{ old('pais_avaliador') }}"
-                placeholder="Insira o país"
+                id="inputCidade"
+                name="cidade_avaliador"
+                value="{{ old('cidade_avaliador') }}"
+                placeholder="Insira a cidade"
                 required
             >
-            </div>
         </div>
-        <div class="form-group form-row">
-            <div class="col-sm-6 col-md-6">
-            <label for="inputCEP">CEP do Avaliador*</label>
+
+        <div class="form-group">
+            <label for="inputEndereco">Logradouro do Avaliador*</label>
             <input type="text"
                 class="form-control"
-                id="inputCEP"
-                name="cep_avaliador"
-                value="{{ old('cep_avaliador') }}"
-                placeholder="Insira o CEP"
+                id="inputEndereco"
+                name="endereco_avaliador"
+                value="{{ old('endereco_avaliador') }}"
+                placeholder="Rua 123, Bairro XYZ"
                 required
             >
-            </div>
         </div>
+
         <x-button> Cadastrar </x-button>
         </form>
     </x-panels.form>

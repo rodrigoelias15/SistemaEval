@@ -62,7 +62,7 @@
         </header>
 
         <div class="card-body text-sm mt-2 space-y-4">
-            <p>Cadastre e administre seus <strong>avaliadores</strong></p>
+            <p>Cadastre e visualize seus <strong>avaliadores</strong></p>
         </div>
 
         <footer>
@@ -141,6 +141,6 @@
         </footer>
     </x-cards.template>
 
-    
+
 </x-panels.gridcontent>
 
