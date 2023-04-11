@@ -42,7 +42,7 @@ Login
                     <a href={{route('cadastrar_novo_login')}} class="btn btn-primary w-100 mt-2">Criar Conta</a>
                 </div>
                 <div class="form-group">
-                    <a href="#" target="_blank">Esqueci minha senha</a>
+                    <a href="/password/reset" target="_blank">Esqueci minha senha</a>
                 </div>
             </form>
             <div class="text-right" style="font-style: italic; font-size: 14px">
