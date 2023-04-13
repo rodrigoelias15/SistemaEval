@@ -219,39 +219,6 @@
         "_comment": "Questão 13, Mensagem C"
     },
 
-    "q14mq": {
-        "message": "Tanto o enunciado quanto as respostas se voltam para ações coletivas e/ou colaborativas, que podem se dar em parcerias entre usuários ou entre usuário(s) e recursos hipermidiáticos. Para tal, cria, por exemplo, problemas (casos) que precisam ser resolvidos em parceria com outros usuários ou por meio de pistas encontradas na web.",
-        "_comment": "Questão 14, Mensagem Questão"
-    },
-    "q14ma": {
-        "message": "Esta opção focaliza resoluções individuais e sem consultas. Tem o objetivo de testar conhecimentos sem que sejam realizadas ações colaborativas de qualquer espécie ou mesmo de pesquisa.",
-        "_comment": "Questão 14, Mensagem A"
-    },
-    "q14mb": {
-        "message": "Ainda que apresente ações que promovam acesso a recursos na web, o faz de forma limitada e/ou controlada. Por exemplo, usando consultas a banco de webdados, intranet etc. (a ideia de intranet se volta a avaliações cujo controle para internet seja vedado). Entretanto, estão descartadas as ações coletivas e/ou colaborativas.",
-        "_comment": "Questão 14, Mensagem B"
-    },
-    "q14mc": {
-        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, tem o objetivo de criar situações para que usuários trabalhem de forma coletiva e colaborativa. Para tal, instiga (ou abre) também para a utilização de recursos hipermidiáticos disponíveis via web.",
-        "_comment": "Questão 14, Mensagem C"
-    },
-
-    "q15mq": {
-        "message": "Tanto o enunciado quanto as respostas se voltam para ações coletivas e/ou colaborativas, que podem se dar em parcerias entre usuários ou entre usuário(s) e recursos hipermidiáticos. Para tal, cria, por exemplo, problemas (casos) que precisam ser resolvidos em parceria com outros usuários ou por meio de pistas encontradas na web.",
-        "_comment": "Questão 15, Mensagem Questão"
-    },
-    "q15ma": {
-        "message": "Esta opção focaliza resoluções individuais e sem consultas. Tem o objetivo de testar conhecimentos sem que sejam realizadas ações colaborativas de qualquer espécie ou mesmo de pesquisa.",
-        "_comment": "Questão 15, Mensagem A"
-    },
-    "q15mb": {
-        "message": "Ainda que apresente ações que promovam acesso a recursos na web, o faz de forma limitada e/ou controlada. Por exemplo, usando consultas a banco de webdados, intranet etc. (a ideia de intranet se volta a avaliações cujo controle para internet seja vedado). Entretanto, estão descartadas as ações coletivas e/ou colaborativas.",
-        "_comment": "Questão 15, Mensagem B"
-    },
-    "q15mc": {
-        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, tem o objetivo de criar situações para que usuários trabalhem de forma coletiva e colaborativa. Para tal, instiga (ou abre) também para a utilização de recursos hipermidiáticos disponíveis via web.",
-        "_comment": "Questão 15, Mensagem C"
-    },
     "rodape": {
         "message": "e-VAL: Avaliação da interatividade em itens digitais. Pesquisadoras: Dra. Liamara Scortegagna (UFJF) e Dra. Adriana Bruno (UNIRIO). Projeto de pesquisa: Itens digitais e interativos em e-Avaliação de larga escala: processos cognitivos, estratégias e produtos didáticos na relação entre meio impresso e meio digital (2020/2021). Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).",
         "_comment": "Nota de Rodapé"

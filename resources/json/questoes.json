@@ -1,0 +1,209 @@
+{
+    "Q1A": {
+        "id": "indicador1a",
+        "question": "Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais",
+        "_comment": "Questão 1 A"
+    },
+    "Q1B": {
+        "id": "indicador1b",
+        "question": "Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação.",
+        "_comment": "Questão 1 B"
+    },
+    "Q1C": {
+        "id": "indicador1c",
+        "question": "Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais.",
+        "_comment": "Questão 1 C"
+    },
+
+    "Q2A": {
+        "id": "indicador2a",
+        "question": "Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.",
+        "_comment": "Questão 2 A"
+    },
+    "Q2B": {
+        "id": "indicador2b",
+        "question": "Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen",
+        "_comment": "Questão 2 B"
+    },
+    "Q2C": {
+        "id": "indicador2c",
+        "question": "Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.",
+        "_comment": "Questão 2 C"
+    },
+
+    "Q3A": {
+        "id": "indicador3a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 3 A"
+    },
+    "Q3B": {
+        "id": "indicador3b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 3 B"
+    },
+    "Q3C": {
+        "id": "indicador3c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 3 C"
+    },
+
+    "Q4A": {
+        "id": "indicador4a",
+        "question": "Apresenta ações em textos e/ou elementos gráficos estáticos 'sem' determinação de tempo para execução.",
+        "_comment": "Questão 4 A"
+    },
+    "Q4B": {
+        "id": "indicador4b",
+        "question": "Apresenta ações em mídias como vídeos, vídeos interativos e animações 'sem' determinação de tempo para execução.",
+        "_comment": "Questão 4 B"
+    },
+    "Q4C": {
+        "id": "indicador4c",
+        "question": "Apresenta ações em mídias como vídeos, vídeos interativos, animações, simuladores etc, &quot;com&quot; determinação de tempo para execução.",
+        "_comment": "Questão 4 C"
+    },
+
+    "Q5A": {
+        "id": "indicador5a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 5 A"
+    },
+    "Q5B": {
+        "id": "indicador5b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 5 B"
+    },
+    "Q5C": {
+        "id": "indicador5c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 5 C"
+    },
+
+    "Q6A": {
+        "id": "indicador6a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 6 A"
+    },
+    "Q6B": {
+        "id": "indicador6b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 6 B"
+    },
+    "Q6C": {
+        "id": "indicador6c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 6 C"
+    },
+
+    "Q7A": {
+        "id": "indicador7a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 7 A"
+    },
+    "Q7B": {
+        "id": "indicador7b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 7 B"
+    },
+    "Q7C": {
+        "id": "indicador7c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 7 C"
+    },
+
+    "Q8A": {
+        "id": "indicador8a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 8 A"
+    },
+    "Q8B": {
+        "id": "indicador8b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 8 B"
+    },
+    "Q8C": {
+        "id": "indicador8c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 8 C"
+    },
+
+    "Q9A": {
+        "id": "indicador9a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 9 A"
+    },
+    "Q9B": {
+        "id": "indicador9b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 9 B"
+    },
+    "Q9C": {
+        "id": "indicador9c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 9 C"
+    },
+
+    "Q10A": {
+        "id": "indicador10a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 10 A"
+    },
+    "Q10B": {
+        "id": "indicador10b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 10 B"
+    },
+    "Q10C": {
+        "id": "indicador10c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 10 C"
+    },
+
+    "Q11A": {
+        "id": "indicador11a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 11 A"
+    },
+    "Q11B": {
+        "id": "indicador11b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 11 B"
+    },
+    "Q11C": {
+        "id": "indicador11c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 11 C"
+    },
+
+    "Q12A": {
+        "id": "indicador12a",
+        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "_comment": "Questão 12 A"
+    },
+    "Q12B": {
+        "id": "indicador12b",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "_comment": "Questão 12 B"
+    },
+    "Q12C": {
+        "id": "indicador12c",
+        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "_comment": "Questão 12 C"
+    },
+
+    "Q13A": {
+        "id": "indicador13a",
+        "question": "O enunciado e respostas não consideram ações do usuário em múltiplas direções, ou seja, há predomínio da unilateralidade do item, sem possibilitar ou mesmo atentar para múltiplos formatos e/ou com diversas mídias e recursos. Só há um caminho, um formato, uma possibilidade.",
+        "_comment": "Questão 13 A"
+    },
+    "Q13B": {
+        "id": "indicador13b",
+        "question": "O enunciado e as respostas promovem ações do usuário em direções específicas e direcionadas. Há certa flexibilidade ao se considerar que há mais do que um caminho, mas há restrições. Há controle, ainda que se integre mais do que uma mídia, recurso e formato.",
+        "_comment": "Questão 13 B"
+    },
+    "Q13C": {
+        "id": "indicador13c",
+        "question": "O enunciado e as respostas promovem ações do usuário em múltiplas direções porque compreende-se que os múltiplos formatos, com diversas mídias e recursos, precisam estar presentes para que se resolva questões e problemas.",
+        "_comment": "Questão 13 C"
+    }
+}
