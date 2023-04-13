@@ -3,8 +3,9 @@
     'name' => '',
     'value' => ''
 ])
+
 <div class="form-group form-check">
-    <input class="form-check-input"
+    <input class="form-check-input radio-input"
         type="radio"
         required onclick="exibeNivelInteratividade()"
         id= {{ $id }}

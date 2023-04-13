@@ -23,7 +23,7 @@ $grausEscolaridade = [
     <x-panels.form>
         <form id="itemform" method="post" class="form-group" action="{{route('cadastrar_item_digital')}}" enctype="multipart/form-data">
             @csrf
-        
+
             <h3 class='text-center'>Informações do Item</h3>
             <x-icons.line/>
             <div class="form-group">
@@ -90,7 +90,7 @@ $grausEscolaridade = [
             <div class="form-group">
                 <label for="custom-control-label">O item digital é multidisciplinar ?*
                     <div class="btn btn-danger" onClick="ajudaMultidisciplinar()" id="help_multidisciplinar" style="margin-left:2rem;
-                        background-image: linear-gradient(45deg, #f37335, #fee140); color: #000">
+                        background-image: linear-gradient(to bottom, #ffffff, #d6e7ea); color: #000">
                         <span class="fa fa-question"></span>
                     </div>
                 </label>
@@ -137,7 +137,7 @@ $grausEscolaridade = [
                     required
                 >
             </div>
-        
+
             <div class="form-group">
                 <label for="inputPlataforma">
                     Plataforma em que o Item Digital está armazenado*
@@ -151,7 +151,7 @@ $grausEscolaridade = [
                     required
                 >
             </div>
-        
+
             <div class="form-group">
                 <label for="inputInstPlataforma">
                     Instituição responsável pela plataforma*
@@ -165,7 +165,7 @@ $grausEscolaridade = [
                     required
                 >
             </div>
-        
+
             <h3 class='text-center'>Informações de Avaliação</h3>
             <x-icons.line/>
             <div class="form-group">
@@ -198,10 +198,10 @@ $grausEscolaridade = [
                     </div>
                 </div>
             </div>
-        
+
             <div id='hiddenform' style='display:none'>
                 <h5 class='text-center mb-4'>Forneça mais informações</h5>
-        
+
                 <div class="form-group">
                     <label for="inputAvaliacao">
                         Nome da Avaliação em que o Item foi utilizado
@@ -268,12 +268,12 @@ $grausEscolaridade = [
                     </div>
                 </div>
             </div>
-        
+
             <div id="image_preview" class="form-group" style="display: none">
                 <img id="preview-image-before-upload" class="img-fluid" src="https://www.riobeauty.co.uk/images/product_image_not_found.gif" alt="Prévia da Imagem do Item Digital" title="Imagem do Item Digital" style="max-height: 250px">
             </div>
             {{-- Scripts --}}
-        
+
                 <script>
                     function exibeImagem() {
                         $('#image_preview').show();
@@ -303,7 +303,7 @@ $grausEscolaridade = [
                     });
                 </script>
             {{--  --}}
-            
+
             <x-button> Cadastrar </x-button>
         </form>
     </x-panels.form>
