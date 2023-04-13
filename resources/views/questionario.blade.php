@@ -42,9 +42,7 @@ Questionário de Interatividade
                 @csrf
                 <section class="form-group">
                     <span>Indicador 1: Textos e elementos gráficos</span>
-                        <x-icons.question
-                            texto="O texto é composto por um conjunto de palavras que ajudam a fornecer aos alunos a quantidade certa de informações, ou seja, são as “interações” em forma de verbos (ação), que quando utilizadas de forma isolada ou com algum elemento gráfico (imagens, figuras, fotos etc), - ambos na forma estática - e/ou com sons e/ou vídeos, a interatividade é considerada baixa. Porém, quando combinadas com outros elementos gráficos, como, imagens (figuras, fotos etc) dinâmicas ou tipografias dinâmicas (mistura de técnicas de animação com texto e/ou imagens, que resultam em vídeos) ou ainda, vídeos e sons interativos (que permitem a interação do usuário), animações e simulações, o nível de interatividade aumenta consideravelmente."
-                        />
+                        <x-icons.question/>
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade">
                         <legend>Critérios:</legend>
@@ -52,10 +50,7 @@ Questionário de Interatividade
                             <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." required onclick="exibeNivelInteratividade()" >
                             <label class="form-check-label" for="indicador1a">
                                 Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais.
-
-                                <x-svg-tooltip message="Textos e/ou elementos gráficos (imagens, figuras, fotos etc) estáticos: que não possuem movimento.
-                                {{-- Por exemplo: uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva. --}}
-                                " color='green'/>
+                                <x-svg-tooltip message="a" color='green'/>
                             </label>
                         </div>
 
@@ -63,9 +58,7 @@ Questionário de Interatividade
                             <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador1b">
                                 Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação.
-                                <i title="Elementos gráficos (imagens, figuras, fotos etc) dinâmicos ou tipografias dinâmicas: mistura de técnicas de animação com texto e/ou imagens, que resultam em vídeos - (Obs: dinâmica envolve movimentos, animações). Vídeos interativos: permite que o usuário se envolva ativamente com o conteúdo que vê. Eles contêm elementos clicáveis que levam o usuário para outra parte do vídeo ou para outra página da web.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -73,9 +66,7 @@ Questionário de Interatividade
                             <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador1c">
                                 Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais.
-                                <i title="Vídeos interativos: permite que o usuário se envolva ativamente com o conteúdo que vê. Eles contêm elementos clicáveis que levam o usuário para outra parte do vídeo ou para outra página da web. Animações: sequência de imagens em movimento que devem estar conjuntamente com algum tipo de simulação - o usuário deve participar com algum tipo de ação de simulação. Simulação: técnica utilizada para testar, criar e experimentar ideias, conceitos e produtos no mundo virtual para aplicá-los em situações reais">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
                     </fieldset>
@@ -83,9 +74,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 2: Espaço/meio de interação</span>
-                    <i title="Refere-se ao meio/espaço com o qual, ou dentro do qual, os alunos interagem com o item - por exemplo, um notebook/computador via mouse um smartphone ou telas touch screen através dos dedos ou canetas específicas conseguem interagir com o item digital. Apresentam ações e comandos tecnológicos que podem ser inseridos juntamente com os elementos “palavras” como: clicar, selecionar e arrastar, manipular, desenhar etc, e desta forma, transformam um simples texto ou imagem estática em ações interativas.">
-                        {{-- <x-icons.question /> --}}
-                    </i>
+                    {{-- <x-icons.question /> --}}
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade">
                         <legend>Critérios:</legend>
@@ -93,9 +82,7 @@ Questionário de Interatividade
                             <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador2a">
                                 Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.
-                                <i title="Itens de múltipla escolha ou escolha única em que a opção seja apenas &quot;clicar&quot; para escolher a resposta correta">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -103,9 +90,7 @@ Questionário de Interatividade
                             <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen" required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador2b">
                                 Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen.
-                                <i title="Itens com possibilidade de o aluno interagir ou escolher a resposta a partir de selecionar e arrastar, manipular e/ou desenhar com auxílio, por exemplo, de mouse ou touch screen.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -113,9 +98,7 @@ Questionário de Interatividade
                            <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc." required onclick="exibeNivelInteratividade()">
                            <label class="form-check-label" for="indicador2c">
                                Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.
-                               <i title="Itens com possibilidade de o aluno escolher a resposta correta a partir de ações no qual ele possa interagir com auxílio, por exemplo, de mouse ou touch screen &quot;e&quot; ainda, ter a disposição recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para a experimentação e/ou simulação">
                                 {{-- <x-icons.question /> --}}
-                               </i>
                             </label>
                         </div>
                     </fieldset>
@@ -123,9 +106,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 3: Comportamento dos elementos no espaço</span>
-                    <i title="O comportamento é o elemento que se preocupa com a forma como ocorrem as interações do usuário com a interface digital, por exemplo, como os usuários podem executar ações (clicar, escrever, selecionar e arrastar, manipular, desenhar, simular etc.) para responder um item. Em relação ao nível de interatividade é possível afirmar que quanto &quot;mais ações&quot; do usuário com a interface digital do item, maior será a interatividade tecnológica. Assim, ele pode variar do nível mais baixo para o nível mais alto de interatividade.">
-                        {{-- <x-icons.question /> --}}
-                    </i>
+                    {{-- <x-icons.question /> --}}
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade ">
                         <legend>Critérios:</legend>
@@ -133,9 +114,7 @@ Questionário de Interatividade
                             <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3a">
                                 Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.
-                                <i title="A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após a leitura do texto sugerido, &quot;clique&quot; (clique = escolha) na opção correta.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -143,9 +122,7 @@ Questionário de Interatividade
                             <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado)." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3b">
                                 Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).
-                                <i title="A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Complete as lacunas do texto &quot;selecionando&quot; e &quot;arrastando&quot; as palavras para os locais adequados.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -153,9 +130,7 @@ Questionário de Interatividade
                             <input id="indicador3c" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual)." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3c">
                                 Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).
-                                <i title="A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após ler o enunciado, clique (ação &quot;clicar&quot;) na opção iniciar para assistir a demonstração do experimento x, na sequência, utilize o simulador (ação: simular) para encontrar a medida solicitada e arraste (ação: arrastar) o resultado para a opção de resposta correta. Caso seja necessário, poderá utilizar a ferramenta calculadora e bloco de notas disponibilizados na barra lateral da tela (ações: clicar nas ferramentas e utilizá-las)">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
                     </fieldset>
@@ -163,9 +138,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 4: Tempo</span>
-                    <i title="Tempo: É o elemento que se refere às mídias que mudam a partir de um determinado tempo - ação e reação. Por exemplo, a partir da &quot;acão&quot; do aluno como, clicar na opção &quot;iniciar&quot; numa mídia utilizada (vídeo, som, imagem animada etc), esta apresenta uma “reação”, ou seja, uma mensagem de texto, som, imagem etc., com novas instruções como, por exemplo, para que o aluno faça uma simulação, porém com um &quot;determinado tempo&quot; para responder o item digital. A reação possui um &quot;tempo de duração&quot; e, este elemento quando tecnologicamente aplicado em itens digitais e combinados, principalmente, com possibilidade da inclusão de animações e simulações, apresenta alto nível de interatividade">
-                        {{-- <x-icons.question /> --}}
-                    </i>
+                    {{-- <x-icons.question /> --}}
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade ">
                         <legend>Critérios:</legend>
@@ -173,9 +146,7 @@ Questionário de Interatividade
                             <input id="indicador4a" class="form-check-input" type="radio" name="questionario_item4" value="Apresenta ações em textos e/ou elementos gráficos estáticos &quot;sem&quot; determinação de tempo para execução." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador4a">
                                 Apresenta ações em textos e/ou elementos gráficos estáticos "sem" determinação de tempo para execução.
-                                <i title="A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Elementos gráficos estáticos: que não possuem movimento, por exemplo, uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva; Determinação de tempo: indicativo de tempo para resolução do item.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -184,9 +155,7 @@ Questionário de Interatividade
                             <label class="form-check-label" for="indicador4b">
                                 Apresenta ações em mídias como vídeos, vídeos interativos e animações "sem" determinação de tempo
                                 para execução.
-                                <i title="A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -195,9 +164,7 @@ Questionário de Interatividade
                             interativos, animações, simuladores etc, &quot;com&quot; determinação de tempo para execução." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador4c">
                                 Apresenta ações em mídias como vídeos, vídeos interativos, animações, simuladores etc, "com" determinação de tempo para execução.
-                                <i title="A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
                     </fieldset>

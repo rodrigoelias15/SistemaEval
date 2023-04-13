@@ -1,0 +1,107 @@
+[
+    {
+        "message": "O texto é composto por um conjunto de palavras que ajudam a fornecer aos alunos a quantidade certa de informações, ou seja, são as “interações” em forma de verbos (ação), que quando utilizadas de forma isolada ou com algum elemento gráfico (imagens, figuras, fotos etc), - ambos na forma estática - e/ou com sons e/ou vídeos, a interatividade é considerada baixa. Porém, quando combinadas com outros elementos gráficos, como, imagens (figuras, fotos etc) dinâmicas ou tipografias dinâmicas (mistura de técnicas de animação com texto e/ou imagens, que resultam em vídeos) ou ainda, vídeos e sons interativos (que permitem a interação do usuário), animações e simulações, o nível de interatividade aumenta consideravelmente.",
+        "key": "q1mq",
+        "_comment": "Questão 1, Mensagem Questão"
+    },
+    {
+        "message": "Textos e/ou elementos gráficos (imagens, figuras, fotos etc) estáticos: que não possuem movimento. Por exemplo: uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva.",
+        "key": "q1ma",
+        "_comment": "Questão 1, Mensagem A"
+    },
+    {
+        "message": "Elementos gráficos (imagens, figuras, fotos etc) dinâmicos ou tipografias dinâmicas: mistura de técnicas de animação com texto e/ou imagens, que resultam em vídeos - (Obs: dinâmica envolve movimentos, animações). Vídeos interativos: permite que o usuário se envolva ativamente com o conteúdo que vê. Eles contêm elementos clicáveis que levam o usuário para outra parte do vídeo ou para outra página da web.",
+        "key": "q1mb",
+        "_comment": "Questão 1, Mensagem B"
+    },
+    {
+        "message": "Vídeos interativos: permite que o usuário se envolva ativamente com o conteúdo que vê. Eles contêm elementos clicáveis que levam o usuário para outra parte do vídeo ou para outra página da web. Animações: sequência de imagens em movimento que devem estar conjuntamente com algum tipo de simulação - o usuário deve participar com algum tipo de ação de simulação. Simulação: técnica utilizada para testar, criar e experimentar ideias, conceitos e produtos no mundo virtual para aplicá-los em situações reais",
+        "key": "q1mc",
+        "_comment": "Questão 1, Mensagem C"
+    },
+
+    {
+        "message":"Refere-se ao meio/espaço com o qual, ou dentro do qual, os alunos interagem com o item - por exemplo, um notebook/computador via mouse um smartphone ou telas touch screen através dos dedos ou canetas específicas conseguem interagir com o item digital. Apresentam ações e comandos tecnológicos que podem ser inseridos juntamente com os elementos “palavras” como: clicar, selecionar e arrastar, manipular, desenhar etc, e desta forma, transformam um simples texto ou imagem estática em ações interativas.",
+        "key": "q2mq",
+        "_comment": "Questão 2, Mensagem Questão"
+    },
+    {
+        "message": "Itens de múltipla escolha ou escolha única em que a opção seja apenas &quot;clicar&quot; para escolher a resposta correta",
+        "key": "q2ma",
+        "_comment": "Questão 2, Mensagem A"
+    },
+    {
+        "message": "Itens com possibilidade de o aluno interagir ou escolher a resposta a partir de selecionar e arrastar, manipular e/ou desenhar com auxílio, por exemplo, de mouse ou touch screen.",
+        "key": "q2mb",
+        "_comment": "Questão 2, Mensagem B"
+    },
+    {
+        "message": "Itens com possibilidade de o aluno escolher a resposta correta a partir de ações no qual ele possa interagir com auxílio, por exemplo, de mouse ou touch screen &quot;e&quot; ainda, ter a disposição recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para a experimentação e/ou simulação",
+        "key": "q2mc",
+        "_comment": "Questão 2, Mensagem C"
+    },
+
+
+    {
+        "message":"O comportamento é o elemento que se preocupa com a forma como ocorrem as interações do usuário com a interface digital, por exemplo, como os usuários podem executar ações (clicar, escrever, selecionar e arrastar, manipular, desenhar, simular etc.) para responder um item. Em relação ao nível de interatividade é possível afirmar que quanto &quot;mais ações&quot; do usuário com a interface digital do item, maior será a interatividade tecnológica. Assim, ele pode variar do nível mais baixo para o nível mais alto de interatividade.",
+        "key": "q3mq",
+        "_comment": "Questão 3, Mensagem Questão"
+    },
+    {
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após a leitura do texto sugerido, &quot;clique&quot; (clique = escolha) na opção correta.",
+        "key": "q3ma",
+        "_comment": "Questão 3, Mensagem A"
+    },
+    {
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Complete as lacunas do texto &quot;selecionando&quot; e &quot;arrastando&quot; as palavras para os locais adequados.",
+        "key": "q3mb",
+        "_comment": "Questão 3, Mensagem B"
+    },
+    {
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após ler o enunciado, clique (ação &quot;clicar&quot;) na opção iniciar para assistir a demonstração do experimento x, na sequência, utilize o simulador (ação: simular) para encontrar a medida solicitada e arraste (ação: arrastar) o resultado para a opção de resposta correta. Caso seja necessário, poderá utilizar a ferramenta calculadora e bloco de notas disponibilizados na barra lateral da tela (ações: clicar nas ferramentas e utilizá-las)",
+        "key": "q3mc",
+        "_comment": "Questão 3, Mensagem C"
+    },
+
+    {
+        "message": "Tempo: É o elemento que se refere às mídias que mudam a partir de um determinado tempo - ação e reação. Por exemplo, a partir da &quot;acão&quot; do aluno como, clicar na opção &quot;iniciar&quot; numa mídia utilizada (vídeo, som, imagem animada etc), esta apresenta uma “reação”, ou seja, uma mensagem de texto, som, imagem etc., com novas instruções como, por exemplo, para que o aluno faça uma simulação, porém com um &quot;determinado tempo&quot; para responder o item digital. A reação possui um &quot;tempo de duração&quot; e, este elemento quando tecnologicamente aplicado em itens digitais e combinados, principalmente, com possibilidade da inclusão de animações e simulações, apresenta alto nível de interatividade",
+        "key": "q4mq",
+        "_comment": "Questão 4, Mensagem Questão"
+    },
+    {
+        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Elementos gráficos estáticos: que não possuem movimento, por exemplo, uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva; Determinação de tempo: indicativo de tempo para resolução do item.",
+        "key": "q4ma",
+        "_comment": "Questão 4, Mensagem A"
+    },
+    {
+        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
+        "key": "q4mb",
+        "_comment": "Questão 4, Mensagem B"
+    },
+    {
+        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
+        "key": "q4mc",
+        "_comment": "Questão 4, Mensagem C"
+    },
+
+    {
+        "message": "Movimento/liberdade do usuário no item: é o elemento que se refere a liberdade do usuário em se movimentar no item/questão. A interatividade é menor quando, por exemplo, o usuário é capaz de se mover somente para frente ou para trás através de uma sequência linear predeterminada no item/questão. Esse tipo de movimento, muitas vezes é chamado de virada de página eletrônica e não fornece feedback específico de resposta ao usuário, mas simplesmente fornece acesso à próxima ou a anterior exibição em uma sequência linear.",
+        "key": "q5mq",
+        "_comment": "Questão 5, Mensagem Questão"
+    },
+    {
+        "message": "O usuário só possui a opção de clicar, por exemplo, em &quot;avançar&quot; e/ou &quot;retornar&quot; (liberdade mínima).",
+        "key": "q5ma",
+        "_comment": "Questão 5, Mensagem A"
+    },
+    {
+        "message": "O usuário tem a possibilidade de se movimentar no item/questão de forma intuitiva, utilizando, por exemplo, menus.",
+        "key": "q5mb",
+        "_comment": "Questão 5, Mensagem B"
+    },
+    {
+        "message": "O usuário tem a liberdade de se movimentar no item/questão de forma autônoma e livre, ou seja, o item não apresenta opções fixas, por exemplo, de avançar e retornar.",
+        "key": "q5mc",
+        "_comment": "Questão 5, Mensagem C"
+    }
+]
