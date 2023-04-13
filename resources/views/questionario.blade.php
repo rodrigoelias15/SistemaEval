@@ -10,8 +10,11 @@ Questionário de Interatividade
 
 <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
-<x-panels.content_special>
+@php
+    $messages = json_decode(file_get_contents(resource_path('/json/messages.json')));
+@endphp
 
+<x-panels.content_special>
     <div class="row">
 
         <x-icons.logo_special
@@ -42,15 +45,15 @@ Questionário de Interatividade
                 @csrf
                 <section class="form-group">
                     <span>Indicador 1: Textos e elementos gráficos</span>
-                        <x-icons.question/>
+                    <x-svg-tooltip :message="$messages->q1mq->message" color='green'/>
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade">
                         <legend>Critérios:</legend>
                         <div class="form-group form-check">
                             <input id="indicador1a" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais." required onclick="exibeNivelInteratividade()" >
                             <label class="form-check-label" for="indicador1a">
-                                Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais.
-                                <x-svg-tooltip message="a" color='green'/>
+                                Apresenta textos e/ou elementos gráficos estáticos (figuras e fotos) em seu enunciado, respostas e informações adicionais
+                                <x-svg-tooltip :message="$messages->q1ma->message" color='green'/>
                             </label>
                         </div>
 
@@ -58,7 +61,7 @@ Questionário de Interatividade
                             <input id="indicador1b" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador1b">
                                 Apresenta textos e/ou elementos gráficos no formato de mídias como, figuras, fotos vídeos e/ou sons com algum tipo de animação.
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q1mb->message" color='green'/>
                             </label>
                         </div>
 
@@ -66,7 +69,7 @@ Questionário de Interatividade
                             <input id="indicador1c" class="form-check-input" type="radio" name="questionario_item1" value="Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador1c">
                                 Apresenta textos e/ou elementos gráficos no formato de vídeos e/ou sons interativos, animações, imagens (figuras, fotos etc) dinâmicas, simuladores etc, em seu enunciado, respostas e informações adicionais.
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q1mc->message" color='green'/>
                             </label>
                         </div>
                     </fieldset>
@@ -74,7 +77,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 2: Espaço/meio de interação</span>
-                    {{-- <x-icons.question /> --}}
+                    <x-svg-tooltip :message="$messages->q2mq->message" color='green'/>
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade">
                         <legend>Critérios:</legend>
@@ -82,7 +85,7 @@ Questionário de Interatividade
                             <input id="indicador2a" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador2a">
                                 Apresenta possibilidade para que o aluno interfira na questão/resposta apenas com a opção 'clicar' com auxílio, por exemplo, de mouse ou touch screen.
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q2ma->message" color='green'/>
                             </label>
                         </div>
 
@@ -90,15 +93,15 @@ Questionário de Interatividade
                             <input id="indicador2b" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen" required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador2b">
                                 Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen.
-                                {{-- <x-icons.question /> --}}
-                            </label>
+                                <x-svg-tooltip :message="$messages->q2mb->message" color='green'/>
+                                </label>
                         </div>
 
                         <div class="form-group form-check">
                            <input id="indicador2c" class="form-check-input" type="radio" name="questionario_item2" value="Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc." required onclick="exibeNivelInteratividade()">
                            <label class="form-check-label" for="indicador2c">
                                Apresenta meios para que o aluno interfira na questão/resposta como, selecionar, arrastar, manipular ou desenhar com auxílio, por exemplo, de mouse ou touch screen e a utilização de recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para experimentação, simulação etc.
-                                {{-- <x-icons.question /> --}}
+                               <x-svg-tooltip :message="$messages->q2mc->message" color='green'/>
                             </label>
                         </div>
                     </fieldset>
@@ -106,7 +109,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 3: Comportamento dos elementos no espaço</span>
-                    {{-- <x-icons.question /> --}}
+                    <x-svg-tooltip :message="$messages->q3mq->message" color='green'/>
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade ">
                         <legend>Critérios:</legend>
@@ -114,7 +117,7 @@ Questionário de Interatividade
                             <input id="indicador3a" class="form-check-input" type="radio" name="questionario_item3" value="Não apresenta orientações para o usuário de como percorrer para desenvolver a questão." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3a">
                                 Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q3ma->message" color='green'/>
                             </label>
                         </div>
 
@@ -122,7 +125,7 @@ Questionário de Interatividade
                             <input id="indicador3b" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado)." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3b">
                                 Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q3mb->message" color='green'/>
                             </label>
                         </div>
 
@@ -130,7 +133,7 @@ Questionário de Interatividade
                             <input id="indicador3c" class="form-check-input" type="radio" name="questionario_item3" value="Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual)." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador3c">
                                 Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).
-                                {{-- <x-icons.question /> --}}
+                                <x-svg-tooltip :message="$messages->q3mc->message" color='green'/>
                             </label>
                         </div>
                     </fieldset>
@@ -172,9 +175,7 @@ Questionário de Interatividade
 
                 <section class="form-group">
                     <span>Indicador 5: Movimento/liberdade do usuário no item</span>
-                    <i title="Movimento/liberdade do usuário no item: é o elemento que se refere a liberdade do usuário em se movimentar no item/questão. A interatividade é menor quando, por exemplo, o usuário é capaz de se mover somente para frente ou para trás através de uma sequência linear predeterminada no item/questão. Esse tipo de movimento, muitas vezes é chamado de virada de página eletrônica e não fornece feedback específico de resposta ao usuário, mas simplesmente fornece acesso à próxima ou a anterior exibição em uma sequência linear.">
-                        {{-- <x-icons.question /> --}}
-                    </i>
+                    {{-- <x-icons.question /> --}}
                     <p>O Item Digital:</p>
                     <fieldset class="indicador_interatividade">
                         <legend>Critérios:</legend>
@@ -182,9 +183,7 @@ Questionário de Interatividade
                             <input id="indicador5a" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão &quot;somente&quot; para frente e para trás por meio de uma sequência linear e pré-definida." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador5a">
                                 Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão "somente" para frente e para trás por meio de uma sequência linear e pré-definida.
-                                <i title="O usuário só possui a opção de clicar, por exemplo, em &quot;avançar&quot; e/ou &quot;retornar&quot; (liberdade mínima).">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -192,9 +191,7 @@ Questionário de Interatividade
                             <input id="indicador5b" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva no item/questão por meio de uma sequência não linear e pré-definida (Ex.: menus)." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador5b">
                                 Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva no item/questão por meio de uma sequência não linear e pré-definida (Ex.: menus).
-                                <i title="O usuário tem a possibilidade de se movimentar no item/questão de forma intuitiva, utilizando, por exemplo, menus.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
 
@@ -202,9 +199,7 @@ Questionário de Interatividade
                             <input id="indicador5c" class="form-check-input" type="radio" name="questionario_item5" value="Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão de forma livre e autônoma." required onclick="exibeNivelInteratividade()">
                             <label class="form-check-label" for="indicador5c">
                                 Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão de forma livre e autônoma.
-                                <i title="O usuário tem a liberdade de se movimentar no item/questão de forma autônoma e livre, ou seja, o item não apresenta opções fixas, por exemplo, de avançar e retornar.">
-                                    {{-- <x-icons.question /> --}}
-                                </i>
+                                {{-- <x-icons.question /> --}}
                             </label>
                         </div>
                     </fieldset>
