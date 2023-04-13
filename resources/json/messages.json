@@ -81,5 +81,179 @@
     "q5mc": {
         "message": "O usuário tem a liberdade de se movimentar no item/questão de forma autônoma e livre, ou seja, o item não apresenta opções fixas, por exemplo, de avançar e retornar.",
         "_comment": "Questão 5, Mensagem C"
+    },
+
+    "q6mq": {
+        "message": "O Suporte e feedback são retornos fornecidos pelo sistema de avaliação ao usuário e pode variar desde simples mensagens de alerta ou estímulo até opções de ajuda com orientações de como resolver o item a partir de explicações e/ou sistemas tutoriais. Como por exemplo, o usuário executa algum comando e conforme o resultado, é apresentado a ele um feedback/mensagem no formato de texto, imagem ou som ou ainda, opção de ajuda com orientações de como resolver a questão.",
+        "_comment": "Questão 6, Mensagem Questão"
+    },
+    "q6ma": {
+        "message": "Retorno/feedback: mensagens de alerta ou estímulo fornecidas pelo sistema de avaliação ao usuário. Ajuda: orientações de como resolver o item/questão a partir de explicações e/ou sistemas tutoriais fornecidas pelo sistema de avaliação ao usuário.",
+        "_comment": "Questão 6, Mensagem A"
+    },
+    "q6mb": {
+        "message": "Retorno/feedback: mensagens de alerta ou estímulo fornecidas pelo sistema de avaliação ao usuário.",
+        "_comment": "Questão 6, Mensagem B"
+    },
+    "q6mc": {
+        "message": "Retorno/feedback: mensagens de alerta ou estímulo fornecidas pelo sistema de avaliação ao usuário. Ajuda: orientações de como resolver o item/questão a partir de explicações e/ou sistemas tutoriais fornecidas pelo sistema de avaliação ao usuário.",
+        "_comment": "Questão 6, Mensagem C"
+    },
+
+    "q7mq": {
+        "message": "Refere-se ao diálogo que ocorre entre o usuário e o conteúdo gerado pelo sistema digital de avaliação. O sistema fornece um item/questão ao qual o usuário deve responder e, a partir da resposta, o sistema apresenta novos itens/questões. Essa forma de interação vai desde o formato simples de perguntas e respostas até as mais complexas, que incorporam componentes de inteligência artificial, que baseados na resposta fornecida pelo usuário apresentam itens com maior ou menor nível de dificuldade, de forma não linear e nem pré-definida. Esse tipo de ação do sistema, normalmente é indistinguível para o usuário. No entanto, quanto maior a apresentação de novos itens baseados nas respostas do usuário, maior será o nível de interatividade.",
+        "_comment": "Questão 7, Mensagem Questão"
+    },
+    "q7ma": {
+        "message": "A sequência da apresentação dos itens/questões é previamente definida pela instituição responsável pela avaliação de forma linear.",
+        "_comment": "Questão 7, Mensagem A"
+    },
+    "q7mb": {
+        "message": "A sequência da apresentação do próximo item/questão é aleatória (embaralhamento de itens/questões), porém não está baseada na resposta dada pelo usuário",
+        "_comment": "Questão 7, Mensagem B"
+    },
+    "q7mc": {
+        "message": "Baseado nas respostas (ações) dos usuários, o sistema, com a utilização de elementos de Inteligência Artificial, determina, de forma não linear e nem pré-definida a sequência da apresentação dos próximos itens/questões. Os itens podem ser de maior ou menor nível de dificuldade, dependendo da resposta do usuário.",
+        "_comment": "Questão 7, Mensagem C"
+    },
+
+    "q8mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para níveis de flexibilidade e de abertura. Isso significa, do ponto de vista da interatividade (foco do presente indicador, ou seja, mais ou menos interativo) identificar o quão flexível e aberto é o item. Entenda-se por entradas e saídas tanto as possibilidades de articulações entre conteúdos e áreas, quanto pistas para se encontrar respostas. O indicador flexibilidade e a abertura compreendem que o item quer ser resolvido, ou seja, não se pretende dificultar, mas oferecer múltiplas condições para sua resolução. Para tal, oferece mais ou menos condições para isso por meio de recursos diversos, tanto por meio do enunciado associado a recursos tecnológicos, quanto criando relações cotidianas, com outros conteúdos e/ou áreas para que o/a estudante possa trilhar seu percurso de respostas",
+        "_comment": "Questão 8, Mensagem Questão"
+    },
+    "q8ma": {
+        "message": "Esta opção não oferece ao respondente oportunidades de abertura com outras áreas. Ao contrário, reduz os caminhos para resolução do item a caminhos unificados, sem flexibilidade, ou seja, sem indicadores/pistas de articulação com outras áreas e conteúdos, dificultando sua resolução: ou sabe ou não sabe a resposta",
+        "_comment": "Questão 8, Mensagem A"
+    },
+    "q8mb": {
+        "message": "Esta opção oferece ao respondente alguma, ainda que sutil, oportunidade de abertura e ligação com outras áreas/conteúdos. Por meio de flexibilidade restrita, ou seja, com algum tipo de indicador/pista (outras áreas e/ou conteúdos), procura oferecer algum tipo de facilitador para a resolução do item, mas mantém algum fechamento, elemento de dificuldade",
+        "_comment": "Questão 8, Mensagem B"
+    },
+    "q8mc": {
+        "message": "Este indicador compreende que existem inúmeros caminhos para se resolver um problema, um item. Nesta direção o item é construído de modo flexível - no sentido de oferecer caminhos alternativos para o usuário (com dicas e auxílios seja por meio de recursos audiovisuais, avatares etc), e aberto, ou seja, criando possibilidade de resolução conjunta, consulta a glossário por exemplo etc.",
+        "_comment": "Questão 8, Mensagem C"
+    },
+
+    "q9mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para níveis de ligação e de articulação entre áreas do conhecimento ou entre conhecimentos da mesma área. Para tal, faz menção (direta ou indiretamente) a determinado conteúdo, atividade ou contexto. Quanto maior a relação explícita entre conhecimentos, mais pistas são oferecidas aos usuários para que se estabeleçam relações. Tais relações podem se dar tanto no enunciado, por meios de tecnologias diversas, como por exemplos charges, animações, simulações, quanto nas próprias opções de respostas, que podem trazer indícios das possíveis relações",
+        "_comment": "Questão 9, Mensagem Questão"
+    },
+    "q9ma": {
+        "message": "Esta opção se limita a uma resposta de tamanha objetividade, sem pistas que ofereçam relações com conhecimentos, conteúdos ou temas inter-áreas.",
+        "_comment": "Questão 9, Mensagem A"
+    },
+    "q9mb": {
+        "message": "Ainda que apresente articulação entre áreas ou conteúdos, por exemplo, tal feitura se dá de forma sutil, velada, quase que como uma camuflagem.",
+        "_comment": "Questão 9, Mensagem B"
+    },
+    "q9mc": {
+        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, apresenta claramente relações entre áreas, temas e/ou conteúdos. A intenção de um tipo de item como esse é oferecer ao(s) usuário(s) pistas, oportunidades, de articulações para, a partir delas, encontrar/construir respostas.",
+        "_comment": "Questão 9, Mensagem C"
+    },
+
+    "q10mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para ações coletivas e/ou colaborativas, que podem se dar em parcerias entre usuários ou entre usuário(s) e recursos hipermidiáticos. Para tal, cria, por exemplo, problemas (casos) que precisam ser resolvidos em parceria com outros usuários ou por meio de pistas encontradas na web.",
+        "_comment": "Questão 10, Mensagem Questão"
+    },
+    "q10ma": {
+        "message": "Esta opção focaliza resoluções individuais e sem consultas. Tem o objetivo de testar conhecimentos sem que sejam realizadas ações colaborativas de qualquer espécie ou mesmo de pesquisa.",
+        "_comment": "Questão 10, Mensagem A"
+    },
+    "q10mb": {
+        "message": "Ainda que apresente ações que promovam acesso a recursos na web, o faz de forma limitada e/ou controlada. Por exemplo, usando consultas a banco de webdados, intranet etc. (a ideia de intranet se volta a avaliações cujo controle para internet seja vedado). Entretanto, estão descartadas as ações coletivas e/ou colaborativas.",
+        "_comment": "Questão 10, Mensagem B"
+    },
+    "q10mc": {
+        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, tem o objetivo de criar situações para que usuários trabalhem de forma coletiva e colaborativa. Para tal, instiga (ou abre) também para a utilização de recursos hipermidiáticos disponíveis via web.",
+        "_comment": "Questão 10, Mensagem C"
+    },
+
+    "q11mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para conexões para além do que está dado, pois devem ser mais amplas e se dar por meio de relações multidisciplinares. Para tal, cria, por exemplo, situações advindas de experiências/experimentos, do cotidiano, que exigem relações inter-áreas, como o uso de simulações, a resolução de problemas práticos etc.",
+        "_comment": "Questão 11, Mensagem Questão"
+    },
+    "q11ma": {
+        "message": "Esta opção não se preocupa em fazer conexões e ampliar possibilidades por meio de experiências e/ou experimentações. O foco é reforçar conceitos sem que estejam relacionados explicitamente com o cotidiano, o mundo da vida/real. Portanto, estão descartadas quaisquer possibilidades multidisciplinares.",
+        "_comment": "Questão 11, Mensagem A"
+    },
+    "q11mb": {
+        "message": "O foco desta opção está em conexões restritas que, apesar de presentes, não possuem a intenção de promover conexões complexas e, portanto, não abordam temas de forma multidisciplinar.",
+        "_comment": "Questão 11, Mensagem B"
+    },
+    "q11mc": {
+        "message": "O enunciado e respostas tem objetivo de apresentar situações conectadas ao cotidiano, portanto apresentam associações, que podem aparecer por como simulações ou outros tipos de propostas cotidianas. Há a intenção de interligação de temas, de experiências/experimentos, e promover, multidisciplinarmente, em outras conexões/ligações.",
+        "_comment": "Questão 11, Mensagem C"
+    },
+
+    "q12mq": {
+        "message": "Neste indicador o foco são as interferências, ou seja, promover, instigar interferências, intervenções. Portanto, quanto mais o usuário puder interferir, interagir, manipular o item, mas ele vai atender a este indicador. Tal manipulação vem ao encontro da compreensão de que o usuário não é (e não deve ser) passivo, mas tem condições de cocriar caminhos, explorando o máximo de possibilidades disponíveis para resolução do item. O item é visto com uma atividade favorecedora de experimentações e explorações e, por isso, intervir se relaciona a construir conhecimento e não a 'adquirir' passivamente informações que serão postas à prova posteriormente sem relação com o mundo da vida, o cotidiano.",
+        "_comment": "Questão 12, Mensagem Questão"
+    },
+    "q12ma": {
+        "message": "Intervir significa se apropriar de algo ou de algum conhecimento que o favoreça a produzir respostas. Esta opção compreende que o usuário não pode ou não tem capacidade de desenvolver tal construção e, assim, não oferece condições de manipulação ou intervenção. O item é fechado.",
+        "_comment": "Questão 12, Mensagem A"
+    },
+    "q12mb": {
+        "message": "Esta opção oferece ao usuário algum tipo de interferência e /ou manipulação no item, que tanto pode ser de simulação controlada/limitada, ou imagem 3D, por exemplos. Entretanto, tudo é controlado para que o respondente não avance muito a ponto de oferecer elementos, como recursos/ferramentas (um menu) para construção da resposta.",
+        "_comment": "Questão 12, Mensagem B"
+    },
+    "q12mc": {
+        "message": "Esta opção oferece ao usuário algum tipo de interferência e /ou manipulação no item, que tanto pode ser de simulação controlada/limitada, ou imagem 3D, por exemplos. Entretanto, tudo é controlado para que o respondente não avance muito a ponto de oferecer elementos, como recursos/ferramentas (um menu) para construção da resposta.",
+        "_comment": "Questão 12, Mensagem C"
+    },
+
+    "q13mq": {
+        "message": "Neste indicador o foco são múltiplas possibilidades e direções possiveis no item. A multidisciplinaridade pressupõe que as disciplinas podem ser postas juntas, em paralelo, ainda que mantenham suas estruturas e especificidades intocáveis. Portanto, compreender as múltiplas possibilidades e direções não significa alterar as estruturas disciplinares, mas aproximá-las, colocá-las em contato de modo que uma possa ajudar a outra na resolução/resposta a um item. Portanto, quanto mais as disciplinas se aproximam para um fim comum, e quanto mais consideram caminhos diversos, múltiplos, mais bidirecional será o item. Entretanto, como estamos falando de multidisciplinaridade, as fornteiras entre as disciplinas se mantém, continuam existindo.",
+        "_comment": "Questão 13, Mensagem Questão"
+    },
+    "q13ma": {
+        "message": "Se não é mais do que uma possibilidade ou caminho para resolução de um problema ou questão, não é bidirecionalidade e sim unidirecionalidade.",
+        "_comment": "Questão 13, Mensagem A"
+    },
+    "q13mb": {
+        "message": "Compreende que pode haver mais do que uma direção e, portanto, forma de pensamento para resolução de problemas, há restrições e limitações que precisam ser impostas. O controle das direções são previstas no item.",
+        "_comment": "Questão 13, Mensagem B"
+    },
+    "q13mc": {
+        "message": "Para toda resolução de questão/problemas é preciso traçar caminhos e, para tanto, faz-se necessário que se tenha o máximo de recursos e instrumentos possíveis. Esta opção abre os caminhos de múltiplas formas e oferece ao usuário tudo o que for poss;ivel para que ele possa encaminhar o melhor caminho para a resposta.",
+        "_comment": "Questão 13, Mensagem C"
+    },
+
+    "q14mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para ações coletivas e/ou colaborativas, que podem se dar em parcerias entre usuários ou entre usuário(s) e recursos hipermidiáticos. Para tal, cria, por exemplo, problemas (casos) que precisam ser resolvidos em parceria com outros usuários ou por meio de pistas encontradas na web.",
+        "_comment": "Questão 14, Mensagem Questão"
+    },
+    "q14ma": {
+        "message": "Esta opção focaliza resoluções individuais e sem consultas. Tem o objetivo de testar conhecimentos sem que sejam realizadas ações colaborativas de qualquer espécie ou mesmo de pesquisa.",
+        "_comment": "Questão 14, Mensagem A"
+    },
+    "q14mb": {
+        "message": "Ainda que apresente ações que promovam acesso a recursos na web, o faz de forma limitada e/ou controlada. Por exemplo, usando consultas a banco de webdados, intranet etc. (a ideia de intranet se volta a avaliações cujo controle para internet seja vedado). Entretanto, estão descartadas as ações coletivas e/ou colaborativas.",
+        "_comment": "Questão 14, Mensagem B"
+    },
+    "q14mc": {
+        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, tem o objetivo de criar situações para que usuários trabalhem de forma coletiva e colaborativa. Para tal, instiga (ou abre) também para a utilização de recursos hipermidiáticos disponíveis via web.",
+        "_comment": "Questão 14, Mensagem C"
+    },
+
+    "q15mq": {
+        "message": "Tanto o enunciado quanto as respostas se voltam para ações coletivas e/ou colaborativas, que podem se dar em parcerias entre usuários ou entre usuário(s) e recursos hipermidiáticos. Para tal, cria, por exemplo, problemas (casos) que precisam ser resolvidos em parceria com outros usuários ou por meio de pistas encontradas na web.",
+        "_comment": "Questão 15, Mensagem Questão"
+    },
+    "q15ma": {
+        "message": "Esta opção focaliza resoluções individuais e sem consultas. Tem o objetivo de testar conhecimentos sem que sejam realizadas ações colaborativas de qualquer espécie ou mesmo de pesquisa.",
+        "_comment": "Questão 15, Mensagem A"
+    },
+    "q15mb": {
+        "message": "Ainda que apresente ações que promovam acesso a recursos na web, o faz de forma limitada e/ou controlada. Por exemplo, usando consultas a banco de webdados, intranet etc. (a ideia de intranet se volta a avaliações cujo controle para internet seja vedado). Entretanto, estão descartadas as ações coletivas e/ou colaborativas.",
+        "_comment": "Questão 15, Mensagem B"
+    },
+    "q15mc": {
+        "message": "O item, seja por meio do enunciado e/ou por meio das respostas, tem o objetivo de criar situações para que usuários trabalhem de forma coletiva e colaborativa. Para tal, instiga (ou abre) também para a utilização de recursos hipermidiáticos disponíveis via web.",
+        "_comment": "Questão 15, Mensagem C"
+    },
+    "rodape": {
+        "message": "e-VAL: Avaliação da interatividade em itens digitais. Pesquisadoras: Dra. Liamara Scortegagna (UFJF) e Dra. Adriana Bruno (UNIRIO). Projeto de pesquisa: Itens digitais e interativos em e-Avaliação de larga escala: processos cognitivos, estratégias e produtos didáticos na relação entre meio impresso e meio digital (2020/2021). Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).",
+        "_comment": "Nota de Rodapé"
     }
 }
