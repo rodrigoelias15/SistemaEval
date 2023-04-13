@@ -65,129 +65,129 @@
 
     "Q5A": {
         "id": "indicador5a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão 'somente' para frente e para trás por meio de uma sequência linear e pré-definida.",
         "_comment": "Questão 5 A"
     },
     "Q5B": {
         "id": "indicador5b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "Apresenta possibilidade para que o usuário seja capaz de se mover de forma intuitiva no item/questão por meio de uma sequência não linear e pré-definida (Ex.: menus).",
         "_comment": "Questão 5 B"
     },
     "Q5C": {
         "id": "indicador5c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "Apresenta possibilidade para que o usuário seja capaz de se mover no item/questão de forma livre e autônoma.",
         "_comment": "Questão 5 C"
     },
 
     "Q6A": {
         "id": "indicador6a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "Não apresenta opção de retorno/feedback ou ajuda.",
         "_comment": "Questão 6 A"
     },
     "Q6B": {
         "id": "indicador6b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "Apresenta somente opção(ões) de retorno e/ou feedbacks.",
         "_comment": "Questão 6 B"
     },
     "Q6C": {
         "id": "indicador6c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "Apresenta opção de retorno/feedback e ajuda.",
         "_comment": "Questão 6 C"
     },
 
     "Q7A": {
         "id": "indicador7a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item avaliativo numa sequência linear e pré-definida.",
         "_comment": "Questão 7 A"
     },
     "Q7B": {
         "id": "indicador7b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item do processo avaliativos numa sequência não linear.",
         "_comment": "Questão 7 B"
     },
     "Q7C": {
         "id": "indicador7c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo.",
         "_comment": "Questão 7 C"
     },
 
     "Q8A": {
         "id": "indicador8a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "O enunciado e as respostas não apresentam possibilidades/trilhas diversas e flexíveis, com sistemas/caminhos/pistas de entrada e saídas (múltiplas experimentações, expressões e experiências) para resolução do item, ou seja, não permitem o uso de mais do que um recurso para que se chegue à resposta esperada.",
         "_comment": "Questão 8 A"
     },
     "Q8B": {
         "id": "indicador8b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "O enunciado e as respostas apresentam pelo menos duas possibilidades/trilhas flexíveis, com algum(s) sistema/caminho/pista de entrada e saídas (múltiplas experimentações, expressões e experiências) para resolução do item, ou seja, permitem o uso de mais do que um recurso para que se chegue à resposta esperada.",
         "_comment": "Questão 8 B"
     },
     "Q8C": {
         "id": "indicador8c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "O enunciado e respostas apresentam possibilidades/trilhas diversas e flexíveis, com múltiplos sistemas/caminhos/pistas de entrada e saídas ( experimentações, expressões e experiências muito flexíveis e abertas) para resolução do item, ou seja, permitem o uso de mais de vários recursos disponíveis (tecnológicos e pedagógicos para que se chegue à resposta esperada.",
         "_comment": "Questão 8 C"
     },
 
     "Q9A": {
         "id": "indicador9a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "O enunciado e respostas não apresentam elos de ligação e/ou articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.",
         "_comment": "Questão 9 A"
     },
     "Q9B": {
         "id": "indicador9b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "O enunciado e respostas apresentam, sutilmente, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.",
         "_comment": "Questão 9 B"
     },
     "Q9C": {
         "id": "indicador9c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "O enunciado e/ou respostas criam, de forma explícita, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.",
         "_comment": "Questão 9 C"
     },
 
     "Q10A": {
         "id": "indicador10a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "O enunciado e/ou respostas não possibilita(m) desenvolver ações coletivas e colaborativas para sua resolução, tampouco arquitetar percursos hipermidiáticos.",
         "_comment": "Questão 10 A"
     },
     "Q10B": {
         "id": "indicador10b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "O enunciado e/ou respostas possibilitam ações por meio de consultas a banco de dados, promovendo pequenos e limitados percursos hipermidiáticos, ou seja, trilhas realizadas com os recursos disponíveis digitalmente.",
         "_comment": "Questão 10 B"
     },
     "Q10C": {
         "id": "indicador10c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "O enunciado e respostas promove(m) ações coletivas e colaborativas (entre usuários) e arquiteta percursos hipermidiáticos disponíveis para resolução do item.",
         "_comment": "Questão 10 C"
     },
 
     "Q11A": {
         "id": "indicador11a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "O enunciado e/ou respostas não criam possibilidades de conectividade, nem multidisciplinaridade. Não traz(em) experiências de modo a se desdobrar/promover conexões/ligações mais amplas e complexas, ligadas, explicitamente, ao cotidiano.",
         "_comment": "Questão 11 A"
     },
     "Q11B": {
         "id": "indicador11b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "O enunciado e/ou respostas criam possibilidades de conectividade, de associações e simulações, mas sem relações multidisciplinares. Experiências mais amplas e complexas, como aquelas vivenciadas no cotidiano e que careçam de conhecimentos de áreas diversas cujas resoluções necessitem dessas ligações, são desprezadas, pois o foco são conexões mais simples, mais óbvias, objetivas e menos reflexivas.",
         "_comment": "Questão 11 B"
     },
     "Q11C": {
         "id": "indicador11c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "O enunciado e respostas apresentam associações, por meio de simulações ou propostas cotidianas, e com forte apelo à conectividade, ou seja, há a interligação de temas, de experiências/experimentos, de modo a se desdobrar, multidisciplinarmente, em outras conexões/ligações.",
         "_comment": "Questão 11 C"
     },
 
     "Q12A": {
         "id": "indicador12a",
-        "question": "Não apresenta orientações para o usuário de como percorrer para desenvolver a questão.",
+        "question": "O enunciado e respostas não promovem e/ou não interferência/manipulação do usuário no objeto/item, pois direcionam para caminhos únicos de resolução.",
         "_comment": "Questão 12 A"
     },
     "Q12B": {
         "id": "indicador12b",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão apenas no formato texto (enunciado).",
+        "question": "O enunciado e respostas promovem e/ou favorecem pontualmente e de forma controlada e restrita a interferência/manipulação do usuário no objeto/item.",
         "_comment": "Questão 12 B"
     },
     "Q12C": {
         "id": "indicador12c",
-        "question": "Apresenta orientações para o usuário de como percorrer para desenvolver a questão de forma explícita (textual, elementos gráficos ou audiovisual).",
+        "question": "O enunciado e/ou respostas promovem e/ou favorecem a interferência/manipulação do usuário no objeto/item, de modo a oferecer recursos e pistas para sua execução é construção.",
         "_comment": "Questão 12 C"
     },
 

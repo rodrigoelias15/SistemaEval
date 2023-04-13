@@ -4,29 +4,23 @@
     <p>O Item Digital:</p>
     <fieldset class="indicador_interatividade">
         <legend>Critérios:</legend>
-        <div class="form-group form-check">
-            <input id="indicador7a" class="form-check-input" type="radio" name="questionario_item7" value="Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item avaliativo numa
-            sequência linear e pré-definida." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador7a">
-                Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item avaliativo numa sequência linear e pré-definida.
-                <x-svg-tooltip :message="$messages->q7ma->message" color='green'/>
-            </label>
-        </div>
-
-        <div class="form-group form-check">
-            <input id="indicador7b" class="form-check-input" type="radio" name="questionario_item7" value="Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item do processo avaliativos numa sequência não linear." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador7b">
-                Após a ação do usuário em finalizar o item/questão, o sistema apresenta o próximo item do processo avaliativos numa sequência não linear.
-                <x-svg-tooltip :message="$messages->q7mb->message" color='green'/>
-            </label>
-        </div>
-
-        <div class="form-group form-check">
-            <input id="indicador7c" class="form-check-input" type="radio" name="questionario_item7" value="As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador7c">
-                As escolhas das ações do usuário determinam a sequência e a continuidade do processo avaliativo.
-                <x-svg-tooltip :message="$messages->q7mc->message" color='green'/>
-            </label>
-        </div>
+        <x-radio
+            :id="$questoes->Q7A->id"
+            name="questionario_item7"
+            :value="$questoes->Q7A->question">
+            <x-svg-tooltip :message="$messages->q7ma->message" color='green'/>
+        </x-radio>
+        <x-radio
+            :id="$questoes->Q7B->id"
+            name="questionario_item7"
+            :value="$questoes->Q7B->question">
+            <x-svg-tooltip :message="$messages->q7mb->message" color='green'/>
+        </x-radio>
+        <x-radio
+            :id="$questoes->Q7C->id"
+            name="questionario_item7"
+            :value="$questoes->Q7C->question">
+            <x-svg-tooltip :message="$messages->q7mc->message" color='green'/>
+        </x-radio>
     </fieldset>
 </section>

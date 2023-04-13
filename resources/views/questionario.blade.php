@@ -46,7 +46,7 @@ Questionário de Interatividade
                 @csrf
 
                 @include('questoes.questao1')
-                {{-- @include('questoes.questao2') --}}
+                @include('questoes.questao2')
                 @include('questoes.questao3')
                 @include('questoes.questao4')
                 @include('questoes.questao5')

@@ -4,28 +4,23 @@
     <p>O Item Digital:</p>
     <fieldset class="indicador_interatividade">
         <legend>Critérios:</legend>
-        <div class="form-group form-check">
-            <input id="indicador9a" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas não apresentam elos de ligação e/ou articulação entre áreas do conhecimento ou entre conhecimentos da mesma área." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador9a">
-                O enunciado e respostas não apresentam elos de ligação e/ou articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.
-                <x-svg-tooltip :message="$messages->q9ma->message" color='green'/>
-            </label>
-        </div>
-
-        <div class="form-group form-check">
-            <input id="indicador9b" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e respostas apresentam, sutilmente, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador9b">
-                O enunciado e respostas apresentam, sutilmente, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.
-                <x-svg-tooltip :message="$messages->q9mb->message" color='green'/>
-            </label>
-        </div>
-
-        <div class="form-group form-check">
-            <input id="indicador9c" class="form-check-input" type="radio" name="questionario_item9" value="O enunciado e/ou respostas criam, de forma explícita, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área." required onclick="exibeNivelInteratividade()">
-            <label class="form-check-label" for="indicador9c">
-                O enunciado e/ou respostas criam, de forma explícita, elos de ligação e articulação entre áreas do conhecimento ou entre conhecimentos da mesma área.
-                <x-svg-tooltip :message="$messages->q9mc->message" color='green'/>
-            </label>
-        </div>
+        <x-radio
+            :id="$questoes->Q9A->id"
+            name="questionario_item9"
+            :value="$questoes->Q9A->question">
+            <x-svg-tooltip :message="$messages->q9ma->message" color='green'/>
+        </x-radio>
+        <x-radio
+            :id="$questoes->Q9B->id"
+            name="questionario_item9"
+            :value="$questoes->Q9B->question">
+            <x-svg-tooltip :message="$messages->q9mb->message" color='green'/>
+        </x-radio>
+        <x-radio
+            :id="$questoes->Q9C->id"
+            name="questionario_item9"
+            :value="$questoes->Q9C->question">
+            <x-svg-tooltip :message="$messages->q9mc->message" color='green'/>
+        </x-radio>
     </fieldset>
 </section>
