@@ -22,7 +22,7 @@
         "_comment": "Questão 2, Mensagem Questão"
     },
     "q2ma": {
-        "message": "Itens de múltipla escolha ou escolha única em que a opção seja apenas &quot;clicar&quot; para escolher a resposta correta",
+        "message": "Itens de múltipla escolha ou escolha única em que a opção seja apenas 'clicar' para escolher a resposta correta",
         "_comment": "Questão 2, Mensagem A"
     },
     "q2mb": {
@@ -30,40 +30,40 @@
         "_comment": "Questão 2, Mensagem B"
     },
     "q2mc": {
-        "message": "Itens com possibilidade de o aluno escolher a resposta correta a partir de ações no qual ele possa interagir com auxílio, por exemplo, de mouse ou touch screen &quot;e&quot; ainda, ter a disposição recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para a experimentação e/ou simulação",
+        "message": "Itens com possibilidade de o aluno escolher a resposta correta a partir de ações no qual ele possa interagir com auxílio, por exemplo, de mouse ou touch screen 'e' ainda, ter a disposição recursos como, por exemplo, calculadora, bloco de anotações, acesso a links de informações adicionais, espaço para a experimentação e/ou simulação",
         "_comment": "Questão 2, Mensagem C"
     },
 
     "q3mq": {
-        "message":"O comportamento é o elemento que se preocupa com a forma como ocorrem as interações do usuário com a interface digital, por exemplo, como os usuários podem executar ações (clicar, escrever, selecionar e arrastar, manipular, desenhar, simular etc.) para responder um item. Em relação ao nível de interatividade é possível afirmar que quanto &quot;mais ações&quot; do usuário com a interface digital do item, maior será a interatividade tecnológica. Assim, ele pode variar do nível mais baixo para o nível mais alto de interatividade.",
+        "message":"O comportamento é o elemento que se preocupa com a forma como ocorrem as interações do usuário com a interface digital, por exemplo, como os usuários podem executar ações (clicar, escrever, selecionar e arrastar, manipular, desenhar, simular etc.) para responder um item. Em relação ao nível de interatividade é possível afirmar que quanto 'mais ações' do usuário com a interface digital do item, maior será a interatividade tecnológica. Assim, ele pode variar do nível mais baixo para o nível mais alto de interatividade.",
         "_comment": "Questão 3, Mensagem Questão"
     },
     "q3ma": {
-        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após a leitura do texto sugerido, &quot;clique&quot; (clique = escolha) na opção correta.",
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após a leitura do texto sugerido, 'clique' (clique = escolha) na opção correta.",
         "_comment": "Questão 3, Mensagem A"
     },
     "q3mb": {
-        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Complete as lacunas do texto &quot;selecionando&quot; e &quot;arrastando&quot; as palavras para os locais adequados.",
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Complete as lacunas do texto 'selecionando' e 'arrastando' as palavras para os locais adequados.",
         "_comment": "Questão 3, Mensagem B"
     },
     "q3mc": {
-        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após ler o enunciado, clique (ação &quot;clicar&quot;) na opção iniciar para assistir a demonstração do experimento x, na sequência, utilize o simulador (ação: simular) para encontrar a medida solicitada e arraste (ação: arrastar) o resultado para a opção de resposta correta. Caso seja necessário, poderá utilizar a ferramenta calculadora e bloco de notas disponibilizados na barra lateral da tela (ações: clicar nas ferramentas e utilizá-las)",
+        "message": "A ação do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc., para desenvolver e/ou responder o que é solicitado. Ex.: Após ler o enunciado, clique (ação 'clicar') na opção iniciar para assistir a demonstração do experimento x, na sequência, utilize o simulador (ação: simular) para encontrar a medida solicitada e arraste (ação: arrastar) o resultado para a opção de resposta correta. Caso seja necessário, poderá utilizar a ferramenta calculadora e bloco de notas disponibilizados na barra lateral da tela (ações: clicar nas ferramentas e utilizá-las)",
         "_comment": "Questão 3, Mensagem C"
     },
     "q4mq": {
-        "message": "Tempo: É o elemento que se refere às mídias que mudam a partir de um determinado tempo - ação e reação. Por exemplo, a partir da &quot;acão&quot; do aluno como, clicar na opção &quot;iniciar&quot; numa mídia utilizada (vídeo, som, imagem animada etc), esta apresenta uma “reação”, ou seja, uma mensagem de texto, som, imagem etc., com novas instruções como, por exemplo, para que o aluno faça uma simulação, porém com um &quot;determinado tempo&quot; para responder o item digital. A reação possui um &quot;tempo de duração&quot; e, este elemento quando tecnologicamente aplicado em itens digitais e combinados, principalmente, com possibilidade da inclusão de animações e simulações, apresenta alto nível de interatividade",
+        "message": "Tempo: É o elemento que se refere às mídias que mudam a partir de um determinado tempo - ação e reação. Por exemplo, a partir da 'acão' do aluno como, clicar na opção 'iniciar' numa mídia utilizada (vídeo, som, imagem animada etc), esta apresenta uma “reação”, ou seja, uma mensagem de texto, som, imagem etc., com novas instruções como, por exemplo, para que o aluno faça uma simulação, porém com um 'determinado tempo' para responder o item digital. A reação possui um 'tempo de duração' e, este elemento quando tecnologicamente aplicado em itens digitais e combinados, principalmente, com possibilidade da inclusão de animações e simulações, apresenta alto nível de interatividade",
         "_comment": "Questão 4, Mensagem Questão"
     },
     "q4ma": {
-        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Elementos gráficos estáticos: que não possuem movimento, por exemplo, uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva; Determinação de tempo: indicativo de tempo para resolução do item.",
+        "message": "A 'ação' do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Elementos gráficos estáticos: que não possuem movimento, por exemplo, uso de uma imagem meramente ilustrativa e/ou o uso de vídeos em substituição idêntica ao texto em sua função prescritiva; Determinação de tempo: indicativo de tempo para resolução do item.",
         "_comment": "Questão 4, Mensagem A"
     },
     "q4mb": {
-        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
+        "message": "A 'ação' do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
         "_comment": "Questão 4, Mensagem B"
     },
     "q4mc": {
-        "message": "A &quot;ação&quot; do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
+        "message": "A 'ação' do usuário no item digital compreende, por exemplo, clicar, escrever, selecionar, arrastar, manipular, desenhar, simular etc.; Determinação de tempo: indicativo de tempo para resolução do item",
         "_comment": "Questão 4, Mensagem C"
     },
     "q5mq": {
@@ -71,7 +71,7 @@
         "_comment": "Questão 5, Mensagem Questão"
     },
     "q5ma": {
-        "message": "O usuário só possui a opção de clicar, por exemplo, em &quot;avançar&quot; e/ou &quot;retornar&quot; (liberdade mínima).",
+        "message": "O usuário só possui a opção de clicar, por exemplo, em 'avançar' e/ou 'retornar' (liberdade mínima).",
         "_comment": "Questão 5, Mensagem A"
     },
     "q5mb": {

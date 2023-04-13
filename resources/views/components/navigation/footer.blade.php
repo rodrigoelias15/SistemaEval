@@ -38,8 +38,8 @@
                     Alexandre Vitor S. Braga <br/>(UFJF) <br/>
                 </span>
             </span>
-        </div> 
-
+        </div>
+        {{ $slot }}
         <div class="foot right">
             <a class="foot-link" href="https://institucional.caeddigital.net/">
                 <span class="foot-link-span">
