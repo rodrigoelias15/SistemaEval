@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "@tabler/icons": "^2.15.0"
+        "@tabler/icons": "^2.15.0",
+        "mysql": "^2.18.1"
     }
 }
