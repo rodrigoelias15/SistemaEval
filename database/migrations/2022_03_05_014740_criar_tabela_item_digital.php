@@ -19,7 +19,7 @@ class CriarTabelaItemDigital extends Migration
             $table->string('area_item_digital');
             $table->string('escolaridade_item_digital');
             $table->string('url_item_digital');
-            $table->string('descricao_item_digital', 1000);
+            $table->mediumText('descricao_item_digital');
             $table->string('item_utilizado_larga_escala');
             $table->string('item_multidisciplinar');
             $table->string('nome_avaliacao_item_digital');
