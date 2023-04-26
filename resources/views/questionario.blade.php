@@ -6,8 +6,6 @@ Questionário de Interatividade
 
 @section('content')
 
-{{-- Script de interatividade --}}
-
 <script defer src="js/interatividade.js"></script> {{-- script baixado durante carregamento mas só executado depois de carregada a página (é adiado) --}}
 
 @php
@@ -52,6 +50,9 @@ Questionário de Interatividade
                         Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).
                     </p>
                 </div>
+
+                <input type="hidden" id="interatividade" name="interatividade">
+                <input type="hidden" id="classificacaoInteratividade" name="classificacaoInteratividade">
                 
                 <div class="form-group justify-content-end text-right">
                     <input class="btn btn-primary px-4" title="Gera Relatório para Impressão/Download" type="submit" value="Gerar Relatório">
