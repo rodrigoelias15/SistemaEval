@@ -7,7 +7,7 @@
 <div class="form-group form-check">
     <input class="form-check-input radio-input"
         type="radio"
-        required onclick="exibeNivelInteratividade()"
+        required onclick="exibeBarraProgressoInteratividade()"
         id= {{ $id }}
         name= {{ $name }}
         value= "{{ $value }}" >
