@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Provider\Lorem;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -31,6 +32,8 @@ class CriarTabelaQuestionario extends Migration
                 $table->string('questionario_item11',500);
                 $table->string('questionario_item12',500);
                 $table->string('questionario_item13',500);
+                $table->integer('interatividade');
+                $table->string('classificacaoInteratividade',500);
             }
         );
     }
