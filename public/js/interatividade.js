@@ -1,18 +1,17 @@
 
 function retornaNivelInteratividade(item_a, item_b, item_c){
     
-    let nivel_interatividade_baixo, nivel_interatividade_medio, nivel_interatividade_alto;
+    let nivel_interatividade_baixo = 1;
+    let nivel_interatividade_medio = 2;
+    let nivel_interatividade_alto = 3;
     
     if (item_a.checked == true) {
-        nivel_interatividade_baixo = 1;
         return nivel_interatividade_baixo;
     }
     else if (item_b.checked == true) {
-        nivel_interatividade_medio = 2;
         return nivel_interatividade_medio;
     }
     else if (item_c.checked == true) {
-        nivel_interatividade_alto = 3;
         return nivel_interatividade_alto;
     }
     return 0;
@@ -174,9 +173,10 @@ function retornaNivelInteratividadeIndicador13() {
     return nivel_interatividade;
 }
 
-function realizaCalculoInteratividade() {
+function calculaInteratividade() {
     
-    let resultado = 0;
+    let resultadoFinal;
+    let valorInteratividade = 0;
     let soma_produtos_indicadores_tecnologicos = 0;
     let soma_produtos_indicadores_pedagogicos = 0;
     let soma_graus_relevancia_tecnologicos = 0;
@@ -203,32 +203,57 @@ function realizaCalculoInteratividade() {
 
     soma_produtos_indicadores_pedagogicos =  grau_relevancia_indicador8*retornaNivelInteratividadeIndicador8() + grau_relevancia_indicador9*retornaNivelInteratividadeIndicador9() + grau_relevancia_indicador10*retornaNivelInteratividadeIndicador10() + grau_relevancia_indicador11*retornaNivelInteratividadeIndicador11() + grau_relevancia_indicador12*retornaNivelInteratividadeIndicador12() + grau_relevancia_indicador13*retornaNivelInteratividadeIndicador13();
 
-    resultado = ((soma_produtos_indicadores_tecnologicos/soma_graus_relevancia_tecnologicos) + (soma_produtos_indicadores_pedagogicos/soma_graus_relevancia_pedagogicos))/2;
+    valorInteratividade = ((soma_produtos_indicadores_tecnologicos/soma_graus_relevancia_tecnologicos) + (soma_produtos_indicadores_pedagogicos/soma_graus_relevancia_pedagogicos))/2;
 
-    return resultado.toFixed(2);
+    resultadoFinal = valorInteratividade.toFixed(2);
+    
+    return resultadoFinal;
 }
 
-function exibeNivelInteratividade() {
+function classificaNivelInteratividade() {
     
-    let barra_progresso_width = 0;
-    let nivel_interatividade = realizaCalculoInteratividade();
-    const elem_nivel_interatividade = document.getElementById("nivel_interatividade");
-    const elem_barra_progresso = document.getElementById("myBar");
-    
-    barra_progresso_width = (100*nivel_interatividade)/3 + '%'; // calculo da porcentagem, 3 é o maximo que interatividade pode alcançar
-    elem_barra_progresso.style.width = barra_progresso_width;
+    let resultadoFinal = calculaInteratividade();
+    const numInteratividade = document.getElementById("interatividade");
+    const classificacaoInteratividade = document.getElementById("classificacaoInteratividade");
 
+    if (resultadoFinal < 1.5) {
+        classificacaoInteratividade.value = "Baixa Interatividade";
+    }
+    else if (1.5 <= resultadoFinal && resultadoFinal < 2.5) {
+        classificacaoInteratividade.value = "Média Interatividade";
+    }
+    else if (resultadoFinal > 2.5) {
+        classificacaoInteratividade.value = "Alta Interatividade";
+    }
+    
+    numInteratividade.value = resultadoFinal;    
+}
+
+function calculaPorcentagemBarraProgresso(nivel_interatividade) {
+    
+    let tamBarraProgresso = (100*nivel_interatividade)/3 + '%'; // calculo da porcentagem da barra de progresso
+    return tamBarraProgresso;
+}
+
+function exibeBarraProgressoInteratividade() {
+    
+    let nivel_interatividade = calculaInteratividade();
+    const barraProgresso = document.getElementById("barraProgresso");
+    const classificacaoInteratividade = document.getElementById("classificacaoInteratividadeBarra");
+    
+    classificaNivelInteratividade();
+    barraProgresso.style.width = calculaPorcentagemBarraProgresso(nivel_interatividade); // tamanho dinâmico da barra
+    
     if (nivel_interatividade < 1.5) {
-        elem_nivel_interatividade.innerHTML = "Baixa Interatividade";
-        elem_barra_progresso.innerHTML = 1;
+        classificacaoInteratividade.innerHTML = "Baixa Interatividade";
+        barraProgresso.innerHTML = 1;
     }
     else if (1.5 <= nivel_interatividade && nivel_interatividade < 2.5) {
-        elem_nivel_interatividade.innerHTML = "Média Interatividade";
-        elem_barra_progresso.innerHTML = 2;
+        classificacaoInteratividade.innerHTML = "Média Interatividade";
+        barraProgresso.innerHTML = 2;
     }
     else if (nivel_interatividade > 2.5) {
-        elem_nivel_interatividade.innerHTML = "Alta Interatividade";
-        elem_barra_progresso.innerHTML = 3;
+        classificacaoInteratividade.innerHTML = "Alta Interatividade";
+        barraProgresso.innerHTML = 3;
     }
-
 }
