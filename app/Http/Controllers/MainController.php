@@ -161,8 +161,8 @@ class MainController extends Controller
     public function storeQuestionario(QuestionarioFormRequest $request)
     {
         $dadosQuestionario = $request->session()->get('questionario');
-        $dados = $request->all();
-        $dadosQuestionario->fill($dados);
+        $novosDadosQuestionario = $request->all();
+        $dadosQuestionario->fill($novosDadosQuestionario);
         $request->session()->put('dadosQuestionario', $dadosQuestionario);
         $dadosQuestionario->save();
         return redirect()->route('exibeRelatorio');
