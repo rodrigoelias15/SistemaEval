@@ -7,7 +7,7 @@ Visualizar Relatórios Por Ordem dos Nomes
 @section('content')
 
 <x-panels.gridcontent2>
-    <x-cards.relatorio_ordenado_nome :relatorio_questionario="$relatorio_questionario" />
+    <x-cards.relatorio_ordenado_nome :relatorioQuestionario="$relatorioQuestionario" />
 </x-panels.gridcontent2>
 
 @endsection

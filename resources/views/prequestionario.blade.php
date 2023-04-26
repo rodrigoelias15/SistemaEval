@@ -21,14 +21,14 @@ Questionário
                 class="form-control"
                 name="nome_avaliador_questionario"
             >
-                @if ($usuarioavaliador->count() >= 1)
-                    @foreach($usuarioavaliador as $usuario)
-                        <option value="{{ $usuario->nome_avaliador }}"
-                            @if(old('nome_avaliador_questionario') == $usuario->nome_avaliador)
+                @if ($dadosUsuarioAvaliador->count() >= 1)
+                    @foreach($dadosUsuarioAvaliador as $dadosUsuario)
+                        <option value="{{ $dadosUsuario->nome_avaliador }}"
+                            @if(old('nome_avaliador_questionario') == $dadosUsuario->nome_avaliador)
                                 selected
                             @endif
                         >
-                            {{$usuario->nome_avaliador}}
+                            {{$dadosUsuario->nome_avaliador}}
                         </option>
                     @endforeach
                 @else
@@ -51,14 +51,14 @@ Questionário
                 class="form-control"
                 name="nome_item_digital_questionario"
             >
-                @if ($itemdigital->count() >= 1)
-                    @foreach($itemdigital as $item)
-                        <option value="{{ $item->nome_item_digital }}"
-                            @if(old('nome_item_digital_questionario') == $item->nome_item_digital)
+                @if ($dadosItemDigital->count() >= 1)
+                    @foreach($dadosItemDigital as $itemDigital)
+                        <option value="{{ $itemDigital->nome_item_digital }}"
+                            @if(old('nome_item_digital_questionario') == $itemDigital->nome_item_digital)
                                 selected
                             @endif
                         >
-                            {{$item->nome_item_digital}}
+                            {{$itemDigital->nome_item_digital}}
                         </option>
                     @endforeach
                 @else

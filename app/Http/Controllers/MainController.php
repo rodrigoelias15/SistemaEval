@@ -133,63 +133,63 @@ class MainController extends Controller
     // Questionario
     public function preQuestionario()
     {
-        $itemdigital = ItemDigital::all();
-        $usuarioavaliador = UsuarioAvaliador::all();
-        return view('prequestionario', compact('usuarioavaliador', 'itemdigital'));
+        $dadosItemDigital = ItemDigital::all();
+        $dadosUsuarioAvaliador = UsuarioAvaliador::all();
+        return view('prequestionario', compact('dadosUsuarioAvaliador', 'dadosItemDigital'));
     }
     
     public function postPreQuestionario(PreQuestionarioFormRequest $request)
     {
+        $dadosItemDigital = $request->all();
         $questionario = new Questionario();
-        $dados = $request->all();
-        $questionario->fill($dados);
-        if(empty($request->session()->get('questionario'))){
-            $request->session()->put('questionario', $questionario);
+        $questionario->fill($dadosItemDigital);
+        if(empty($dadosItemDigital)){
+            $request->session()->put('dadosItemDigital', $dadosItemDigital);
         }else{
-            $request->session()->forget($request->all());
-            $request->session()->put('questionario', $questionario);
+            $request->session()->forget($dadosItemDigital);
+            $request->session()->put('dadosItemDigital', $dadosItemDigital);
         }
         return redirect()->route('questionario');
     }
         
     public function questionario(Request $request)
     {
-        $questionario = $request->session()->get('questionario');
-        return view('questionario', compact('questionario'));
+        $dadosQuestionario = $request->session()->get('questionario');
+        return view('questionario', compact('dadosQuestionario'));
     }
     
     public function storeQuestionario(QuestionarioFormRequest $request)
     {
-        $questionario = $request->session()->get('questionario');
+        $dadosQuestionario = $request->session()->get('questionario');
         $dados = $request->all();
-        $questionario->fill($dados);
-        $request->session()->put('questionario', $questionario);
-        $questionario->save();
+        $dadosQuestionario->fill($dados);
+        $request->session()->put('dadosQuestionario', $dadosQuestionario);
+        $dadosQuestionario->save();
         return redirect()->route('exibeRelatorio');
     }
     
     public function exibeRelatorio(Request $request)
     {
-        $questionario = $request->session()->get('questionario');
-        return view('relatorio.exibeRelatorio', compact('questionario'));
+        $dadosQuestionario = $request->session()->get('questionario');
+        return view('relatorio.exibeRelatorio', compact('dadosQuestionario'));
     }
 
     public function exibeRelatorioOrdenado()
     {
-        $relatorio_questionario = Questionario::all();
-        return view('relatorio.exibeRelatorioOrdenado', compact('relatorio_questionario'));
+        $relatorioQuestionario = Questionario::all();
+        return view('relatorio.exibeRelatorioOrdenado', compact('relatorioQuestionario'));
     }
 
     public function exibeRelatorioOrdenadoNome()
     {
-        $relatorio_questionario = Questionario::all();
-        return view('relatorio.exibeRelatorioOrdenadoNome', compact('relatorio_questionario'));    
+        $relatorioQuestionario = Questionario::all();
+        return view('relatorio.exibeRelatorioOrdenadoNome', compact('relatorioQuestionario'));    
     }
 
     public function exibeRelatorioOrdenadoData()
     {
-        $relatorio_questionario = Questionario::all();
-        return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorio_questionario'));    
+        $relatorioQuestionario = Questionario::all();
+        return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorioQuestionario'));    
     }
     
     public function storeRelatorio(Request $request)

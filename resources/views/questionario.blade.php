@@ -19,7 +19,7 @@ Questionário de Interatividade
     <div class="row">
 
         <x-icons.logo_special
-            :questionario="$questionario"
+            :dadosQuestionario="$dadosQuestionario"
         />
 
         <div class="col-lg-12 my-4">
@@ -42,7 +42,7 @@ Questionário de Interatividade
                 @include('questoes.questao11')
                 @include('questoes.questao12')
                 @include('questoes.questao13')
-
+                
                 <textarea id="campo_observacao" name="observacao" rows="5" cols="33" placeholder="Observações"></textarea>
                 <div class="notas_rodape">
                     <b>Nota de Rodapé:</b>
@@ -52,6 +52,7 @@ Questionário de Interatividade
                         Financiamento: Centro de Políticas Públicas e Avaliação da Educação da Universidade Federal de Juiz de Fora (CAEd/UFJF).
                     </p>
                 </div>
+                
                 <div class="form-group justify-content-end text-right">
                     <input class="btn btn-primary px-4" title="Gera Relatório para Impressão/Download" type="submit" value="Gerar Relatório">
                 </div>

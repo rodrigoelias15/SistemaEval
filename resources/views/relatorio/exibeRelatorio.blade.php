@@ -7,7 +7,7 @@ Relatório
 @section('content')
 
 <x-panels.gridcontent2>
-    <x-cards.relatorio :questionario="$questionario" />
+    <x-cards.relatorio :dadosQuestionario="$dadosQuestionario" />
 </x-panels.gridcontent2>
 
 @endsection
