@@ -143,34 +143,29 @@ class MainController extends Controller
         $dadosItemDigital = $request->all();
         $questionario = new Questionario();
         $questionario->fill($dadosItemDigital);
-        if(empty($dadosItemDigital)){
-            $request->session()->put('dadosItemDigital', $dadosItemDigital);
-        }else{
-            $request->session()->forget($dadosItemDigital);
-            $request->session()->put('dadosItemDigital', $dadosItemDigital);
-        }
+        $request->session()->put('questionarioKey', $questionario);
         return redirect()->route('questionario');
     }
         
     public function questionario(Request $request)
     {
-        $dadosQuestionario = $request->session()->get('questionario');
+        $dadosQuestionario = $request->session()->get('questionarioKey');
         return view('questionario', compact('dadosQuestionario'));
     }
     
-    public function storeQuestionario(QuestionarioFormRequest $request)
+    public function postQuestionario(QuestionarioFormRequest $request)
     {
-        $dadosQuestionario = $request->session()->get('questionario');
+        $dadosQuestionario = $request->session()->get('questionarioKey');
         $novosDadosQuestionario = $request->all();
         $dadosQuestionario->fill($novosDadosQuestionario);
-        $request->session()->put('dadosQuestionario', $dadosQuestionario);
+        $request->session()->put('questionarioKey', $dadosQuestionario);
         $dadosQuestionario->save();
         return redirect()->route('exibeRelatorio');
     }
     
     public function exibeRelatorio(Request $request)
     {
-        $dadosQuestionario = $request->session()->get('questionario');
+        $dadosQuestionario = $request->session()->get('questionarioKey');
         return view('relatorio.exibeRelatorio', compact('dadosQuestionario'));
     }
 
@@ -192,10 +187,10 @@ class MainController extends Controller
         return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorioQuestionario'));    
     }
     
-    public function storeRelatorio(Request $request)
+    public function baixarRelatorio(Request $request)
     {
-        $questionario = $request->session()->get('questionario');
-        return PDF::loadView('relatorio.relatorioDownload', compact('questionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('Relatorio.pdf');
+        $dadosQuestionario = $request->session()->get('questionarioKey');
+        return PDF::loadView('relatorio.relatorioDownload', compact('dadosQuestionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('Relatorio.pdf');
     }
 
     public function excluirRelatorio(Request $request)
