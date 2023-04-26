@@ -1,4 +1,28 @@
-@props(['questionario'])
+@props(['dadosQuestionario'])
+
+<div class="logocontainer col-lg-12 d-flex">
+    <x-icons.logo />
+
+    <div class="titulo">
+        <span>
+            <i>e-VAL </i><span class="fa fa-cube"></span><br />
+            Avaliação de interatividade em itens digitais
+        </span>
+    </div>
+
+</div>
+
+<div class="infocontainer col-lg-12 d-flex">
+    <span class="info_quest col-4">
+        <b>Título do Item:</b> {{$dadosQuestionario->nome_item_digital_questionario}}
+    </span>
+    <span class="info_quest col-4">
+        <b>Nome do Avaliador:</b> {{$dadosQuestionario->nome_avaliador_questionario}}
+    </span>
+    <span class="info_quest col-4">
+        <b>Data da Avaliação:</b> {{ (new DateTime($dadosQuestionario->data_item_digital_questionario))->format('d/m/Y')}}
+    </span>
+</div>
 
 <style>
 
@@ -29,28 +53,3 @@
     }
 
 </style>
-
-
-<div class="logocontainer col-lg-12 d-flex">
-    <x-icons.logo />
-
-    <div class="titulo">
-        <span>
-            <i>e-VAL </i><span class="fa fa-cube"></span><br />
-            Avaliação de interatividade em itens digitais
-        </span>
-    </div>
-
-</div>
-
-<div class="infocontainer col-lg-12 d-flex">
-    <span class="info_quest col-4">
-        <b>Título do Item:</b> {{$questionario->nome_item_digital_questionario}}
-    </span>
-    <span class="info_quest col-4">
-        <b>Nome do Avaliador:</b> {{$questionario->nome_avaliador_questionario}}
-    </span>
-    <span class="info_quest col-4">
-        <b>Data da Avaliação:</b> {{ (new DateTime($questionario->data_item_digital_questionario))->format('d/m/Y')}}
-    </span>
-</div>
