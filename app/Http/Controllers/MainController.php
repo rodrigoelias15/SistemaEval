@@ -12,7 +12,8 @@ use App\UsuarioAvaliador;
 use Illuminate\Http\Request;
 use App\Instituicao;
 use App\ItemDigital;
-use Barryvdh\DomPDF\Facade\Pdf;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
@@ -187,10 +188,16 @@ class MainController extends Controller
         return view('relatorio.exibeRelatorioOrdenadoData', compact('relatorioQuestionario'));    
     }
     
-    public function baixarRelatorio(Request $request)
+    public function gerarRelatorio(Request $request)
     {
         $dadosQuestionario = $request->session()->get('questionarioKey');
-        return PDF::loadView('relatorio.relatorioDownload', compact('dadosQuestionario'))->setOptions(['defaultFont' => 'sans-serif'])->stream('Relatorio.pdf');
+        $opcoes = new Options();
+        $opcoes->set('defaultFont', 'Arial');
+        $dompdf = new Dompdf($opcoes);
+        $paginaRelatorio = view('relatorio.relatorioDownload', compact('dadosQuestionario'))->render();
+        $dompdf->loadHtml($paginaRelatorio);
+        $dompdf->render();
+        $dompdf->stream('Relatorio.pdf');
     }
 
     public function excluirRelatorio(Request $request)
