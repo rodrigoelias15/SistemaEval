@@ -96,7 +96,7 @@
 
         <div class="form-group text-center">
             <a class="btn btn-primary px-4" title="Voltar para página anterior" href="{{route("questionario")}}">Voltar</a>
-            <a class="btn btn-primary px-4" title="Download do Relatório" target="_blank" href="{{route("relatorioDownload")}}">Baixar Relatorio</a>
+            <a class="btn btn-primary px-4" title="Download do Relatório" target="_blank" href="{{route("gerarRelatorioDownload")}}">Baixar Relatorio</a>
         </div>
     </div>
 
