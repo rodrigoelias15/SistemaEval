@@ -22,6 +22,7 @@
             name="questionario_item4"
             :value="$questoes->Q4C->question">
             <x-help :message="$messages->q4mc->message" color='green'/>
+            <input type="hidden" id="indicador4" name="indicador4">
         </x-radio>
     </fieldset>
 </section>
