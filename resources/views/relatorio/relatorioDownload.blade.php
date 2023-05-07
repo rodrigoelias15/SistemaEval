@@ -35,6 +35,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 1: Textos e elementos gráficos</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item1; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador1 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -43,6 +44,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 2: Espaço/meio de interação</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item2; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador2 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -51,6 +53,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 3: Comportamento dos elementos no espaço</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item3; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador3 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -59,6 +62,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 4: Tempo</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item4; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador4 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -67,6 +71,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 5: Movimento/liberdade do usuário no item</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item5; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador5 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -75,6 +80,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 6: Suporte e feedback</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item6; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador6 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -83,14 +89,18 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 7: Diálogo entre usuários e conteúdo</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item7; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador7 }}</i></b></p>
         </section>
     </fieldset>
+
+    <div class="page-break"></div>
 
     <fieldset>
         <section id="indicador8">
             <h1 class="indicador">Indicador 8: Flexibilidade e Abertura</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item8; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador8 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -99,6 +109,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 9: Integração Inter-áreas</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item9; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador9 }}</i></b></p>
         </section>
     </fieldset>
     
@@ -107,24 +118,27 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 10: Integração colaborativa</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item10; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador10 }}</i></b></p>
         </section>
     </fieldset>
-    
-    <div class="page-break"></div>
     
     <fieldset>
         <section id="indicador11">
             <h1 class="indicador">Indicador 11: Permutabilidade</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item11; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador11 }}</i></b></p>
         </section>
     </fieldset>
 
+    <div class="page-break"></div>
+    
     <fieldset>
         <section id="indicador12">
             <h1 class="indicador">Indicador 12: Intervenção</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item12; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador12 }}</i></b></p>
         </section>
     </fieldset>
 
@@ -133,6 +147,7 @@ function converteImagemBase64($caminhoImagem)
             <h1 class="indicador">Indicador 13: Bidirecionalidade</h1>
             <h2 class="criterio">Critério escolhido:</h2>
             <span><?php echo $dadosQuestionario->questionario_item13; ?></span>
+            <p><b><i>Nível de Interatividade do Critério: {{ $indicador13 }}</i></b></p>
         </section>
     </fieldset>
 </body>
