@@ -156,12 +156,26 @@ class MainController extends Controller
     
     public function postQuestionario(QuestionarioFormRequest $request)
     {
+        $request->session()->put('keyIndicador1', $request->input('indicador1'));
+        $request->session()->put('keyIndicador2', $request->input('indicador2'));
+        $request->session()->put('keyIndicador3', $request->input('indicador3'));
+        $request->session()->put('keyIndicador4', $request->input('indicador4'));
+        $request->session()->put('keyIndicador5', $request->input('indicador5'));
+        $request->session()->put('keyIndicador6', $request->input('indicador6'));
+        $request->session()->put('keyIndicador7', $request->input('indicador7'));
+        $request->session()->put('keyIndicador8', $request->input('indicador8'));
+        $request->session()->put('keyIndicador9', $request->input('indicador9'));
+        $request->session()->put('keyIndicador10', $request->input('indicador10'));
+        $request->session()->put('keyIndicador11', $request->input('indicador11'));
+        $request->session()->put('keyIndicador12', $request->input('indicador12'));
+        $request->session()->put('keyIndicador13', $request->input('indicador13'));
+
         $dadosQuestionario = $request->session()->get('questionarioKey');
         $novosDadosQuestionario = $request->all();
         $dadosQuestionario->fill($novosDadosQuestionario);
         $request->session()->put('questionarioKey', $dadosQuestionario);
         $dadosQuestionario->save();
-        return redirect()->route('exibeRelatorio');
+        return view('relatorio.exibeRelatorio', compact('dadosQuestionario'));
     }
     
     public function exibeRelatorio(Request $request)
@@ -190,11 +204,38 @@ class MainController extends Controller
     
     public function gerarRelatorio(Request $request)
     {
+        $indicador1 = $request->session()->get('keyIndicador1');
+        $indicador2 = $request->session()->get('keyIndicador2');
+        $indicador3 = $request->session()->get('keyIndicador3');
+        $indicador4 = $request->session()->get('keyIndicador4');
+        $indicador5 = $request->session()->get('keyIndicador5');
+        $indicador6 = $request->session()->get('keyIndicador6');
+        $indicador7 = $request->session()->get('keyIndicador7');
+        $indicador8 = $request->session()->get('keyIndicador8');
+        $indicador9 = $request->session()->get('keyIndicador9');
+        $indicador10 = $request->session()->get('keyIndicador10');
+        $indicador11 = $request->session()->get('keyIndicador11');
+        $indicador12 = $request->session()->get('keyIndicador12');
+        $indicador13 = $request->session()->get('keyIndicador13');
+
         $dadosQuestionario = $request->session()->get('questionarioKey');
         $opcoes = new Options();
         $opcoes->set('defaultFont', 'Arial');
         $dompdf = new Dompdf($opcoes);
-        $paginaRelatorio = view('relatorio.relatorioDownload', compact('dadosQuestionario'))->render();
+        $paginaRelatorio = view('relatorio.relatorioDownload', compact('dadosQuestionario',
+        'indicador1',
+        'indicador2',
+        'indicador3',
+        'indicador4',
+        'indicador5',
+        'indicador6',
+        'indicador7',
+        'indicador8',
+        'indicador9',
+        'indicador10',
+        'indicador11',
+        'indicador12',
+        'indicador13'))->render();
         $dompdf->loadHtml($paginaRelatorio);
         $dompdf->render();
         $dompdf->stream('Relatorio.pdf');
