@@ -1,176 +1,198 @@
 
-function retornaNivelInteratividade(item_a, item_b, item_c){
-    
-    let nivel_interatividade_baixo = 1;
-    let nivel_interatividade_medio = 2;
-    let nivel_interatividade_alto = 3;
+function retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c){
     
     if (item_a.checked == true) {
-        return nivel_interatividade_baixo;
+        return 1;
     }
     else if (item_b.checked == true) {
-        return nivel_interatividade_medio;
+        return 2;
     }
     else if (item_c.checked == true) {
-        return nivel_interatividade_alto;
+        return 3;
     }
     return 0;
 }
 
 function retornaNivelInteratividadeIndicador1() {
     
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador1a");
     const item_b = document.getElementById("indicador1b");
     const item_c = document.getElementById("indicador1c");
-
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    const elem = document.getElementById("indicador1");
     
-    return nivel_interatividade;
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
+    
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador2() {
     
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador2a");
     const item_b = document.getElementById("indicador2b");
     const item_c = document.getElementById("indicador2c");
+    const elem = document.getElementById("indicador2");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador3() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador3a");
     const item_b = document.getElementById("indicador3b");
     const item_c = document.getElementById("indicador3c");
+    const elem = document.getElementById("indicador3");
 
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador4() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador4a");
     const item_b = document.getElementById("indicador4b");
     const item_c = document.getElementById("indicador4c");
+    const elem = document.getElementById("indicador4");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador5() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador5a");
     const item_b = document.getElementById("indicador5b");
     const item_c = document.getElementById("indicador5c");
+    const elem = document.getElementById("indicador5");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador6() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador6a");
     const item_b = document.getElementById("indicador6b");
     const item_c = document.getElementById("indicador6c");
+    const elem = document.getElementById("indicador6");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador7() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador7a");
     const item_b = document.getElementById("indicador7b");
     const item_c = document.getElementById("indicador7c");
+    const elem = document.getElementById("indicador7");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador8() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador8a");
     const item_b = document.getElementById("indicador8b");
     const item_c = document.getElementById("indicador8c");
+    const elem = document.getElementById("indicador8");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador9() {
     
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador9a");
     const item_b = document.getElementById("indicador9b");
     const item_c = document.getElementById("indicador9c");
+    const elem = document.getElementById("indicador9");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador10() {
     
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador10a");
     const item_b = document.getElementById("indicador10b");
     const item_c = document.getElementById("indicador10c");
+    const elem = document.getElementById("indicador10");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador11() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador11a");
     const item_b = document.getElementById("indicador11b");
     const item_c = document.getElementById("indicador11c");
+    const elem = document.getElementById("indicador11");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador12() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador12a");
     const item_b = document.getElementById("indicador12b");
     const item_c = document.getElementById("indicador12c");
+    const elem = document.getElementById("indicador12");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function retornaNivelInteratividadeIndicador13() {
    
-    let nivel_interatividade;
+    let nivel_interatividade_criterio;
     const item_a = document.getElementById("indicador13a");
     const item_b = document.getElementById("indicador13b");
     const item_c = document.getElementById("indicador13c");
+    const elem = document.getElementById("indicador13");
     
-    nivel_interatividade = retornaNivelInteratividade(item_a, item_b, item_c);
+    nivel_interatividade_criterio = retornaNivelInteratividadeCriterioEscolhido(item_a, item_b, item_c);
+    elem.value = nivel_interatividade_criterio;
     
-    return nivel_interatividade;
+    return nivel_interatividade_criterio;
 }
 
 function calculaInteratividade() {
