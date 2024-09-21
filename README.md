@@ -1,64 +1,114 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Instalação para Windows usando WSL2
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 1. Abra o cmd em modo administrador e execute:
 
-## About Laravel
+```shell
+wsl --install -d Ubuntu-24.04
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Abra o Ubuntu instalado e atualize o sistema:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+```shell
+sudo apt update && sudo apt upgrade -y
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Siga com o restante da instalação a seguir.
 
-## Learning Laravel
+# Instalação para Linux
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 1. Clone o repositorio utilizando o comando:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```shell
+git clone https://github.com/rodrigoelias15/SistemaEval.git
+```
 
-## Laravel Sponsors
+## 2. Instale o php e seus módulos:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```shell
+sudo apt install php php-mysql php-cli php-xml php-curl php-gd
+```
 
-### Premium Partners
+## 3. Instale o composer:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+```shell
+sudo apt install composer
+```
 
-## Contributing
+## 4. Instale o banco de dados (mysql):
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```shell
+sudo apt install mysql-server
+```
 
-## Code of Conduct
+## 5. Ative os módulos do php, acessando o arquivo php,ini. subistitua o trecho "versão_php" pela versão instalada no sistema:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```shell
+sudo nano /etc/php/<versão_php>/apache2/php.ini
+```
 
-## Security Vulnerabilities
+Busque pelos módulos que estão desativados (comentados com ";") e retire os ";" para ativá-los, nestas linhas:
+;extension=pdo_mysql
+;extension=pdo_curl
+;extension=pdo_gd
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 6. Reinicie o servidor apache:
 
-## License
+```shell
+sudo systemctl restart apache2
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 7. Crie o banco de dados:
+
+```shell
+sudo mysql
+```
+
+```shell
+CREATE DATABASE rodrigo;
+```
+
+```shell
+ALTER USER 'rodrigo'@'localhost' IDENTIFIED BY '1234';
+```
+
+```shell
+GRANT ALL PRIVILEGES ON *.* TO 'rodrigo'@'localhost';
+```
+
+```shell
+flush privileges;
+```
+
+```shell
+exit;
+```
+
+## 8. Baixe o gerenciador de banco de dados:
+
+Baixe o DBEaver clicando <a href="https://dbeaver.io/download/" target="_blank">aqui</a>.
+
+## 9. Configurando o DBEaver
+
+Acesse o menu Database -> New Database Connection -> MySQL -> Next
+
+Acesse a aba "Driver Properties" e altere o valor do parâmetro "allowPublicKeyRetrieval" para TRUE
+
+Retorne para a aba "Main", preencha os campos mostrados abaixo e clique em "Test Connection" (se o programa oferecer para baixar drivers do mysql, basta aceitar para baixá-los):
+
+Database: rodrigo
+Username: rodrigo
+Password: 1234
+
+## 10. Iniciando o projeto:
+
+Abra um terminal na pasta do projeto e execute:
+
+```shell
+php artisan migrate
+```
+
+```shell
+php artisan serve
+```
+
+Acesse o link mostrado no terminal (algo como http://127.0.0.1:8000)
