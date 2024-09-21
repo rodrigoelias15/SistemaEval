@@ -12,11 +12,11 @@ Abra o Ubuntu instalado e atualize o sistema:
 sudo apt update && sudo apt upgrade -y
 ```
 
-Siga com o restante da instalação a seguir.
+Siga com o restante da instalação com os passos a seguir.
 
 # Instalação para Linux
 
-## 1. Clone o repositorio utilizando o comando:
+## 1. Clone o repositorio:
 
 ```shell
 git clone https://github.com/rodrigoelias15/SistemaEval.git
@@ -46,10 +46,10 @@ sudo apt install mysql-server
 sudo nano /etc/php/<versão_php>/apache2/php.ini
 ```
 
-Busque pelos módulos que estão desativados (comentados com ";") e retire os ";" para ativá-los, nestas linhas:
-;extension=pdo_mysql
-;extension=pdo_curl
-;extension=pdo_gd
+Apague os ";" dos módulos abaixo para ativá-los: \n
+;extension=pdo_mysql \n
+;extension=pdo_curl \n
+;extension=pdo_gd 
 
 ## 6. Reinicie o servidor apache:
 
@@ -58,6 +58,8 @@ sudo systemctl restart apache2
 ```
 
 ## 7. Crie o banco de dados:
+
+Execute os comandos:
 
 ```shell
 sudo mysql
@@ -95,8 +97,8 @@ Acesse a aba "Driver Properties" e altere o valor do parâmetro "allowPublicKeyR
 
 Retorne para a aba "Main", preencha os campos mostrados abaixo e clique em "Test Connection" (se o programa oferecer para baixar drivers do mysql, basta aceitar para baixá-los):
 
-Database: rodrigo
-Username: rodrigo
+Database: rodrigo \n
+Username: rodrigo \n
 Password: 1234
 
 ## 10. Iniciando o projeto:
