@@ -46,9 +46,9 @@ sudo apt install mysql-server
 sudo nano /etc/php/<versão_php>/apache2/php.ini
 ```
 
-Apague os ";" dos módulos abaixo para ativá-los: \n
-;extension=pdo_mysql \n
-;extension=pdo_curl \n
+Apague os ";" dos módulos abaixo para ativá-los: <br>
+;extension=pdo_mysql <br>
+;extension=pdo_curl <br>
 ;extension=pdo_gd 
 
 ## 6. Reinicie o servidor apache:
@@ -97,8 +97,8 @@ Acesse a aba "Driver Properties" e altere o valor do parâmetro "allowPublicKeyR
 
 Retorne para a aba "Main", preencha os campos mostrados abaixo e clique em "Test Connection" (se o programa oferecer para baixar drivers do mysql, basta aceitar para baixá-los):
 
-Database: rodrigo \n
-Username: rodrigo \n
+Database: rodrigo <br>
+Username: rodrigo <br>
 Password: 1234
 
 ## 10. Iniciando o projeto:
