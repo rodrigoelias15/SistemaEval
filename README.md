@@ -14,6 +14,8 @@ sudo apt update && sudo apt upgrade -y
 
 Siga com o restante da instalação com os passos a seguir.
 
+<br><br>
+
 # Instalação para Linux
 
 ## 1. Clone o repositorio:
