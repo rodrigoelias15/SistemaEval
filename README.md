@@ -12,7 +12,7 @@ Abra o Ubuntu instalado e atualize o sistema:
 sudo apt update && sudo apt upgrade -y
 ```
 
-Siga com o restante da instalação com os passos a seguir.
+Prossiga com a instalação seguindo os próximos passos.
 
 <br><br>
 
@@ -105,7 +105,13 @@ Password: 1234
 
 ## 10. Iniciando o projeto:
 
-Abra um terminal na pasta do projeto e execute:
+Acesse o diretório do projeto, executando:
+
+```shell
+cd SistemaEval/
+```
+
+Execute os comandos:
 
 ```shell
 php artisan migrate
